@@ -1,0 +1,61 @@
+{
+  "status": "passed_with_documented_limits",
+  "run": "phase1_20261020T042524626304Z",
+  "local_start_lima": "2026-10-19 23:25:24 -05:00",
+  "source_zip": "results/results-20261020T043203Z-1-001.zip",
+  "source_zip_sha256": "990bc5faf28a99b9708304ed4a4462896d3aef708e34e592e123712e6a3b340a",
+  "executed_notebook_sha256": "fa4317d925e2bb1d82e29db269e6a188ca8b2dff495e078d234dbf1064e69875",
+  "executed_code_cells": 14,
+  "notebook_errors": [],
+  "changed_code_cells": [],
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.1.3",
+    "pillow": "11.3.0",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "in_colab": true,
+    "torch": "2.11.0+cpu",
+    "cuda_available": false,
+    "manifest_metadata_sha256": "5096512725c2c9154c6d50d819a9a3260d92b3c08574b4b07c5970786bad50c3",
+    "manifest_csv_sha256": {
+      "all_labeled_members.csv": "74dab7737817e82e9a35b7a7dd06c2d0868a3bc3e8876ef0c3783aa56bc052ae",
+      "external_overlap_report.csv": "56f6ce95bde132eda743b8d2deebb378a884450f1715c3dfa9cef02d887dde5a",
+      "official_test_unlabeled.csv": "05f9262b3ecb31c02fef349de516a31798ea2ab9ef5f0d4cd252de102bc403e3",
+      "reserved_external.csv": "859c2e9c68a5de03017385f1a22428b701aa816ae6ea13b4eccd1c51d87e5cd5",
+      "test.csv": "081a7b1ccfcbde3c36879100f966281a981dbb99a7f01d786b3fccf91fd9e63d",
+      "train.csv": "60a912df315f7cfbfba24fcf8429cc1323cf164d143ba0505c180621d8ed2993",
+      "validation.csv": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e"
+    }
+  },
+  "manifests_byte_identical_to_local": [
+    "all_labeled_members.csv",
+    "external_overlap_report.csv",
+    "official_test_unlabeled.csv",
+    "reserved_external.csv",
+    "test.csv",
+    "train.csv",
+    "validation.csv"
+  ],
+  "config_byte_identical": true,
+  "duplicate_review_byte_identical": true,
+  "internal_group_overlap": 0,
+  "integrity_status": "passed",
+  "all_image_hashes_verified": 0,
+  "sample_hashes_verified": 27,
+  "dataloader_check": {
+    "executed": true,
+    "shape": [
+      4,
+      3,
+      512,
+      512
+    ],
+    "device": "cpu"
+  },
+  "drive_mount_and_export": "Evidenciados por salidas del notebook y resultados entregados; no observacion de sesion en vivo.",
+  "training_executed": false,
+  "pending": [
+    "Comparar SHA256 de todos los archivos transferidos en Colab; esta ejecucion comprobo 27 muestras.",
+    "La ejecucion entregada es CPU. Entrenamiento y compatibilidad CUDA/modelos siguen pendientes."
+  ]
+}

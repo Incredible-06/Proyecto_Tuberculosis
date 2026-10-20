@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "seed": 20261019,
+  "classes": {"health": 0, "sick": 1, "TB": 2},
+  "split_ratios": {"train": 0.70, "validation": 0.15, "test": 0.15},
+  "image_size": 512,
+  "normalization": {
+    "name": "imagenet_rgb",
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225]
+  },
+  "augmentation": {
+    "rotation_degrees": 5.0,
+    "brightness": 0.08,
+    "contrast": 0.08,
+    "horizontal_flip": false,
+    "clahe": false
+  },
+  "near_duplicate_review": {
+    "candidate_source": "equal_dhash64_from_initial_audit",
+    "phash_max_distance": 32,
+    "suspicious_phash_max_distance": 20,
+    "suspicious_ssim_min": 0.94,
+    "suspicious_ncc_min": 0.98,
+    "review_size": 128,
+    "ssim_window": 7
+  }
+}

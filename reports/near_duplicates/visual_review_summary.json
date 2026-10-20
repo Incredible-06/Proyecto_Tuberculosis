@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex_visual_review",
+  "clinical_review": false,
+  "confirmed_near_pairs": 44,
+  "core_core_pairs": 23,
+  "negative_controls_visually_reviewed": 8,
+  "contact_sheets_reviewed": [
+    "suspicious_01.jpg",
+    "suspicious_02.jpg",
+    "suspicious_03.jpg",
+    "suspicious_04.jpg",
+    "suspicious_05.jpg",
+    "suspicious_06.jpg",
+    "rejected_controls_01.jpg"
+  ],
+  "full_resolution_visual_detail": "detail_lowest_similarity.png (near_00042, near_00043, near_00044)",
+  "scope": "Refinamiento de candidatos dHash iguales; no busqueda exhaustiva ni identificacion de pacientes.",
+  "uncertain_pairs_remaining": 0
+}

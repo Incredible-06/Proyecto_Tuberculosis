@@ -1,0 +1,12 @@
+relative_path,group_id,matched_paths_json,overlaps_internal,overlaps_official_test
+imgs/extra/da+db/train/n28.png,g_3a82e8cb0c58f45f8dc4d984de8f6d5a61d74c625c3df106be004af763083497,"[""imgs/extra/da+db/val/n1.png""]",0,0
+imgs/extra/da+db/train/n31.png,g_2d3a9fba3118bad5cb528a6fb21e88c2f36f1fdb0ab8fa2359360e8af31c1b09,"[""imgs/extra/da+db/train/n5.png""]",0,0
+imgs/extra/da+db/train/n5.png,g_2d3a9fba3118bad5cb528a6fb21e88c2f36f1fdb0ab8fa2359360e8af31c1b09,"[""imgs/extra/da+db/train/n31.png""]",0,0
+imgs/extra/da+db/train/n6.png,g_662c3392b0379ec7e50cea85f05a58d42cd660527a850ec12f678e0ff8b79320,"[""imgs/extra/da+db/val/n32.png""]",0,0
+imgs/extra/da+db/train/p6.png,g_0dee690398d1984a3d76ba074fa16c64ffd612473aeb7fe06151da0f9ca7c7af,"[""imgs/test/unknown_564.png""]",0,1
+imgs/extra/da+db/val/n1.png,g_3a82e8cb0c58f45f8dc4d984de8f6d5a61d74c625c3df106be004af763083497,"[""imgs/extra/da+db/train/n28.png""]",0,0
+imgs/extra/da+db/val/n2.png,g_d7894c9cd0e3702a2da782fdc0bbdb81d1cd2801bfde1b2b5d9003f43e8335c6,"[""imgs/extra/da+db/val/n30.png""]",0,0
+imgs/extra/da+db/val/n30.png,g_d7894c9cd0e3702a2da782fdc0bbdb81d1cd2801bfde1b2b5d9003f43e8335c6,"[""imgs/extra/da+db/val/n2.png""]",0,0
+imgs/extra/da+db/val/n32.png,g_662c3392b0379ec7e50cea85f05a58d42cd660527a850ec12f678e0ff8b79320,"[""imgs/extra/da+db/train/n6.png""]",0,0
+imgs/extra/da+db/val/n33.png,g_4f877d6125411f021ef0c2ef8024b2c7cf361ccaaded0936d5b4ec71abfe66f5,"[""imgs/test/unknown_87.png""]",0,1
+imgs/extra/da+db/val/p5.png,g_a467ee7ab2d48b4fa7557b30908eed6c2481e9ec5f3338bf48590405321704d9,"[""imgs/test/unknown_2079.png""]",0,1

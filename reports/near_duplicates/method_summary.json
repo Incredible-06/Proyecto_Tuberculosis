@@ -1,0 +1,19 @@
+{
+  "candidate_groups": 1213,
+  "images_read": 4020,
+  "candidate_pairs": 13783,
+  "exact_pairs_already_known": 216,
+  "rejected_by_phash": 13523,
+  "pairs_with_structural_metrics": 44,
+  "suspicious_pairs": 44,
+  "method": {
+    "candidate_source": "equal_dhash64_from_initial_audit",
+    "phash_max_distance": 32,
+    "suspicious_phash_max_distance": 20,
+    "suspicious_ssim_min": 0.94,
+    "suspicious_ncc_min": 0.98,
+    "review_size": 128,
+    "ssim_window": 7
+  },
+  "scope": "Solo grupos de dHash igual existentes; no busqueda exhaustiva ni identificacion de pacientes."
+}

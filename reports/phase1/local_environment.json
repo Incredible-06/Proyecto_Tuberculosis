@@ -1,0 +1,17 @@
+{
+  "python": "3.14.7",
+  "numpy": "2.5.4",
+  "pillow": "12.3.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "in_colab": false,
+  "manifest_metadata_sha256": "5096512725c2c9154c6d50d819a9a3260d92b3c08574b4b07c5970786bad50c3",
+  "manifest_csv_sha256": {
+    "all_labeled_members.csv": "74dab7737817e82e9a35b7a7dd06c2d0868a3bc3e8876ef0c3783aa56bc052ae",
+    "external_overlap_report.csv": "56f6ce95bde132eda743b8d2deebb378a884450f1715c3dfa9cef02d887dde5a",
+    "official_test_unlabeled.csv": "05f9262b3ecb31c02fef349de516a31798ea2ab9ef5f0d4cd252de102bc403e3",
+    "reserved_external.csv": "859c2e9c68a5de03017385f1a22428b701aa816ae6ea13b4eccd1c51d87e5cd5",
+    "test.csv": "081a7b1ccfcbde3c36879100f966281a981dbb99a7f01d786b3fccf91fd9e63d",
+    "train.csv": "60a912df315f7cfbfba24fcf8429cc1323cf164d143ba0505c180621d8ed2993",
+    "validation.csv": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e"
+  }
+}
