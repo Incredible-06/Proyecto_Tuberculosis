@@ -14,12 +14,12 @@ def main():
     if Path(args.name).name!=args.name or not args.name.endswith('.zip'):raise ValueError('Nombre ZIP no válido.')
     destination=root/'dist'/args.name
     destination.parent.mkdir(parents=True,exist_ok=True)
-    folders=['src','configs','manifests','notebooks','scripts','tests',
+    folders=['src','configs','manifests','notebooks','scripts','tests','docs','api','web','models',
              'reports/initial_audit','reports/near_duplicates','reports/phase1']
     files=[root/name for name in ['README.md','requirements-data.txt','requirements-audit.txt','pyproject.toml','.gitignore','.gitattributes']]
     for folder in folders:
         for p in (root/folder).rglob('*'):
-            if p.is_file() and not any(part in ['__pycache__','test_tmp'] for part in p.parts):files.append(p)
+            if p.is_file() and p.suffix.lower()!='.docx' and not any(part in ['__pycache__','test_tmp','_qa','_tmp','assets'] for part in p.parts):files.append(p)
     with zipfile.ZipFile(destination,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
         for p in sorted(set(files)):
             relative=p.relative_to(root).as_posix()

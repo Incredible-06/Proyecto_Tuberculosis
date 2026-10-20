@@ -48,3 +48,15 @@ ha supuesto que una persona ejecutó cada tarea por figurar como responsable.
 No se necesitan métricas de clasificación, checkpoints, entrenamiento de Mamba,
 fusión o detector para presentar estas dos fases. Tampoco se necesitan de nuevo
 el dataset o el ZIP de resultados del notebook 01, ya disponibles.
+
+## Entregables y publicación
+
+El repositorio ya se publicó en
+https://github.com/Incredible-06/Proyecto_Tuberculosis con código, notebooks y
+manifiestos autorizados. El informe editable está en
+`docs/Informe_Fases_1_y_2_Final.docx`; el texto versionable, en
+`docs/Informe_Fases_1_y_2.md`.
+
+Se documentó una discrepancia de licencias entre la página oficial y los JSON de
+la copia local en `FUENTES_Y_LICENCIAS.md`. Antes de redistribuir imágenes o darles
+un uso distinto, se requiere aclarar los términos aplicables con sus responsables.
