@@ -1,0 +1,536 @@
+{
+  "schema": "hybrid_vit_phase5_report_payload_v1",
+  "scope": "validation_only",
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "candidate_by_macro_f1": "hybrid_cross_attention",
+  "comparison_5models": [
+    {
+      "architecture": "convnext_tiny",
+      "display_name": "ConvNeXt-Tiny",
+      "short_label": "ConvNeXt",
+      "run_id": "phase3_convnext_tiny_20261103T023002Z_4a7e2a",
+      "completed_epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "accuracy": 0.9709911361804996,
+      "macro_f1": 0.942715557119158,
+      "TB_recall": 0.7833333333333333,
+      "TB_precision": 0.9690721649484536,
+      "TB_specificity": 0.9973238180196253,
+      "TB_roc_auc": 0.9957850133809099,
+      "TB_recognized": 94,
+      "TB_to_health": 4,
+      "TB_to_sick": 22,
+      "sick_to_TB": 3,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "33869c4791569f95c262df2987c9a688649aa4f65c92e51e79f8340c1d0c3616"
+    },
+    {
+      "architecture": "vmamba_tiny",
+      "display_name": "VMamba-Tiny",
+      "short_label": "VMamba",
+      "run_id": "phase3_vmamba_tiny_20261103T025536Z_4784e4",
+      "completed_epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "accuracy": 0.9685737308622079,
+      "macro_f1": 0.949672039326329,
+      "TB_recall": 0.8416666666666667,
+      "TB_precision": 0.9619047619047619,
+      "TB_specificity": 0.9964317573595004,
+      "TB_roc_auc": 0.9934359203092478,
+      "TB_recognized": 101,
+      "TB_to_health": 12,
+      "TB_to_sick": 7,
+      "sick_to_TB": 4,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "56efbe2bc8230f7fb52cc199d89489f98134bb2364cc06fa20f353d471860b53"
+    },
+    {
+      "architecture": "hybrid_cross_attention",
+      "display_name": "Híbrido (ConvNeXt+VMamba)",
+      "short_label": "Híbrido v1",
+      "run_id": "phase3_hybrid_cross_attention_20261103T032205Z_71d127",
+      "completed_epochs": 7,
+      "best_epoch": 3,
+      "stop_reason": "early_stopping",
+      "accuracy": 0.9782433521353747,
+      "macro_f1": 0.9644699190877536,
+      "TB_recall": 0.8916666666666667,
+      "TB_precision": 0.963963963963964,
+      "TB_specificity": 0.9964317573595004,
+      "TB_roc_auc": 0.9957552780255725,
+      "TB_recognized": 107,
+      "TB_to_health": 6,
+      "TB_to_sick": 7,
+      "sick_to_TB": 4,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "1db1965bd191456cec05f9d91a45539e7dcc22bfbbab0adcc474f351b7473830"
+    },
+    {
+      "architecture": "vit_b_16",
+      "display_name": "ViT-B/16",
+      "short_label": "ViT-B/16",
+      "run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+      "completed_epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "accuracy": 0.9774375503626108,
+      "macro_f1": 0.9644352282077575,
+      "TB_recall": 0.9166666666666666,
+      "TB_precision": 0.9401709401709402,
+      "TB_specificity": 0.9937555753791257,
+      "TB_roc_auc": 0.9969223907225692,
+      "TB_recognized": 110,
+      "TB_to_health": 3,
+      "TB_to_sick": 7,
+      "sick_to_TB": 7,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "2873fbcff636ad151b41451022b0fc34eeb197866cf5acd200e3f764f4f3d50d"
+    },
+    {
+      "architecture": "hybrid_convnext_vit",
+      "display_name": "Híbrido ConvNeXt + ViT-B/16",
+      "short_label": "Híbrido C+ViT",
+      "run_id": "phase3_hybrid_convnext_vit_20261116T031647Z_376827",
+      "completed_epochs": 6,
+      "best_epoch": 2,
+      "stop_reason": "early_stopping",
+      "accuracy": 0.9782433521353747,
+      "macro_f1": 0.9629935436748385,
+      "TB_recall": 0.875,
+      "TB_precision": 0.9722222222222222,
+      "TB_specificity": 0.9973238180196253,
+      "TB_roc_auc": 0.9974650609574784,
+      "TB_recognized": 105,
+      "TB_to_health": 4,
+      "TB_to_sick": 11,
+      "sick_to_TB": 2,
+      "health_to_TB": 1,
+      "checkpoint_sha256": "bd88a5ee557b6ad1b6b1da59cbada3a47946d69defbe897b25721bbd357ecf1d"
+    }
+  ],
+  "hybrid_vit_details": {
+    "run_id": "phase3_hybrid_convnext_vit_20261116T031647Z_376827",
+    "completed_epochs": 6,
+    "best_epoch": 2,
+    "stop_reason": "early_stopping",
+    "checkpoint_sha256": "bd88a5ee557b6ad1b6b1da59cbada3a47946d69defbe897b25721bbd357ecf1d",
+    "validation": {
+      "n": 1241,
+      "accuracy": 0.9782433521353747,
+      "macro_f1": 0.9629935436748385,
+      "balanced_accuracy": 0.951154466626336,
+      "macro_roc_auc_ovr": 0.998259631738709,
+      "confusion_matrix": [
+        [
+          566,
+          3,
+          1
+        ],
+        [
+          6,
+          543,
+          2
+        ],
+        [
+          4,
+          11,
+          105
+        ]
+      ],
+      "classes": [
+        "health",
+        "sick",
+        "TB"
+      ],
+      "per_class": {
+        "health": {
+          "support": 570,
+          "precision": 0.9826388888888888,
+          "recall": 0.9929824561403509,
+          "f1": 0.987783595113438,
+          "specificity": 0.9850968703427719,
+          "roc_auc": 0.9992339268439354,
+          "average_precision": 0.9992246161203554
+        },
+        "sick": {
+          "support": 551,
+          "precision": 0.9748653500897666,
+          "recall": 0.985480943738657,
+          "f1": 0.98014440433213,
+          "specificity": 0.9797101449275363,
+          "roc_auc": 0.9980799074147136,
+          "average_precision": 0.9977165146135035
+        },
+        "TB": {
+          "support": 120,
+          "precision": 0.9722222222222222,
+          "recall": 0.875,
+          "f1": 0.9210526315789473,
+          "specificity": 0.9973238180196253,
+          "roc_auc": 0.9974650609574784,
+          "average_precision": 0.9805539372192251
+        }
+      },
+      "decision_rule": "argmax softmax; sin ajuste de umbral",
+      "evaluation_unit": "imagen; sin intervalos de confianza ni garantía de independencia por paciente"
+    },
+    "history": [
+      {
+        "epoch": "1",
+        "train_loss": "0.3726700276144435",
+        "train_accuracy": "0.8934737569060773",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "head_only",
+        "validation_loss": "0.13375840842028786",
+        "validation_accuracy": "0.9572925060435133",
+        "validation_macro_f1": "0.9288679896350119",
+        "validation_tb_recall": "0.9333333333333333",
+        "seconds": "304.930808577"
+      },
+      {
+        "epoch": "2",
+        "train_loss": "0.1570141506400639",
+        "train_accuracy": "0.9659875690607734",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "head_only",
+        "validation_loss": "0.15887529597772523",
+        "validation_accuracy": "0.9782433521353747",
+        "validation_macro_f1": "0.9629935436748385",
+        "validation_tb_recall": "0.875",
+        "seconds": "307.13177615899997"
+      },
+      {
+        "epoch": "3",
+        "train_loss": "0.07821230659842164",
+        "train_accuracy": "0.9834254143646409",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.21102660672776014",
+        "validation_accuracy": "0.9734085414987913",
+        "validation_macro_f1": "0.9581275427914525",
+        "validation_tb_recall": "0.8666666666666667",
+        "seconds": "391.640222537"
+      },
+      {
+        "epoch": "4",
+        "train_loss": "0.05714903975821757",
+        "train_accuracy": "0.9908494475138122",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.3652439480558059",
+        "validation_accuracy": "0.9734085414987913",
+        "validation_macro_f1": "0.949499541890274",
+        "validation_tb_recall": "0.8",
+        "seconds": "391.81551483499993"
+      },
+      {
+        "epoch": "5",
+        "train_loss": "0.05944967717863585",
+        "train_accuracy": "0.9880870165745856",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.4597526241885545",
+        "validation_accuracy": "0.9709911361804996",
+        "validation_macro_f1": "0.9400016614466905",
+        "validation_tb_recall": "0.75",
+        "seconds": "391.972668463"
+      },
+      {
+        "epoch": "6",
+        "train_loss": "0.048387409753925706",
+        "train_accuracy": "0.9906767955801105",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.5224796498418979",
+        "validation_accuracy": "0.9685737308622079",
+        "validation_macro_f1": "0.9352176863603922",
+        "validation_tb_recall": "0.7333333333333333",
+        "seconds": "392.14638458599984"
+      }
+    ],
+    "thresholds_grid": [
+      {
+        "threshold": 0.05,
+        "tp": 116,
+        "fp": 22,
+        "fn": 4,
+        "tn": 1099,
+        "sensitivity": 0.9666666666666667,
+        "specificity": 0.9803746654772525,
+        "precision": 0.8405797101449275,
+        "alerts": 138
+      },
+      {
+        "threshold": 0.1,
+        "tp": 111,
+        "fp": 15,
+        "fn": 9,
+        "tn": 1106,
+        "sensitivity": 0.925,
+        "specificity": 0.9866190900981266,
+        "precision": 0.8809523809523809,
+        "alerts": 126
+      },
+      {
+        "threshold": 0.2,
+        "tp": 109,
+        "fp": 8,
+        "fn": 11,
+        "tn": 1113,
+        "sensitivity": 0.9083333333333333,
+        "specificity": 0.9928635147190009,
+        "precision": 0.9316239316239316,
+        "alerts": 117
+      },
+      {
+        "threshold": 0.3,
+        "tp": 108,
+        "fp": 5,
+        "fn": 12,
+        "tn": 1116,
+        "sensitivity": 0.9,
+        "specificity": 0.9955396966993756,
+        "precision": 0.9557522123893806,
+        "alerts": 113
+      },
+      {
+        "threshold": 0.5,
+        "tp": 105,
+        "fp": 2,
+        "fn": 15,
+        "tn": 1119,
+        "sensitivity": 0.875,
+        "specificity": 0.9982158786797503,
+        "precision": 0.9813084112149533,
+        "alerts": 107
+      },
+      {
+        "threshold": 0.7,
+        "tp": 98,
+        "fp": 2,
+        "fn": 22,
+        "tn": 1119,
+        "sensitivity": 0.8166666666666667,
+        "specificity": 0.9982158786797503,
+        "precision": 0.98,
+        "alerts": 100
+      },
+      {
+        "threshold": 0.9,
+        "tp": 88,
+        "fp": 0,
+        "fn": 32,
+        "tn": 1121,
+        "sensitivity": 0.7333333333333333,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "alerts": 88
+      }
+    ]
+  },
+  "candidate_thresholds_grid": [
+    {
+      "threshold": 0.05,
+      "tp": 111,
+      "fp": 6,
+      "fn": 9,
+      "tn": 1115,
+      "sensitivity": 0.925,
+      "specificity": 0.9946476360392507,
+      "precision": 0.9487179487179487,
+      "alerts": 117
+    },
+    {
+      "threshold": 0.1,
+      "tp": 111,
+      "fp": 5,
+      "fn": 9,
+      "tn": 1116,
+      "sensitivity": 0.925,
+      "specificity": 0.9955396966993756,
+      "precision": 0.9568965517241379,
+      "alerts": 116
+    },
+    {
+      "threshold": 0.2,
+      "tp": 109,
+      "fp": 4,
+      "fn": 11,
+      "tn": 1117,
+      "sensitivity": 0.9083333333333333,
+      "specificity": 0.9964317573595004,
+      "precision": 0.9646017699115044,
+      "alerts": 113
+    },
+    {
+      "threshold": 0.3,
+      "tp": 107,
+      "fp": 4,
+      "fn": 13,
+      "tn": 1117,
+      "sensitivity": 0.8916666666666667,
+      "specificity": 0.9964317573595004,
+      "precision": 0.963963963963964,
+      "alerts": 111
+    },
+    {
+      "threshold": 0.5,
+      "tp": 107,
+      "fp": 4,
+      "fn": 13,
+      "tn": 1117,
+      "sensitivity": 0.8916666666666667,
+      "specificity": 0.9964317573595004,
+      "precision": 0.963963963963964,
+      "alerts": 111
+    },
+    {
+      "threshold": 0.7,
+      "tp": 106,
+      "fp": 3,
+      "fn": 14,
+      "tn": 1118,
+      "sensitivity": 0.8833333333333333,
+      "specificity": 0.9973238180196253,
+      "precision": 0.9724770642201835,
+      "alerts": 109
+    },
+    {
+      "threshold": 0.9,
+      "tp": 100,
+      "fp": 1,
+      "fn": 20,
+      "tn": 1120,
+      "sensitivity": 0.8333333333333334,
+      "specificity": 0.9991079393398751,
+      "precision": 0.9900990099009901,
+      "alerts": 101
+    }
+  ],
+  "figures": [
+    {
+      "name": "hybrid_convnext_vit_training",
+      "title": "Historial de Híbrido ConvNeXt + ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "hybrid_convnext_vit"
+      ],
+      "note": "Epochs reales; línea en mejor época. Train se mide durante updates con aumentos; validation sin aumentos. No se rellenan épocas tras early stopping.",
+      "files": [
+        "hybrid_convnext_vit_training.png",
+        "hybrid_convnext_vit_training.pdf",
+        "hybrid_convnext_vit_training.svg",
+        "hybrid_convnext_vit_training.csv"
+      ]
+    },
+    {
+      "name": "hybrid_convnext_vit_confusion",
+      "title": "Matriz de confusión de Híbrido ConvNeXt + ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "hybrid_convnext_vit"
+      ],
+      "note": "Filas reales, columnas predichas; argmax original; normalización por fila.",
+      "files": [
+        "hybrid_convnext_vit_confusion.png",
+        "hybrid_convnext_vit_confusion.pdf",
+        "hybrid_convnext_vit_confusion.svg",
+        "hybrid_convnext_vit_confusion.csv"
+      ]
+    },
+    {
+      "name": "hybrid_convnext_vit_roc",
+      "title": "ROC multiclase de Híbrido ConvNeXt + ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "hybrid_convnext_vit"
+      ],
+      "note": "One-vs-rest, scores originales; no corresponde a test.",
+      "files": [
+        "hybrid_convnext_vit_roc.png",
+        "hybrid_convnext_vit_roc.pdf",
+        "hybrid_convnext_vit_roc.svg",
+        "hybrid_convnext_vit_roc.csv"
+      ]
+    },
+    {
+      "name": "classifier_comparison",
+      "title": "Comparación de los cinco clasificadores",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny",
+        "vmamba_tiny",
+        "hybrid_cross_attention",
+        "vit_b_16",
+        "hybrid_convnext_vit"
+      ],
+      "note": "Una seed y validation reutilizada para selección; sin intervalos ni prueba de superioridad estadística.",
+      "files": [
+        "classifier_comparison.png",
+        "classifier_comparison.pdf",
+        "classifier_comparison.svg",
+        "classifier_comparison.csv"
+      ]
+    },
+    {
+      "name": "TB_roc_precision_recall",
+      "title": "ROC y precisión–recall TB comparativas",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny",
+        "vmamba_tiny",
+        "hybrid_cross_attention",
+        "vit_b_16",
+        "hybrid_convnext_vit"
+      ],
+      "note": "AP es average precision, no área trapezoidal. Scores TB originales; ningún umbral queda seleccionado.",
+      "files": [
+        "TB_roc_precision_recall.png",
+        "TB_roc_precision_recall.pdf",
+        "TB_roc_precision_recall.svg",
+        "TB_roc_precision_recall.csv"
+      ]
+    },
+    {
+      "name": "hybrid_convnext_vit_thresholds",
+      "title": "Curva de umbrales TB de Híbrido ConvNeXt + ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "hybrid_convnext_vit"
+      ],
+      "note": "Exploración de p_TB >= t en validation; no congela umbral operativo.",
+      "files": [
+        "hybrid_convnext_vit_thresholds.png",
+        "hybrid_convnext_vit_thresholds.pdf",
+        "hybrid_convnext_vit_thresholds.svg"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "/content/tbx11k_hybrid_vit/project/manifests/validation.csv": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/summary.json": "aae592ca4615cac408d70c0b044c86c6a5f7b958468b695a70527d02bac6a661",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/history.csv": "d23e92321c9eb7d1f949f44bf4e6952437a39cbcaf4510d88264cc656b408a29",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/validation_predictions.csv": "7a2540f7bf93a21e1e5c2c291e6d81d1d3ce77738a5dbd4e51a6227e504f40fd",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/summary.json": "61a33baaa4b3be52e4628b0c589b77c0e4e055cc6e10f3c142c9a78a6904f3ee",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/history.csv": "c912ab446aab6e0b30d9d4f19e6ff2327e16ea2976ed9ab8f73ba343ed116cd0",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/validation_predictions.csv": "9981825c9d67443811d64d00a288e6130ee1062495c9fab3b399f02156521209",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/summary.json": "b635d2c70d6b9bd8a85302b2915aadb0b39992e1ccd2cd4e5e453327bb9fc077",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/history.csv": "aa2e223d3daa1f86e84180120906537cf40aa334fea6006d20f9150363bf01ab",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/validation_predictions.csv": "b6ebd0738a0d10713d25f13a84bbf5761adc15567816c6a0dc2440bc77c34056",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vit_b_16_20261116T014808Z_2e8a27/summary.json": "d8d692895ae539663eb7ee1d3d0582356a7e70726e2a33e80065fb87c19f417e",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vit_b_16_20261116T014808Z_2e8a27/history.csv": "a75da880867b0d0982ad8c817e6b960ba96a709c55061b488186fe4feb601577",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vit_b_16_20261116T014808Z_2e8a27/validation_predictions.csv": "9ee335dcb0716cc6f808b3e3ee57b87370546a6d8ae503c570def13a589dcf1f",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_convnext_vit_20261116T031647Z_376827/summary.json": "5e31f1c2eb94af1a3fe32bdc4591b23a43462ce186a71ef7631f2af67c8f3043",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_convnext_vit_20261116T031647Z_376827/history.csv": "b9ef14e215c0ec8248986c2e724c8435dfafbc28aba502850f9af1644fbf1a47",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_convnext_vit_20261116T031647Z_376827/validation_predictions.csv": "56e303ccaadb8640f948342c227d09526fb6cee34bdaa7d076d6ae644c985c10"
+  }
+}

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="604.7244" height="240" viewBox="0 0 604.7244 240">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Times New Roman" font-size="16" fill="black">
+<path d="M 62,157.0 H 584" fill="none" stroke="#D9D9D9"/>
+<text x="52" y="162.0" text-anchor="end">0.7</text>
+<path d="M 62,109.33333333333329 H 584" fill="none" stroke="#D9D9D9"/>
+<text x="52" y="114.33333333333329" text-anchor="end">0.8</text>
+<path d="M 62,61.66666666666663 H 584" fill="none" stroke="#D9D9D9"/>
+<text x="52" y="66.66666666666663" text-anchor="end">0.9</text>
+<path d="M 62,13.999999999999972 H 584" fill="none" stroke="#D9D9D9"/>
+<text x="52" y="18.99999999999997" text-anchor="end">1.0</text>
+<path d="M 62,14 V 157 H 584" fill="none" stroke="black"/>
+<path d="M 62.0,157 v 4" stroke="black"/>
+<text x="62.0" y="180" text-anchor="middle">1</text>
+<path d="M 109.45454545454545,157 v 4" stroke="black"/>
+<text x="109.45454545454545" y="180" text-anchor="middle">2</text>
+<path d="M 156.9090909090909,157 v 4" stroke="black"/>
+<text x="156.9090909090909" y="180" text-anchor="middle">3</text>
+<path d="M 204.36363636363635,157 v 4" stroke="black"/>
+<text x="204.36363636363635" y="180" text-anchor="middle">4</text>
+<path d="M 251.8181818181818,157 v 4" stroke="black"/>
+<text x="251.8181818181818" y="180" text-anchor="middle">5</text>
+<path d="M 299.27272727272725,157 v 4" stroke="black"/>
+<text x="299.27272727272725" y="180" text-anchor="middle">6</text>
+<path d="M 346.7272727272727,157 v 4" stroke="black"/>
+<text x="346.7272727272727" y="180" text-anchor="middle">7</text>
+<path d="M 394.1818181818182,157 v 4" stroke="black"/>
+<text x="394.1818181818182" y="180" text-anchor="middle">8</text>
+<path d="M 441.6363636363636,157 v 4" stroke="black"/>
+<text x="441.6363636363636" y="180" text-anchor="middle">9</text>
+<path d="M 489.0909090909091,157 v 4" stroke="black"/>
+<text x="489.0909090909091" y="180" text-anchor="middle">10</text>
+<path d="M 536.5454545454545,157 v 4" stroke="black"/>
+<text x="536.5454545454545" y="180" text-anchor="middle">11</text>
+<path d="M 584.0,157 v 4" stroke="black"/>
+<text x="584.0" y="180" text-anchor="middle">12</text>
+<text x="16" y="95" text-anchor="middle" transform="rotate(-90 16 95)">Macro F1</text>
+<text x="323.0" y="204" text-anchor="middle">Época de entrenamiento</text>
+<polyline points="62.0,77.92019573557563 109.45454545454545,71.86869426598615 156.9090909090909,62.45411487935378 204.36363636363635,49.72891989140277 251.8181818181818,56.46189949120931 299.27272727272725,58.75263114405378 346.7272727272727,57.30951361748893 394.1818181818182,48.1473975959813 441.6363636363636,50.89281465435721 489.0909090909091,44.675823409882014 536.5454545454545,41.305584439868 584.0,46.031499890829195" fill="none" stroke="black" stroke-width="2" stroke-dasharray=""/>
+<circle cx="62.0" cy="77.92019573557563" r="2.7" fill="black"/>
+<circle cx="109.45454545454545" cy="71.86869426598615" r="2.7" fill="black"/>
+<circle cx="156.9090909090909" cy="62.45411487935378" r="2.7" fill="black"/>
+<circle cx="204.36363636363635" cy="49.72891989140277" r="2.7" fill="black"/>
+<circle cx="251.8181818181818" cy="56.46189949120931" r="2.7" fill="black"/>
+<circle cx="299.27272727272725" cy="58.75263114405378" r="2.7" fill="black"/>
+<circle cx="346.7272727272727" cy="57.30951361748893" r="2.7" fill="black"/>
+<circle cx="394.1818181818182" cy="48.1473975959813" r="2.7" fill="black"/>
+<circle cx="441.6363636363636" cy="50.89281465435721" r="2.7" fill="black"/>
+<circle cx="489.0909090909091" cy="44.675823409882014" r="2.7" fill="black"/>
+<circle cx="536.5454545454545" cy="41.305584439868" r="2.7" fill="black"/>
+<circle cx="584.0" cy="46.031499890829195" r="2.7" fill="black"/>
+<path d="M 69,215 h 34" stroke="black" stroke-width="2" stroke-dasharray=""/>
+<text x="111" y="220">ConvNeXt</text>
+<polyline points="62.0,99.76369686660811 109.45454545454545,84.48252881150226 156.9090909090909,69.55927773241304 204.36363636363635,56.81032462228234 251.8181818181818,64.19757966561167 299.27272727272725,50.88721975696312 346.7272727272727,50.315858766092944 394.1818181818182,43.34188622873633 441.6363636363636,42.95302028568342 489.0909090909091,44.180612253819376 536.5454545454545,37.9896612544498 584.0,40.44943722359447" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 4"/>
+<circle cx="62.0" cy="99.76369686660811" r="2.7" fill="black"/>
+<circle cx="109.45454545454545" cy="84.48252881150226" r="2.7" fill="black"/>
+<circle cx="156.9090909090909" cy="69.55927773241304" r="2.7" fill="black"/>
+<circle cx="204.36363636363635" cy="56.81032462228234" r="2.7" fill="black"/>
+<circle cx="251.8181818181818" cy="64.19757966561167" r="2.7" fill="black"/>
+<circle cx="299.27272727272725" cy="50.88721975696312" r="2.7" fill="black"/>
+<circle cx="346.7272727272727" cy="50.315858766092944" r="2.7" fill="black"/>
+<circle cx="394.1818181818182" cy="43.34188622873633" r="2.7" fill="black"/>
+<circle cx="441.6363636363636" cy="42.95302028568342" r="2.7" fill="black"/>
+<circle cx="489.0909090909091" cy="44.180612253819376" r="2.7" fill="black"/>
+<circle cx="536.5454545454545" cy="37.9896612544498" r="2.7" fill="black"/>
+<circle cx="584.0" cy="40.44943722359447" r="2.7" fill="black"/>
+<path d="M 253,215 h 34" stroke="black" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="295" y="220">VMamba</text>
+<polyline points="62.0,60.4771824229733 109.45454545454545,39.43685535876399 156.9090909090909,30.936005234837424 204.36363636363635,40.13609649780274 251.8181818181818,56.68605040938023 299.27272727272725,46.995489710660664 346.7272727272727,36.65103851582977" fill="none" stroke="black" stroke-width="2" stroke-dasharray="2 4"/>
+<circle cx="62.0" cy="60.4771824229733" r="2.7" fill="black"/>
+<circle cx="109.45454545454545" cy="39.43685535876399" r="2.7" fill="black"/>
+<circle cx="156.9090909090909" cy="30.936005234837424" r="2.7" fill="black"/>
+<circle cx="204.36363636363635" cy="40.13609649780274" r="2.7" fill="black"/>
+<circle cx="251.8181818181818" cy="56.68605040938023" r="2.7" fill="black"/>
+<circle cx="299.27272727272725" cy="46.995489710660664" r="2.7" fill="black"/>
+<circle cx="346.7272727272727" cy="36.65103851582977" r="2.7" fill="black"/>
+<path d="M 429,215 h 34" stroke="black" stroke-width="2" stroke-dasharray="2 4"/>
+<text x="471" y="220">Híbrido</text>
+</g></svg>

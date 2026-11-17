@@ -1,0 +1,104 @@
+{
+  "run_id": "convnext_tiny_v02_20261027T040449Z_9d9c1232",
+  "status": "completed_preliminary",
+  "training_executed": true,
+  "phase3_complete": false,
+  "stop_reason": "epoch_budget",
+  "completed_epochs": 5,
+  "optimizer_updates": 905,
+  "best_epoch": 4,
+  "validation": {
+    "n": 1241,
+    "accuracy": 0.9726027397260274,
+    "macro_f1": 0.9488206661680629,
+    "balanced_accuracy": 0.9338626739261947,
+    "macro_roc_auc_ovr": 0.9973287465170605,
+    "confusion_matrix": [
+      [
+        567,
+        3,
+        0
+      ],
+      [
+        5,
+        541,
+        5
+      ],
+      [
+        2,
+        19,
+        99
+      ]
+    ],
+    "classes": [
+      "health",
+      "sick",
+      "TB"
+    ],
+    "per_class": {
+      "health": {
+        "support": 570,
+        "precision": 0.9878048780487805,
+        "recall": 0.9947368421052631,
+        "f1": 0.9912587412587412,
+        "specificity": 0.9895678092399404,
+        "roc_auc": 0.9994561664967186,
+        "average_precision": 0.9994382791379522
+      },
+      "sick": {
+        "support": 551,
+        "precision": 0.9609236234458259,
+        "recall": 0.9818511796733213,
+        "f1": 0.9712746858168761,
+        "specificity": 0.9681159420289855,
+        "roc_auc": 0.9974512743628186,
+        "average_precision": 0.9967032765865513
+      },
+      "TB": {
+        "support": 120,
+        "precision": 0.9519230769230769,
+        "recall": 0.825,
+        "f1": 0.8839285714285714,
+        "specificity": 0.9955396966993756,
+        "roc_auc": 0.9950787986916444,
+        "average_precision": 0.9688210877493821
+      }
+    },
+    "decision_rule": "argmax softmax; sin ajuste de umbral",
+    "evaluation_unit": "imagen; sin intervalos de confianza ni garantía de independencia por paciente",
+    "loss": 0.19677162638649517,
+    "unweighted_loss": 0.08128607183538931,
+    "split": "validation"
+  },
+  "session_seconds": 644.6996381079998,
+  "config": {
+    "experiment_label": "convnext_tiny_v02",
+    "model": "convnext_tiny",
+    "weights": "IMAGENET1K_V1",
+    "seed": 20261019,
+    "epochs": 5,
+    "warmup_epochs": 0,
+    "unfreeze_last_stage": true,
+    "batch_size": 8,
+    "accumulation_steps": 4,
+    "num_workers": 2,
+    "head_lr": 0.0003,
+    "backbone_lr": 0.000005,
+    "weight_decay": 0.01,
+    "gradient_clip": 1,
+    "amp": false,
+    "patience": 3,
+    "min_delta": 0.001,
+    "selection_metric": "macro_f1",
+    "hypothesis": "Un ajuste más suave desde la mejor época de v01 podría mejorar la validación y reducir TB confundida con sick.",
+    "parent_run": "convnext_tiny_v01_20261027T034012Z_860908e3",
+    "change_reason": "En v01 la época 3 empeoró validación; en la mejor época, 24 TB se predijeron sick y 8 health. Se explora continuación desde best.pt con tasas menores."
+  },
+  "checkpoint_sha256": {
+    "best.pt": "b0e59423e96d641632477c9560cd4a67f0925ccd43000a1493975d1d0920fb68",
+    "last.pt": "a70610359a412082859af96b30ce218a24f944512ca561aa0e13a053f11420ac"
+  },
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "scope": "Un clasificador preliminar; comparación de arquitecturas y evaluación final pendientes."
+}

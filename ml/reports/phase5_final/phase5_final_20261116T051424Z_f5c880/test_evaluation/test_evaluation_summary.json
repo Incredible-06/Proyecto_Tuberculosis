@@ -1,0 +1,436 @@
+{
+  "schema": "phase5_frozen_test_evaluation_v1",
+  "evaluated_at_utc": "2026-11-16T05:18:52.451375+00:00",
+  "split": "test",
+  "n": 1241,
+  "single_evaluation_enforced": true,
+  "decisions_frozen": true,
+  "test_evaluated": true,
+  "contract_classifier": {
+    "architecture": "vit_b_16",
+    "display_name": "ViT-B/16",
+    "run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+    "protocol_config": "configs/vit_controlled.json",
+    "checkpoint_sha256": "2873fbcff636ad151b41451022b0fc34eeb197866cf5acd200e3f764f4f3d50d",
+    "best_epoch": 11,
+    "requires_oflex": false,
+    "operational_tb_threshold": 0.3,
+    "preserve_argmax_and_probabilities": true
+  },
+  "contract_detector": {
+    "architecture": "yolo11n",
+    "run_id": "detector_yolo11n_20261103T032033865005Z",
+    "weights_sha256": "3e28e82987c8c2c84ca503f639354c7da1130472165adae8642737c7b5263dd0",
+    "confidence_threshold": 0.25,
+    "inference_options": {
+      "imgsz": 512,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "half": false,
+      "rect": false,
+      "augment": false
+    },
+    "nms_iou": 0.7,
+    "max_det": 300,
+    "match_iou_for_localization_metrics": 0.5,
+    "verified_sha256": "3e28e82987c8c2c84ca503f639354c7da1130472165adae8642737c7b5263dd0"
+  },
+  "manifest_integrity": {
+    "status": "passed",
+    "counts": {
+      "train": {
+        "health": 2660,
+        "sick": 2572,
+        "TB": 560
+      },
+      "validation": {
+        "health": 570,
+        "sick": 551,
+        "TB": 120
+      },
+      "test": {
+        "health": 570,
+        "sick": 551,
+        "TB": 120
+      }
+    },
+    "overlap_checks": {
+      "relative_path:train:validation": 0,
+      "relative_path:train:test": 0,
+      "relative_path:validation:test": 0,
+      "sha256:train:validation": 0,
+      "sha256:train:test": 0,
+      "sha256:validation:test": 0,
+      "rgb_sha256:train:validation": 0,
+      "rgb_sha256:train:test": 0,
+      "rgb_sha256:validation:test": 0,
+      "group_id:train:validation": 0,
+      "group_id:train:test": 0,
+      "group_id:validation:test": 0
+    },
+    "supervised_images": 8274,
+    "supervised_groups": 8251,
+    "official_test_unlabeled": 3302,
+    "reserved_external": 576,
+    "hash_verified_samples": [],
+    "all_image_hashes_verified": 12278,
+    "hash_scope": "SHA256 de todos los archivos contra la auditoría reutilizada.",
+    "patient_independence_guaranteed": false
+  },
+  "classifier_metrics": {
+    "n": 1241,
+    "accuracy": 0.9717969379532635,
+    "macro_f1": 0.9551419659898959,
+    "balanced_accuracy": 0.9463349465618068,
+    "macro_roc_auc_ovr": 0.9969024017850291,
+    "confusion_matrix": [
+      [
+        565,
+        5,
+        0
+      ],
+      [
+        9,
+        536,
+        6
+      ],
+      [
+        8,
+        7,
+        105
+      ]
+    ],
+    "classes": [
+      "health",
+      "sick",
+      "TB"
+    ],
+    "per_class": {
+      "health": {
+        "support": 570,
+        "precision": 0.9707903780068728,
+        "recall": 0.9912280701754386,
+        "f1": 0.9809027777777778,
+        "specificity": 0.9746646795827124,
+        "roc_auc": 0.9989750830130468,
+        "average_precision": 0.9988956167940607
+      },
+      "sick": {
+        "support": 551,
+        "precision": 0.9781021897810219,
+        "recall": 0.9727767695099818,
+        "f1": 0.9754322111010009,
+        "specificity": 0.9826086956521739,
+        "roc_auc": 0.9976643257318709,
+        "average_precision": 0.9966983484756422
+      },
+      "TB": {
+        "support": 120,
+        "precision": 0.9459459459459459,
+        "recall": 0.875,
+        "f1": 0.9090909090909091,
+        "specificity": 0.9946476360392507,
+        "roc_auc": 0.9940677966101694,
+        "average_precision": 0.9682936142188067
+      }
+    },
+    "decision_rule": "argmax softmax; sin ajuste de umbral",
+    "evaluation_unit": "imagen; sin intervalos de confianza ni garantía de independencia por paciente"
+  },
+  "classifier_operational_threshold": {
+    "threshold": 0.3,
+    "tp": 108,
+    "fp": 10,
+    "fn": 12,
+    "tn": 1111,
+    "sensitivity": 0.9,
+    "specificity": 0.9910793933987511,
+    "precision": 0.9152542372881356,
+    "alerts": 118
+  },
+  "classifier_threshold_reference_points": [
+    {
+      "threshold": 0.1,
+      "tp": 112,
+      "fp": 21,
+      "fn": 8,
+      "tn": 1100,
+      "sensitivity": 0.9333333333333333,
+      "specificity": 0.9812667261373773,
+      "precision": 0.8421052631578947,
+      "alerts": 133
+    },
+    {
+      "threshold": 0.3,
+      "tp": 108,
+      "fp": 10,
+      "fn": 12,
+      "tn": 1111,
+      "sensitivity": 0.9,
+      "specificity": 0.9910793933987511,
+      "precision": 0.9152542372881356,
+      "alerts": 118
+    },
+    {
+      "threshold": 0.5,
+      "tp": 105,
+      "fp": 6,
+      "fn": 15,
+      "tn": 1115,
+      "sensitivity": 0.875,
+      "specificity": 0.9946476360392507,
+      "precision": 0.9459459459459459,
+      "alerts": 111
+    }
+  ],
+  "detector_operational_point": {
+    "threshold": 0.25,
+    "match_iou": 0.5,
+    "matched_boxes": 89,
+    "gt_boxes": 184,
+    "false_positive_boxes": 103,
+    "total_predicted_boxes": 192,
+    "box_precision": 0.4635416666666667,
+    "lesion_recall": 0.483695652173913,
+    "image_sensitivity_any_box": 0.7333333333333333,
+    "image_sensitivity_localized": 0.6083333333333333,
+    "fp_boxes_per_image": 0.08299758259468171,
+    "negative_image_alert_rate": 0.001784121320249777,
+    "health_images": 570,
+    "sick_images": 551,
+    "tb_images": 120,
+    "health_alert_count": 1,
+    "sick_alert_count": 1,
+    "health_alert_rate": 0.0017543859649122807,
+    "sick_alert_rate": 0.0018148820326678765
+  },
+  "detector_threshold_reference_points": [
+    {
+      "threshold": 0.1,
+      "match_iou": 0.5,
+      "matched_boxes": 106,
+      "gt_boxes": 184,
+      "false_positive_boxes": 220,
+      "total_predicted_boxes": 326,
+      "box_precision": 0.32515337423312884,
+      "lesion_recall": 0.5760869565217391,
+      "image_sensitivity_any_box": 0.8166666666666667,
+      "image_sensitivity_localized": 0.6833333333333333,
+      "fp_boxes_per_image": 0.177276390008058,
+      "negative_image_alert_rate": 0.010704727921498661,
+      "health_images": 570,
+      "sick_images": 551,
+      "tb_images": 120,
+      "health_alert_count": 4,
+      "sick_alert_count": 8,
+      "health_alert_rate": 0.007017543859649123,
+      "sick_alert_rate": 0.014519056261343012
+    },
+    {
+      "threshold": 0.25,
+      "match_iou": 0.5,
+      "matched_boxes": 89,
+      "gt_boxes": 184,
+      "false_positive_boxes": 103,
+      "total_predicted_boxes": 192,
+      "box_precision": 0.4635416666666667,
+      "lesion_recall": 0.483695652173913,
+      "image_sensitivity_any_box": 0.7333333333333333,
+      "image_sensitivity_localized": 0.6083333333333333,
+      "fp_boxes_per_image": 0.08299758259468171,
+      "negative_image_alert_rate": 0.001784121320249777,
+      "health_images": 570,
+      "sick_images": 551,
+      "tb_images": 120,
+      "health_alert_count": 1,
+      "sick_alert_count": 1,
+      "health_alert_rate": 0.0017543859649122807,
+      "sick_alert_rate": 0.0018148820326678765
+    },
+    {
+      "threshold": 0.5,
+      "match_iou": 0.5,
+      "matched_boxes": 60,
+      "gt_boxes": 184,
+      "false_positive_boxes": 29,
+      "total_predicted_boxes": 89,
+      "box_precision": 0.6741573033707865,
+      "lesion_recall": 0.32608695652173914,
+      "image_sensitivity_any_box": 0.5083333333333333,
+      "image_sensitivity_localized": 0.44166666666666665,
+      "fp_boxes_per_image": 0.023368251410153102,
+      "negative_image_alert_rate": 0.0,
+      "health_images": 570,
+      "sick_images": 551,
+      "tb_images": 120,
+      "health_alert_count": 0,
+      "sick_alert_count": 0,
+      "health_alert_rate": 0.0,
+      "sick_alert_rate": 0.0
+    }
+  ],
+  "concordance_summary": {
+    "classifier_threshold": 0.3,
+    "detector_threshold": 0.25,
+    "state_counts": {
+      "neither_alert": 1115,
+      "classifier_only_review": 36,
+      "detector_only_review": 8,
+      "both_alert": 82
+    },
+    "tb_state_counts": {
+      "classifier_only_review": 27,
+      "both_alert": 81,
+      "neither_alert": 5,
+      "detector_only_review": 7
+    },
+    "combined_tb_sensitivity": 0.9583333333333334,
+    "tb_missed_by_both": 5,
+    "non_tb_review_count": 11,
+    "non_tb_review_rate": 0.009812667261373774,
+    "health_review_count": 2,
+    "health_review_rate": 0.0035087719298245615,
+    "sick_review_count": 9,
+    "sick_review_rate": 0.016333938294010888,
+    "total_review_count": 126,
+    "total_review_rate": 0.10153102336825141
+  },
+  "bootstrap_ci": {
+    "n_images": 1241,
+    "n_groups": 1237,
+    "n_resamples": 2000,
+    "seed": 20261019,
+    "ci_level": 0.95,
+    "classifier_argmax": {
+      "accuracy": {
+        "point": 0.9717969379532635,
+        "ci_low": 0.9621882542236525,
+        "ci_high": 0.9806295399515739,
+        "std": 0.004626785804357678,
+        "valid_resamples": 2000
+      },
+      "macro_f1": {
+        "point": 0.9551419659898959,
+        "ci_low": 0.9377899766689519,
+        "ci_high": 0.9702437767575388,
+        "std": 0.008269129735036143,
+        "valid_resamples": 2000
+      },
+      "balanced_accuracy": {
+        "point": 0.9463349465618068,
+        "ci_low": 0.924593396551905,
+        "ci_high": 0.9654096900662958,
+        "std": 0.01068455490978398,
+        "valid_resamples": 2000
+      },
+      "tb_recall": {
+        "point": 0.875,
+        "ci_low": 0.8083333333333333,
+        "ci_high": 0.9333333333333333,
+        "std": 0.031131472736027507,
+        "valid_resamples": 2000
+      },
+      "tb_specificity": {
+        "point": 0.9946476360392507,
+        "ci_low": 0.9901697944593387,
+        "ci_high": 0.9982190560997328,
+        "std": 0.002233930158940203,
+        "valid_resamples": 2000
+      },
+      "tb_precision": {
+        "point": 0.9459459459459459,
+        "ci_low": 0.9016393442622951,
+        "ci_high": 0.9819819819819819,
+        "std": 0.021270041742927553,
+        "valid_resamples": 2000
+      },
+      "tb_roc_auc": {
+        "point": 0.9940677966101694,
+        "ci_low": 0.988454618571057,
+        "ci_high": 0.9981011269006156,
+        "std": 0.0025031281802075727,
+        "valid_resamples": 2000
+      },
+      "tb_average_precision": {
+        "point": 0.9682936142188067,
+        "ci_low": 0.9470304125100183,
+        "ci_high": 0.986352308866402,
+        "std": 0.010085448911758704,
+        "valid_resamples": 2000
+      }
+    },
+    "operational_and_concordance": {
+      "cls_thresh_sensitivity": {
+        "point": 0.9,
+        "ci_low": 0.8416666666666667,
+        "ci_high": 0.95,
+        "std": 0.028068507716368235,
+        "valid_resamples": 2000
+      },
+      "cls_thresh_specificity": {
+        "point": 0.9910793933987511,
+        "ci_low": 0.9848484848484849,
+        "ci_high": 0.9964285714285714,
+        "std": 0.00289478454374221,
+        "valid_resamples": 2000
+      },
+      "cls_thresh_precision": {
+        "point": 0.9152542372881356,
+        "ci_low": 0.864,
+        "ci_high": 0.9636363636363636,
+        "std": 0.0250967326647054,
+        "valid_resamples": 2000
+      },
+      "combined_tb_sensitivity": {
+        "point": 0.9583333333333334,
+        "ci_low": 0.9247916666666671,
+        "ci_high": 0.9916666666666667,
+        "std": 0.018197810373047872,
+        "valid_resamples": 2000
+      },
+      "combined_non_tb_review_rate": {
+        "point": 0.009812667261373774,
+        "ci_low": 0.004456327985739751,
+        "ci_high": 0.016057091882247992,
+        "std": 0.0030213733893120825,
+        "valid_resamples": 2000
+      },
+      "detector_lesion_recall": {
+        "point": 0.483695652173913,
+        "ci_low": 0.4095744680851064,
+        "ci_high": 0.5586592178770949,
+        "std": 0.038483373416128196,
+        "valid_resamples": 2000
+      },
+      "detector_box_precision": {
+        "point": 0.4635416666666667,
+        "ci_low": 0.41360388396196174,
+        "ci_high": 0.5214732172306881,
+        "std": 0.02782470592606335,
+        "valid_resamples": 2000
+      },
+      "detector_image_any_box": {
+        "point": 0.7333333333333333,
+        "ci_low": 0.65,
+        "ci_high": 0.8083333333333333,
+        "std": 0.03990590113421545,
+        "valid_resamples": 2000
+      },
+      "detector_image_localized": {
+        "point": 0.6083333333333333,
+        "ci_low": 0.5166666666666667,
+        "ci_high": 0.6916666666666667,
+        "std": 0.04486316422779431,
+        "valid_resamples": 2000
+      },
+      "detector_neg_alert_rate": {
+        "point": 0.001784121320249777,
+        "ci_low": 0.0,
+        "ci_high": 0.004464285714285714,
+        "std": 0.0012481661609458964,
+        "valid_resamples": 2000
+      }
+    }
+  }
+}

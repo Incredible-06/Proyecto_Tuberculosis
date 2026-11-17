@@ -1,0 +1,43 @@
+{
+  "status": "prepared_and_reserved",
+  "datasets": {
+    "montgomery": {
+      "images": 138,
+      "normal": 80,
+      "abnormal_tb_consistent": 58,
+      "clinical_readings": 138,
+      "readme_sha256": "5db09d1bdc9dd98505cd6b516c56365b6ec87fa72288b9c41b18c91290f6a772",
+      "images_with_overlap_candidates": 138,
+      "source_url": "https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Montgomery-County-CXR-Set/MontgomerySet/",
+      "image_modes": {
+        "L": 138
+      }
+    },
+    "shenzhen": {
+      "images": 662,
+      "normal": 326,
+      "abnormal_tb_consistent": 336,
+      "clinical_readings": 662,
+      "readme_sha256": "7bff523f767aa29826bfe2c2f1f52bbf79f7b1b66bba857bd8725ef31c8d6dbe",
+      "images_with_overlap_candidates": 662,
+      "source_url": "https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Shenzhen-Hospital-CXR-Set/",
+      "image_modes": {
+        "P": 635,
+        "RGB": 27
+      }
+    }
+  },
+  "total_images": 800,
+  "total_clinical_readings": 800,
+  "decoding_errors": 0,
+  "all_download_sizes_match_official_index": true,
+  "excluded_from_tbx11k_splits": true,
+  "training_executed": false,
+  "eligible_for_evaluation": false,
+  "overlap_search": "All 800 external dHash64 vs 12278 frozen TBX11K hashes; distance <=4; candidates only, non-exhaustive.",
+  "known_limitation": "TBX11K includes resized external sources. Do not claim independent evaluation until overlap review.",
+  "outputs_sha256": {
+    "montgomery.csv": "7334825505c16e378915381e52951b4e8322c909121133ec11e28aa3eb8f08eb",
+    "shenzhen.csv": "819b16c7be26d704d738d1a01f2e195972178cf92b31f67c14f00b039f08637a"
+  }
+}

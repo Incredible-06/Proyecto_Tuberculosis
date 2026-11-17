@@ -1,0 +1,4 @@
+architecture,accuracy,macro_f1,TB_recall,source
+convnext_tiny,0.9709911361804996,0.942715557119158,0.7833333333333333,existing_validation_predictions
+vmamba_tiny,0.9685737308622079,0.949672039326329,0.8416666666666667,existing_validation_predictions
+hybrid_cross_attention,0.9782433521353747,0.9644699190877536,0.8916666666666667,existing_validation_predictions

@@ -1,0 +1,31 @@
+{
+  "schema": "phase5_validation_preparation_v1",
+  "scope": "validation_only",
+  "selection_criterion": "validation_macro_f1",
+  "decisions_frozen": false,
+  "test_evaluated": false,
+  "classifiers": [
+    {
+      "architecture": "convnext_tiny",
+      "run_id": "phase3_convnext_tiny_20261103T023002Z_4a7e2a",
+      "sha256": "33869c4791569f95c262df2987c9a688649aa4f65c92e51e79f8340c1d0c3616"
+    },
+    {
+      "architecture": "vmamba_tiny",
+      "run_id": "phase3_vmamba_tiny_20261103T025536Z_4784e4",
+      "sha256": "56efbe2bc8230f7fb52cc199d89489f98134bb2364cc06fa20f353d471860b53"
+    },
+    {
+      "architecture": "hybrid_cross_attention",
+      "run_id": "phase3_hybrid_cross_attention_20261103T032205Z_71d127",
+      "sha256": "1db1965bd191456cec05f9d91a45539e7dcc22bfbbab0adcc474f351b7473830"
+    }
+  ],
+  "detector": {
+    "run_id": "detector_yolo11n_20261103T032033865005Z",
+    "architecture": "yolo11n",
+    "hash_reference": "No prior SHA-256 available; record current bytes before inference."
+  },
+  "thresholds": null,
+  "concordance_final": null
+}

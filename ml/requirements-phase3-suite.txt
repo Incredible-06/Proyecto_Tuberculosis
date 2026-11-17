@@ -1,0 +1,7 @@
+-r requirements-training.txt
+timm==1.0.22
+fvcore==0.1.5.post20221221
+einops==0.8.1
+PyYAML==6.0.3
+ninja>=1.11,<2
+packaging>=24,<27

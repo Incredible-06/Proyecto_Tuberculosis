@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": {
+      "health": 2660,
+      "sick": 2572,
+      "TB": 560
+    },
+    "validation": {
+      "health": 570,
+      "sick": 551,
+      "TB": 120
+    },
+    "test": {
+      "health": 570,
+      "sick": 551,
+      "TB": 120
+    }
+  },
+  "overlap_checks": {
+    "relative_path:train:validation": 0,
+    "relative_path:train:test": 0,
+    "relative_path:validation:test": 0,
+    "sha256:train:validation": 0,
+    "sha256:train:test": 0,
+    "sha256:validation:test": 0,
+    "rgb_sha256:train:validation": 0,
+    "rgb_sha256:train:test": 0,
+    "rgb_sha256:validation:test": 0,
+    "group_id:train:validation": 0,
+    "group_id:train:test": 0,
+    "group_id:validation:test": 0
+  },
+  "supervised_images": 8274,
+  "supervised_groups": 8251,
+  "official_test_unlabeled": 3302,
+  "reserved_external": 576,
+  "hash_verified_samples": [],
+  "all_image_hashes_verified": 12278,
+  "hash_scope": "SHA256 de todos los archivos contra la auditor\u00eda reutilizada.",
+  "patient_independence_guaranteed": false
+}

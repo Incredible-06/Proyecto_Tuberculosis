@@ -1,0 +1,20 @@
+{
+  "date_lima": "2026-11-02",
+  "phase3_notebook": "https://colab.research.google.com/drive/1eTn6yj2lmn3Ny2FJO8yBIl2p-ti_bytU",
+  "phase4_notebook": "https://colab.research.google.com/drive/1AE1-5SPb4YP3W5QMqk7w-M0yGS0_Zpem",
+  "package_url": "https://drive.google.com/file/d/1rtGmdMXTK4O_FUyBQKnFmzf-DbfGViCQ/view?usp=drivesdk",
+  "package_sha256": "6892bc8526f8a3e5312faf501f5c9abd33fadf3ed8a10a5c268aeebe5ff7b464",
+  "package_bytes": 4296078,
+  "new_files_uploaded": true,
+  "colab_suite_executed": false,
+  "cuda_kernel_build_verified_in_colab": false,
+  "phase3_complete": false,
+  "phase4_complete": false,
+  "phase5_started": false,
+  "next_steps": [
+    "Ejecutar notebook 04 en Colab GPU: preparación, kernel, smokes, tanda de tres modelos y cierre verificable.",
+    "Conservar closure.json, comparison.csv, report.md, checkpoints y notebook ejecutado.",
+    "Abrir notebook 05 para conversión y revisión de detección; entrenar al activar la bandera correspondiente.",
+    "Mantener test, umbrales, selección final y explicabilidad para Fase 5."
+  ]
+}

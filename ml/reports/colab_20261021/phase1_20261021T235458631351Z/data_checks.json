@@ -1,0 +1,44 @@
+{
+  "checked_samples": [
+    {
+      "split": "train",
+      "class": "health",
+      "relative_path": "imgs/health/h0001.png"
+    },
+    {
+      "split": "train",
+      "class": "sick",
+      "relative_path": "imgs/sick/s0001.png"
+    },
+    {
+      "split": "train",
+      "class": "TB",
+      "relative_path": "imgs/tb/tb0004.png"
+    },
+    {
+      "split": "validation",
+      "class": "health",
+      "relative_path": "imgs/health/h0009.png"
+    },
+    {
+      "split": "validation",
+      "class": "sick",
+      "relative_path": "imgs/sick/s0015.png"
+    },
+    {
+      "split": "validation",
+      "class": "TB",
+      "relative_path": "imgs/tb/tb0003.png"
+    }
+  ],
+  "dataloader_check": {
+    "executed": true,
+    "shape": [
+      4,
+      3,
+      512,
+      512
+    ],
+    "device": "cpu"
+  }
+}

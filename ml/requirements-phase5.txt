@@ -1,0 +1,3 @@
+# Nunca reemplazar torch/CUDA del runtime; el notebook agrega constraints.
+-r requirements-phase3-suite.txt
+-r requirements-detection.txt

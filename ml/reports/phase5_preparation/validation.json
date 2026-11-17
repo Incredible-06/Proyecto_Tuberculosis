@@ -1,0 +1,43 @@
+{
+  "scope": "local_CPU_checks_existing_validation_only",
+  "tests_run": 8,
+  "tests_passed": true,
+  "package_verified": true,
+  "original_provenance_verified_in_package": true,
+  "previous_local_notebooks_unchanged_during_check": true,
+  "previous_local_notebook_sha256": {
+    "02_convnext_tiny_baseline.ipynb": "5d85194fdb0cb003e72769c55a9d6b445196fa45860ccd09dbe0c6c83859e59d",
+    "03_celdas_continuacion_convnext_v02.ipynb": "5102cfa67087920623060a5621f1a4f9d984eaed1f9cc4b003dfbd3c809ff144",
+    "04_cierre_fase3_clasificadores.ipynb": "8bf7e7c3db7432afd39bd8fdfbe9884f6723a75c10a9087f28290383f2d28e01",
+    "05_fase4_detector_TB.ipynb": "6f2236adf9da736afda407f692a4b6391a973e0f6eb3301579481507296a3f6c"
+  },
+  "new_notebook_sha256": "a99406d648220aadb87a2bebfe38049b0ff392a2d9401cc3e44ed55ddad2ebd4",
+  "package": {
+    "file": "tbx11k_fase5_preparacion_colab.zip",
+    "bytes": 4154878,
+    "sha256": "99d402b198d5ab1a2a023ebcb1b87e62c45905e132d42daf3d55aa8bed84f96c",
+    "files": 51,
+    "contains_original_images": false,
+    "contains_weights": false,
+    "contains_prior_notebooks": false,
+    "test_evaluated": false,
+    "decisions_frozen": false,
+    "colab_executed": false,
+    "phase5_complete": false
+  },
+  "source_predictions": "reports/phase5_readiness/drive_evidence",
+  "figures_exported": 12,
+  "figures_directory": "C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\reports\\phase5_preparation\\figures_existing_validation_a2d08a21",
+  "figure_formats": [
+    "png_300dpi",
+    "pdf",
+    "svg",
+    "csv"
+  ],
+  "new_gpu_inference_executed": false,
+  "colab_executed": false,
+  "decisions_frozen": false,
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "phase5_complete": false
+}

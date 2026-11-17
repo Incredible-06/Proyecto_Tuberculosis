@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "run": "entorno_20261020T051106311884Z",
+  "run_local_time": "2026-10-20 00:11:06 America/Lima",
+  "source_notebook_sha256": "db4a248b92c4fde34f9319a3fdea73d809ccbfa76c38ce58a80b12fdf6aff673",
+  "source_zip_sha256": "d0436d27bb740066e7badd02f4bf100be0566ca69ec3faf7e050ee1062fd1909",
+  "executed_code_cells": 7,
+  "code_matches_original": true,
+  "notebook_errors": 0,
+  "reference_notebook": "reports/revision_20261021/referencias/00_configuracion_entorno.ipynb",
+  "comparison_scope": "Código de la versión histórica, anterior a la revisión de presentación del 21 de octubre.",
+  "configuration_matches": true,
+  "manifest_metadata_matches": true,
+  "local_frozen_inputs_and_csv_fingerprints_match": true,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "cuda_probe": "passed",
+  "all_image_hashes_verified_in_colab": 12278,
+  "internal_overlap_checks_zero": 12,
+  "local_training_or_cuda_executed_by_review": false,
+  "scope": "Revisión de archivos entregados; no observación de sesión en vivo ni validación de modelos."
+}

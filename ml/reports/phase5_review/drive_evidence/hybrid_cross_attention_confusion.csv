@@ -1,0 +1,10 @@
+actual,predicted,count,proportion_within_actual
+health,health,568,0.9964912280701754
+health,sick,2,0.0035087719298245615
+health,TB,0,0.0
+sick,health,8,0.014519056261343012
+sick,sick,539,0.9782214156079855
+sick,TB,4,0.007259528130671506
+TB,health,6,0.05
+TB,sick,7,0.058333333333333334
+TB,TB,107,0.8916666666666667

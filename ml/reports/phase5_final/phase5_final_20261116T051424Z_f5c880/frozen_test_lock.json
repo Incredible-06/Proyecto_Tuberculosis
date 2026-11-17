@@ -1,0 +1,8 @@
+{
+  "locked_at_utc": "2026-11-16T05:18:52.451375+00:00",
+  "output_dir": "/content/drive/MyDrive/Proyecto_Tuberculosis/results/phase5_final/phase5_final_20261116T051424Z_f5c880/test_evaluation",
+  "classifier_run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+  "detector_run_id": "detector_yolo11n_20261103T032033865005Z",
+  "test_macro_f1": 0.9551419659898959,
+  "test_combined_tb_sensitivity": 0.9583333333333334
+}

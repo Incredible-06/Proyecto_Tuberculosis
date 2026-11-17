@@ -1,0 +1,8 @@
+{
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA L4",
+  "precision": "fp32",
+  "architecture": "hybrid_convnext_vit"
+}

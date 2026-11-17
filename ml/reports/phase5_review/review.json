@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "run_id": "phase5_validation_20261103T042954Z_bc33c6",
+  "executed_code_cells": 11,
+  "notebook_errors": 0,
+  "validation_images": 1241,
+  "confusion_matrix": [
+    [
+      568,
+      2,
+      0
+    ],
+    [
+      8,
+      539,
+      4
+    ],
+    [
+      6,
+      7,
+      107
+    ]
+  ],
+  "macro_f1": 0.9644699190877536,
+  "threshold_points_verified": 1242,
+  "figures_exported": 12,
+  "downloaded_figures_sha256_verified": 7,
+  "all_figure_sources_match_local_review": true,
+  "embedded_figures_match_original_exports": true,
+  "color_figures_used": [
+    "classifier_comparison.png",
+    "convnext_tiny_training.png",
+    "convnext_tiny_confusion.png",
+    "vmamba_tiny_training.png",
+    "vmamba_tiny_confusion.png",
+    "hybrid_cross_attention_training.png",
+    "hybrid_cross_attention_confusion.png"
+  ],
+  "classifier_load_smokes_passed": 3,
+  "full_validation_inference_reexecuted": false,
+  "detector_diagnostics_executed": false,
+  "decisions_frozen": false,
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "docx": "C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\docs\\Informe_Avance_Fase_5.docx",
+  "docx_sha256": "db997644a9a69cb9697e0baa32a92e37083cf5fa74e54232cff1f0aef10822aa",
+  "font": "Times New Roman",
+  "font_size_pt": 12,
+  "text_color": "000000",
+  "pages_rendered": 5,
+  "cover_page": false,
+  "evidence_sha256": {
+    "06_fase5_ejecutado.ipynb": "0e67488751fe803f527cc6568690fa5be6787e16468c9ae8f1617f7202bc40d3",
+    "artifact_verification.json": "cf43a5ba3a88ef6b7c744f136f66e44941f527cdfa829da0191348ecacabad00",
+    "candidate_validation_predictions.csv": "b6ebd0738a0d10713d25f13a84bbf5761adc15567816c6a0dc2440bc77c34056",
+    "classifier_comparison.csv": "2c4b98baf4cfde9d947302054c3fd1617f3dd2c7f2df711fab41e1fe257f0af8",
+    "classifier_comparison.png": "6d48275608b425313f11eecf75eec4a0c57c78b8c5c64c7594c673b07060b062",
+    "classifier_TB_thresholds_validation.csv": "e35878426f25c3978d9b1c3facea994c7ee49c758cdddd4bf17d86dad8801199",
+    "convnext_tiny_confusion.png": "1b57d97b80924c8f2bf3092a1230e8284703ff86c85c22485ebf0b7a1d3a7533",
+    "convnext_tiny_training.png": "40b0764064f0d813a0b2c720aad10e29a0aadfaf89b93f2aac4f1e438031336e",
+    "figures_manifest.json": "7bd88aa481e252cb18fca63e43ce82cd553f039ed98bd2e2a750cbb176367d29",
+    "hybrid_cross_attention_confusion.csv": "6019410a7e1c38ec17d917f84d4ef6797881e140b9bc453656d320645bf5686c",
+    "hybrid_cross_attention_confusion.png": "818f73934c48691bff3f4088b415f767d3634c092314a2634b2b27010db2a31a",
+    "hybrid_cross_attention_training.png": "20d6686f306dfe89a01a60256580cf36f5aba5dccb310dd6126c35ffc2d31387",
+    "load_smoke.json": "ed1307dd53cad475c23afa92525cf89c8d44b57f2702b426c4c6c26b3513c42a",
+    "preparation_status.json": "61319ec097fb7319cda19036259ee0bac427f0c275047c153894ecf01d1264db",
+    "session.json": "2f2f9a4dc577ffd79059c9c3998a25e6c43f265fcf129868df1aeebd78d1f316",
+    "transfer_integrity.json": "317b1ebe395261c238fafa8e090a082895157d2b4aa1dc70f6535a981d5b52ce",
+    "validation_comparison.csv": "9a0b3776d3030963dde956e2e879169c5f7922c7d4af734e11d2e5456f457fb2",
+    "vmamba_tiny_confusion.png": "f82364f1c987c3a57a62ac50d61d1d3a8445dc239d8b9dfcaa58edac14542a99",
+    "vmamba_tiny_training.png": "d1b02f1e63913fabd129a68edda979fff6615df28b6d41c584941ead86498541"
+  },
+  "sources": [
+    {
+      "title": "Notebook 06 ejecutado",
+      "url": "https://colab.research.google.com/drive/1XMzT95x1p9WSBNex3yyXuQiySZODGyvD"
+    },
+    {
+      "title": "Resultados de fase 5",
+      "url": "https://drive.google.com/drive/folders/17JBPtxHx5jL0SEnPY-T56MEt6YM7URgW"
+    }
+  ]
+}

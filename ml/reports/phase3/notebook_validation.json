@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-27T03:27:21.858631+00:00",
+  "code_cells_compiled": 12,
+  "all_source_cells_unexecuted": true,
+  "frozen_manifests": "passed",
+  "class_map": {
+    "health": 0,
+    "sick": 1,
+    "TB": 2
+  },
+  "epochs_configured": 3,
+  "colab_training_executed": false,
+  "scope": "Compilación estática, configuración y metadatos. No prueba CUDA, descarga de pesos ni entrenamiento Colab."
+}

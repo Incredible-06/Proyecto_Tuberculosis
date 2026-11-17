@@ -1,0 +1,9 @@
+{
+  "run_id": "phase5_validation_20261103T042954Z_bc33c6",
+  "package_sha256": "99d402b198d5ab1a2a023ebcb1b87e62c45905e132d42daf3d55aa8bed84f96c",
+  "scope": "validation_only",
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "decisions_frozen": false,
+  "phase5_complete": false
+}

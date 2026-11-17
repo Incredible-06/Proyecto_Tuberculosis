@@ -1,0 +1,32 @@
+{
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "pillow": "11.3.0",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "seed": 20261019,
+  "in_colab": true,
+  "pythonhashseed_at_start": null,
+  "training_executed": false,
+  "cuda_probe": {
+    "executed": true,
+    "status": "passed",
+    "operation": "4x4 float32 matrix multiplication; no model"
+  },
+  "torch": "2.11.0+cu130",
+  "cuda_build": "13.0",
+  "cuda_available": true,
+  "deterministic_algorithms": "enabled_with_warnings",
+  "gpu": {
+    "name": "NVIDIA A100-SXM4-40GB",
+    "compute_capability": [
+      8,
+      0
+    ],
+    "memory_free_bytes": 41957130240,
+    "memory_total_bytes": 42405855232
+  },
+  "output_paths": {
+    "experiments": "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments",
+    "checkpoints": "/content/drive/MyDrive/Proyecto_Tuberculosis/checkpoints"
+  }
+}

@@ -1,3 +1,0 @@
-# Fase 1: sin torch, torchvision, CUDA ni pesos. Se registra la versión resuelta.
-numpy>=1.26,<3
-Pillow>=10.4,<14

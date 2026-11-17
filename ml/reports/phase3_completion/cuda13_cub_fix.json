@@ -1,0 +1,20 @@
+{
+  "date_lima": "2026-11-02",
+  "diagnosed_from": "Salida de compilador enviada por el usuario",
+  "runtime": {"python": "3.13.16", "torch": "2.11.0+cu130", "nvcc": "13.0", "gpu_arch": "sm_89"},
+  "actual_error": "reverse_scan.cuh: cub::LaneId y cub::CTA_SYNC no existen en CUB de CUDA 13",
+  "patch": "cuda13_cub_helpers_v1",
+  "replacements": {"cub::LaneId()": "::cuda::ptx::get_sreg_laneid()", "cub::CTA_SYNC()": "__syncthreads()"},
+  "header_added": "cuda/ptx",
+  "upstream_reverse_scan_sha256": "e29d6a36bc537d0c149abf79edac70252d5cb9b868fefe2e6797564e3efd2a52",
+  "patched_reverse_scan_sha256": "bfeb94d612a6e6b98fa6449cb10aa33a89f9596c26aeaeeaa41386c863ef3fd6",
+  "source_patch_checked_locally": true,
+  "patch_idempotence_checked": true,
+  "cuda_compilation_verified": true,
+  "cuda_import_verified": true,
+  "verification_source": "Salida Colab del usuario: Successfully installed selective_scan-0.0.2 y Selective scan: oflex",
+  "three_model_gpu_smokes_verified": false,
+  "hotfix_drive_file_id": "1TaVB6kh1Egp3D-6oIcQ_s8g_9D_XbEv5",
+  "existing_notebook_outputs_overwritten": false,
+  "next_action": "Ejecutar F3-C2 y comprobar completed_smoke en las tres arquitecturas; después F3-C3 y F3-C4."
+}

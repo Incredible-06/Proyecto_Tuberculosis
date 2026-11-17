@@ -1,0 +1,22 @@
+{
+  "protocol_id": "phase3_controlled_vit_v1",
+  "architecture": "vit_b_16",
+  "display_name": "ViT-B/16",
+  "weights": "ViT_B_16_Weights.IMAGENET1K_V1",
+  "seed": 20261019,
+  "epochs": 12,
+  "warmup_epochs": 2,
+  "batch_size": 2,
+  "accumulation_steps": 16,
+  "num_workers": 2,
+  "head_lr": 0.0003,
+  "backbone_lr": 0.000005,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "patience": 4,
+  "min_delta": 0.001,
+  "precision": "fp32",
+  "selection_metric": "validation_macro_f1",
+  "initialization": "ImageNet oficial IMAGENET1K_V1 con interpolación bicúbica de embeddings posicionales 224->512",
+  "scope": "Extensión de comparación controlada con una seed; mismos datos, splits, aumentos e hiperparámetros que phase3_controlled_v1"
+}

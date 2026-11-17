@@ -1,0 +1,14 @@
+test_boxes_are_original_and_missing_tb_is_flagged (test_data_pipeline.DataTests.test_boxes_are_original_and_missing_tb_is_flagged) ... ok
+test_class_weights_train_only (test_data_pipeline.DataTests.test_class_weights_train_only) ... ok
+test_evaluation_is_deterministic_and_denormalizes (test_data_pipeline.DataTests.test_evaluation_is_deterministic_and_denormalizes) ... ok
+test_manifest_integrity_and_no_group_leakage (test_data_pipeline.DataTests.test_manifest_integrity_and_no_group_leakage) ... ok
+test_rebuild_is_byte_identical (test_data_pipeline.DataTests.test_rebuild_is_byte_identical) ... ok
+test_rejects_augmented_test_and_unlabeled_sources (test_data_pipeline.DataTests.test_rejects_augmented_test_and_unlabeled_sources) ... ok
+test_rejects_path_traversal_and_zip_symlinks (test_data_pipeline.DataTests.test_rejects_path_traversal_and_zip_symlinks) ... ok
+test_samples_shape_finite_and_repeatable (test_data_pipeline.DataTests.test_samples_shape_finite_and_repeatable) ... ok
+test_staging_folder_zip_and_reuse_on_tiny_fixture (test_data_pipeline.DataTests.test_staging_folder_zip_and_reuse_on_tiny_fixture) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 15.342s
+
+OK

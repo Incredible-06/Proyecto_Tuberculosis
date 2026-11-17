@@ -1,0 +1,14 @@
+{
+  "montgomery": {
+    "total": 138,
+    "train_val_pixel_overlaps": 0,
+    "clean_vs_train_val": 138,
+    "matched_extra_mc_shenzhen_d1": 73
+  },
+  "shenzhen": {
+    "total": 662,
+    "train_val_pixel_overlaps": 0,
+    "clean_vs_train_val": 662,
+    "matched_extra_mc_shenzhen_d1": 400
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "review_date_lima": "2026-10-26",
+  "run_id": "convnext_tiny_v01_20261027T034012Z_860908e3",
+  "source_folder": "https://drive.google.com/drive/folders/1Z9lwIAEbIk6eNOyOxZEdl2lTOEA3W-Tt",
+  "training_executed": true,
+  "completed_epochs": 3,
+  "optimizer_updates": 543,
+  "best_epoch": 2,
+  "validation": {
+    "n": 1241,
+    "accuracy": 0.9564867042707494,
+    "macro_f1": 0.9211178063429815,
+    "balanced_accuracy": 0.8979028029844726,
+    "macro_roc_auc_ovr": 0.9944755027493759,
+    "confusion_matrix": [
+      [
+        565,
+        5,
+        0
+      ],
+      [
+        12,
+        534,
+        5
+      ],
+      [
+        8,
+        24,
+        88
+      ]
+    ],
+    "classes": [
+      "health",
+      "sick",
+      "TB"
+    ],
+    "per_class": {
+      "health": {
+        "support": 570,
+        "precision": 0.9658119658119658,
+        "recall": 0.9912280701754386,
+        "f1": 0.9783549783549783,
+        "specificity": 0.970193740685544,
+        "roc_auc": 0.9987397704395117,
+        "average_precision": 0.9984551646166113
+      },
+      "sick": {
+        "support": 551,
+        "precision": 0.9484902309058615,
+        "recall": 0.969147005444646,
+        "f1": 0.9587073608617595,
+        "specificity": 0.9579710144927536,
+        "roc_auc": 0.9949157000447144,
+        "average_precision": 0.9941597653104245
+      },
+      "TB": {
+        "support": 120,
+        "precision": 0.946236559139785,
+        "recall": 0.7333333333333333,
+        "f1": 0.8262910798122066,
+        "specificity": 0.9955396966993756,
+        "roc_auc": 0.9897710377639013,
+        "average_precision": 0.937008083461996
+      }
+    },
+    "decision_rule": "argmax softmax; sin ajuste de umbral",
+    "evaluation_unit": "imagen; sin intervalos de confianza ni garantía de independencia por paciente",
+    "loss": 0.26483707386499017,
+    "unweighted_loss": 0.12025320127615398,
+    "split": "validation"
+  },
+  "config": {
+    "experiment_label": "convnext_tiny_v01",
+    "model": "convnext_tiny",
+    "weights": "IMAGENET1K_V1",
+    "seed": 20261019,
+    "epochs": 3,
+    "warmup_epochs": 1,
+    "unfreeze_last_stage": true,
+    "batch_size": 8,
+    "accumulation_steps": 4,
+    "num_workers": 2,
+    "head_lr": 0.001,
+    "backbone_lr": 0.00001,
+    "weight_decay": 0.01,
+    "gradient_clip": 1,
+    "amp": false,
+    "patience": 3,
+    "min_delta": 0.001,
+    "selection_metric": "macro_f1",
+    "hypothesis": "Primera referencia: adaptar la cabeza y después la última etapa de ConvNeXt-Tiny, conservando datos y preprocesamiento de la fase 2.",
+    "parent_run": null,
+    "change_reason": "Primera corrida en FP32 tras un smoke sin actualización efectiva con AMP."
+  },
+  "test_evaluated": false,
+  "phase3_complete": false,
+  "observations": [
+    "Validation loss cae de época 1 a 2 y sube en época 3 mientras train_loss sigue bajando; deterioro observado, sin demostrar sobreajuste con una sola corrida.",
+    "De 120 TB: 88 correctas, 24 como sick, 8 como health. De los 32 falsos negativos TB, 75% se predicen sick.",
+    "Tres épocas corresponden al presupuesto preliminar configurado, no al early stopping."
+  ],
+  "checkpoint_hashes_declared_by_run": {
+    "best.pt": "221bb695035a186eb489e012ac5591c3602f927e95fb771cfd3cba2d4b4bf3d5",
+    "last.pt": "b9ba7851b8e1ba2b7fac49df52555db5d9ebf33a972f00fa18f16a78d7d3fb59"
+  }
+}

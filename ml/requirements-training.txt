@@ -1,0 +1,4 @@
+# Se conserva torch/torchvision/CUDA preinstalado en el runtime GPU de Colab.
+-r requirements-data.txt
+matplotlib>=3.8,<4
+pandas>=2.2,<4

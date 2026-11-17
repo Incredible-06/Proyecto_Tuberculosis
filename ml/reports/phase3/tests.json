@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-03T01:33:33.651377+00:00",
+  "tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu"
+  },
+  "colab_training_executed": false,
+  "tbx11k_training_executed": false,
+  "fixture_scope": "CPU, datos sintéticos: métricas, acumulación ponderada, ConvNeXt 32px sin pesos descargados, checkpoint, optimizador/RNG y figuras. CUDA/AMP/512px reales pendientes del smoke Colab."
+}

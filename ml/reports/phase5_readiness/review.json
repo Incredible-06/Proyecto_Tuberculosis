@@ -1,0 +1,295 @@
+{
+  "review_date_local": "2026-11-02",
+  "timezone": "America/Lima",
+  "scope": "Revisión de resultados de Drive; sin inferencia nueva ni acceso a test",
+  "classifier": {
+    "convnext": {
+      "run_id": "phase3_convnext_tiny_20261103T023002Z_4a7e2a",
+      "status": "completed_controlled",
+      "n": 1241,
+      "unique_paths": 1241,
+      "unique_groups": 1237,
+      "cm": [
+        [
+          568,
+          2,
+          0
+        ],
+        [
+          5,
+          543,
+          3
+        ],
+        [
+          4,
+          22,
+          94
+        ]
+      ],
+      "macro_f1_recomputed": 0.9427155571191579,
+      "accuracy_recomputed": 0.9709911361804996,
+      "matches_summary": true,
+      "probability_errors": 0,
+      "argmax_errors": 0,
+      "epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "history_train_n": [
+        5792
+      ],
+      "optimizer_updates": 2172,
+      "best_weights": {
+        "id": "1yvukiuaY2MrMzlNLOwlsADywxpDbDa_o",
+        "title": "best.pt",
+        "mime_type": "application/x-zip",
+        "size": "111352775",
+        "url": "https://drive.google.com/file/d/1yvukiuaY2MrMzlNLOwlsADywxpDbDa_o/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1yvukiuaY2MrMzlNLOwlsADywxpDbDa_o/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": "2026-11-03T02:55:31.221Z",
+        "modified_time": "2026-11-03T02:55:34.239Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": true,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified",
+        "can_download": true,
+        "can_list_children": false
+      }
+    },
+    "vmamba": {
+      "run_id": "phase3_vmamba_tiny_20261103T025536Z_4784e4",
+      "status": "completed_controlled",
+      "n": 1241,
+      "unique_paths": 1241,
+      "unique_groups": 1237,
+      "cm": [
+        [
+          569,
+          1,
+          0
+        ],
+        [
+          15,
+          532,
+          4
+        ],
+        [
+          12,
+          7,
+          101
+        ]
+      ],
+      "macro_f1_recomputed": 0.9496720393263292,
+      "accuracy_recomputed": 0.9685737308622079,
+      "matches_summary": true,
+      "probability_errors": 0,
+      "argmax_errors": 0,
+      "epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "history_train_n": [
+        5792
+      ],
+      "optimizer_updates": 2172,
+      "best_weights": {
+        "id": "1GVlrGkZqMXnNnhnEqpXW-BlRciWG35vv",
+        "title": "best.pt",
+        "mime_type": "application/x-zip",
+        "size": "118023397",
+        "url": "https://drive.google.com/file/d/1GVlrGkZqMXnNnhnEqpXW-BlRciWG35vv/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1GVlrGkZqMXnNnhnEqpXW-BlRciWG35vv/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": "2026-11-03T03:22:02.999Z",
+        "modified_time": "2026-11-03T03:22:03.689Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": true,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified",
+        "can_download": true,
+        "can_list_children": false
+      }
+    },
+    "hybrid": {
+      "run_id": "phase3_hybrid_cross_attention_20261103T032205Z_71d127",
+      "status": "completed_controlled",
+      "n": 1241,
+      "unique_paths": 1241,
+      "unique_groups": 1237,
+      "cm": [
+        [
+          568,
+          2,
+          0
+        ],
+        [
+          8,
+          539,
+          4
+        ],
+        [
+          6,
+          7,
+          107
+        ]
+      ],
+      "macro_f1_recomputed": 0.9644699190877535,
+      "accuracy_recomputed": 0.9782433521353747,
+      "matches_summary": true,
+      "probability_errors": 0,
+      "argmax_errors": 0,
+      "epochs": 7,
+      "best_epoch": 3,
+      "stop_reason": "early_stopping",
+      "history_train_n": [
+        5792
+      ],
+      "optimizer_updates": 1267,
+      "best_weights": {
+        "id": "16h4sh6D4avXr6nL_Rrwy7BNXnEcaDtRG",
+        "title": "best.pt",
+        "mime_type": "application/x-zip",
+        "size": "233035111",
+        "url": "https://drive.google.com/file/d/16h4sh6D4avXr6nL_Rrwy7BNXnEcaDtRG/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/16h4sh6D4avXr6nL_Rrwy7BNXnEcaDtRG/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": "2026-11-03T03:44:49.000Z",
+        "modified_time": "2026-11-03T03:44:49.486Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": true,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified",
+        "can_download": true,
+        "can_list_children": false
+      }
+    }
+  },
+  "same_validation_rows_and_labels": true,
+  "identical_protocols": true,
+  "identical_recorded_provenance": true,
+  "detector": {
+    "epochs": 33,
+    "best_epoch_by_history_map50_95": 26,
+    "best_history": {
+      "epoch": "26",
+      "time": "1473.15",
+      "train/box_loss": "0.71458",
+      "train/cls_loss": "0.64503",
+      "train/dfl_loss": "0.67328",
+      "metrics/precision(B)": "0.60883",
+      "metrics/recall(B)": "0.45102",
+      "metrics/mAP50(B)": "0.48438",
+      "metrics/mAP50-95(B)": "0.21553",
+      "val/box_loss": "0.21097",
+      "val/cls_loss": "0.49177",
+      "val/dfl_loss": "0.16853",
+      "lr/pg0": "0.000585714",
+      "lr/pg1": "0.000585714",
+      "lr/pg2": "0.000585714"
+    },
+    "last_history": {
+      "epoch": "33",
+      "time": "1869.01",
+      "train/box_loss": "0.50698",
+      "train/cls_loss": "0.41449",
+      "train/dfl_loss": "0.58099",
+      "metrics/precision(B)": "0.56956",
+      "metrics/recall(B)": "0.48864",
+      "metrics/mAP50(B)": "0.48677",
+      "metrics/mAP50-95(B)": "0.20789",
+      "val/box_loss": "0.22419",
+      "val/cls_loss": "0.41576",
+      "val/dfl_loss": "0.18527",
+      "lr/pg0": "0.000189714",
+      "lr/pg1": "0.000189714",
+      "lr/pg2": "0.000189714"
+    },
+    "epochs_after_best": 7,
+    "summary": {
+      "status": "trained_validation_available",
+      "map50_95": 0.21577616090176216,
+      "map50": 0.48423225059138064,
+      "validation_only": true,
+      "test_evaluated": false,
+      "phase5_complete": false
+    },
+    "conversion": {
+      "status": "prepared_not_trained",
+      "counts": {
+        "train": {
+          "negative_no_TB_boxes": 5232,
+          "boxes": 851,
+          "positive_TB_boxes": 559,
+          "excluded_TB_missing_boxes": 1
+        },
+        "validation": {
+          "negative_no_TB_boxes": 1121,
+          "boxes": 176,
+          "positive_TB_boxes": 120
+        }
+      },
+      "test_exported": false,
+      "class_policy": "Cajas TB originales unificadas como tb_lesion; subtipos no se usan como clases de detección.",
+      "missing_box_policy": "TB sin cajas excluida; nunca negativo.",
+      "phase4_complete": false
+    },
+    "weights": [
+      {
+        "id": "1TmeAidR_3BVss_XO_5RijtKa_o8M0kh3",
+        "title": "best.pt",
+        "mime_type": "application/x-zip",
+        "size": "5451098",
+        "url": "https://drive.google.com/file/d/1TmeAidR_3BVss_XO_5RijtKa_o8M0kh3/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1TmeAidR_3BVss_XO_5RijtKa_o8M0kh3/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": "2026-11-03T03:28:09.045Z",
+        "modified_time": "2026-11-03T03:58:17.593Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": true,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified",
+        "can_download": true,
+        "can_list_children": false
+      },
+      {
+        "id": "1qjGQHvtNPu4RUCEF6xoNgpj8bYL8MxRo",
+        "title": "last.pt",
+        "mime_type": "application/x-zip",
+        "size": "5451098",
+        "url": "https://drive.google.com/file/d/1qjGQHvtNPu4RUCEF6xoNgpj8bYL8MxRo/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1qjGQHvtNPu4RUCEF6xoNgpj8bYL8MxRo/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": "2026-11-03T03:28:09.019Z",
+        "modified_time": "2026-11-03T03:58:17.362Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": true,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified",
+        "can_download": true,
+        "can_list_children": false
+      }
+    ]
+  },
+  "new_test_or_external_evaluation_performed": false,
+  "limitations": [
+    "Los hashes de pesos son los registrados por el cierre de Colab; se comprobó existencia/tamaño en Drive sin volver a descargar los checkpoints.",
+    "Una seed; validación reutilizada para elegir época y arquitectura; no prueba de superioridad estadística.",
+    "Grupos por duplicados, no identidad del paciente.",
+    "No se inspeccionaron visualmente los PNG remotos: descarga de archivos no disponible en este entorno; se revisaron historiales numéricos completos.",
+    "El recall del detector es por lesión/caja y el del clasificador es por imagen; no son comparables directamente."
+  ]
+}

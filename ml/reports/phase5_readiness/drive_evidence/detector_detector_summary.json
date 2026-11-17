@@ -1,0 +1,8 @@
+{
+  "status": "trained_validation_available",
+  "map50_95": 0.21577616090176216,
+  "map50": 0.48423225059138064,
+  "validation_only": true,
+  "test_evaluated": false,
+  "phase5_complete": false
+}

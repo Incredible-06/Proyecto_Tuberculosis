@@ -1,0 +1,24 @@
+{
+  "delivery_date_lima": "2026-10-26",
+  "folder_url": "https://drive.google.com/drive/folders/1eN1n7g3-f8qxCS_DjDPBFmhz2qRdI-zG",
+  "notebook": {
+    "id": "1PIKRaThshNsLfwhEOQ_Pa-owlMUp9-Ho",
+    "url": "https://colab.research.google.com/drive/1PIKRaThshNsLfwhEOQ_Pa-owlMUp9-Ho",
+    "bytes": 22650,
+    "mime_type": "application/vnd.google.colaboratory",
+    "metadata_readback_verified": true,
+    "source_uploaded_without_execution_outputs": true
+  },
+  "package": {
+    "id": "1xAZEgtwQtE0RBAbScKXqUhkxIa2t8Y1G",
+    "url": "https://drive.google.com/file/d/1xAZEgtwQtE0RBAbScKXqUhkxIa2t8Y1G/view?usp=drivesdk",
+    "name": "tbx11k_fase3_baseline_colab.zip",
+    "bytes": 3910635,
+    "local_sha256": "d7817ed83b5315bcb0a8ef2ca20742f447613797fbc6160019ad573faa5b547d",
+    "local_zip_extract_and_frozen_manifest_validation": "passed"
+  },
+  "colab_training_executed": false,
+  "blocker": "El control del navegador se detuvo porque no pudo verificar la URL de la ventana de Brave; la ejecución GPU y el montaje de Drive deben iniciarse desde la sesión del usuario.",
+  "next_action": "Abrir el notebook, seleccionar GPU L4/T4/A100 disponible, ejecutar smoke y luego entrenamiento base; guardar las salidas del notebook con Ctrl+S.",
+  "phase3_complete": false
+}

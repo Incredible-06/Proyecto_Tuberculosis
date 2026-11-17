@@ -1,0 +1,13 @@
+test_concordance_preserves_classifier_alert_without_boxes (test_phase5_preparation.PreparationTests.test_concordance_preserves_classifier_alert_without_boxes) ... ok
+test_detector_one_to_one_matching_and_image_denominators (test_phase5_preparation.PreparationTests.test_detector_one_to_one_matching_and_image_denominators) ... ok
+test_detector_rejects_missing_negative_and_reserved_split (test_phase5_preparation.PreparationTests.test_detector_rejects_missing_negative_and_reserved_split) ... ok
+test_notebook_has_no_test_inference_or_freeze_switch (test_phase5_preparation.PreparationTests.test_notebook_has_no_test_inference_or_freeze_switch) ... ok
+test_original_provenance_and_validation_metrics (test_phase5_preparation.PreparationTests.test_original_provenance_and_validation_metrics) ... ok
+test_reject_predictions_from_other_partition_or_duplicated (test_phase5_preparation.PreparationTests.test_reject_predictions_from_other_partition_or_duplicated) ... ok
+test_reject_test_split_and_changed_provenance (test_phase5_preparation.PreparationTests.test_reject_test_split_and_changed_provenance) ... ok
+test_threshold_ties_boundaries_and_probability_preservation (test_phase5_preparation.PreparationTests.test_threshold_ties_boundaries_and_probability_preservation) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.927s
+
+OK

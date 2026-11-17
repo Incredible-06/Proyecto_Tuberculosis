@@ -1,0 +1,52 @@
+[
+  {
+    "architecture": "convnext_tiny",
+    "passed": true,
+    "max_probability_delta": 2.0802021026611328e-05,
+    "paths": [
+      "imgs/health/h0009.png",
+      "imgs/sick/s0015.png",
+      "imgs/tb/tb0003.png"
+    ]
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "passed": true,
+    "max_probability_delta": 0.0005712509155273438,
+    "paths": [
+      "imgs/health/h0009.png",
+      "imgs/sick/s0015.png",
+      "imgs/tb/tb0003.png"
+    ]
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "passed": true,
+    "max_probability_delta": 4.7206878662109375e-05,
+    "paths": [
+      "imgs/health/h0009.png",
+      "imgs/sick/s0015.png",
+      "imgs/tb/tb0003.png"
+    ]
+  },
+  {
+    "architecture": "vit_b_16",
+    "passed": true,
+    "max_probability_delta": 3.5390257835388184e-08,
+    "paths": [
+      "imgs/health/h0009.png",
+      "imgs/sick/s0015.png",
+      "imgs/tb/tb0003.png"
+    ]
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "passed": true,
+    "max_probability_delta": 3.7997961044311523e-06,
+    "paths": [
+      "imgs/health/h0009.png",
+      "imgs/sick/s0015.png",
+      "imgs/tb/tb0003.png"
+    ]
+  }
+]

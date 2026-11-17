@@ -1,0 +1,260 @@
+"""Genera el notebook independiente 04c para entrenamiento del híbrido ConvNeXt-Tiny + ViT-B/16."""
+import json
+import textwrap
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+NAME = '04c_entrenamiento_hibrido_convnext_vit.ipynb'
+
+
+def main():
+    cells = []
+
+    def add(kind, source):
+        cell = dict(
+            cell_type=kind,
+            id='hybrid-vit-' + str(len(cells)),
+            metadata={},
+            source=textwrap.dedent(source).strip().splitlines(keepends=True),
+        )
+        if kind == 'code':
+            compile(''.join(cell['source']), NAME + ':' + cell['id'], 'exec')
+            cell.update(execution_count=None, outputs=[])
+        cells.append(cell)
+
+    package = json.loads((ROOT / 'dist/hybrid_vit_package_info.json').read_text(encoding='utf-8'))
+
+    add('markdown', '''
+    # 04c · Extensión Fase 3: Híbrido ConvNeXt-Tiny + ViT-B/16 con atención cruzada
+
+    Este notebook implementa y entrena el **quinto clasificador** de la comparación controlada:
+    un modelo híbrido creado a medida (**`hybrid_convnext_vit`**) que fusiona:
+
+    - **Rama local:** `ConvNeXt-Tiny` (`IMAGENET1K_V1`, salida espacial `16×16×768`).
+    - **Rama global:** `ViT-B/16` (`IMAGENET1K_V1` con interpolación bicúbica `224→512`, `32×32` tokens espaciales de dimensión `768`).
+    - **Fusión (`CrossFusion`):** agrupación a rejilla común `8×8`, proyección a `256` dimensiones y
+      atención cruzada bidireccional de `4` cabezas entre ambas ramas (sin compilar kernels CUDA externos).
+
+    Conserva exactamente el protocolo controlado (`seed=20261019`, 3 clases, `512×512`, hasta 12 épocas,
+    2 de warmup, paciencia 4, lote efectivo 32, FP32, `head_lr=3e-4`, `backbone_lr=5e-6`).
+    **El conjunto de prueba (`test`) y externos permanecen reservados.**
+    ''')
+
+    add('markdown', '''
+    ## Paso 1 — Montar Drive, verificar paquete ZIP y preparar dataset
+
+    Coloque `tbx11k_hibrido_convnext_vit_colab.zip` en `MyDrive/Proyecto_Tuberculosis/`
+    (junto a `TBX11K.zip` o `TBX11K/`). No sobrescribe los experimentos anteriores.
+    ''')
+
+    add('code', '''
+    import hashlib, importlib.metadata as metadata, json, stat, subprocess, sys, zipfile
+    from pathlib import Path, PurePosixPath
+    from google.colab import drive
+    drive.mount('/content/drive')
+    DRIVE_BASE = Path('/content/drive/MyDrive/Proyecto_Tuberculosis')
+    ARCHIVE = DRIVE_BASE / 'tbx11k_hibrido_convnext_vit_colab.zip'
+    EXPECTED_PACKAGE_SHA256 = '__PACKAGE_SHA256__'
+    def file_sha256(path):
+        h = hashlib.sha256()
+        with Path(path).open('rb') as stream:
+            for chunk in iter(lambda: stream.read(1024 * 1024), b''):
+                h.update(chunk)
+        return h.hexdigest()
+    if file_sha256(ARCHIVE) != EXPECTED_PACKAGE_SHA256:
+        raise ValueError('ZIP diferente de esta versión del notebook. Use ambos archivos de la misma entrega.')
+    PROJECT_ROOT = Path('/content/tbx11k_hybrid_vit/project')
+    PROJECT_ROOT.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(ARCHIVE) as archive:
+        names = archive.namelist()
+        if len(names) != len(set(names)):
+            raise ValueError('ZIP con nombres duplicados.')
+        for item in archive.infolist():
+            rel = PurePosixPath(item.filename)
+            target = (PROJECT_ROOT / item.filename).resolve()
+            if (rel.is_absolute() or '..' in rel.parts or ':' in item.filename
+                    or chr(92) in item.filename or stat.S_ISLNK(item.external_attr >> 16)
+                    or PROJECT_ROOT.resolve() not in target.parents):
+                raise ValueError('Ruta ZIP insegura: ' + item.filename)
+        checksums = json.loads(archive.read('hybrid_vit_package_checksums.json'))
+        if set(names) != set(checksums) | {'hybrid_vit_package_checksums.json'}:
+            raise ValueError('Cobertura de checksums incorrecta.')
+        for name, expected in checksums.items():
+            if hashlib.sha256(archive.read(name)).hexdigest() != expected:
+                raise ValueError('Archivo alterado en el paquete: ' + name)
+        archive.extractall(PROJECT_ROOT)
+    for name in list(sys.modules):
+        if name in {'tbxdata', 'tbxtrain'} or name.startswith(('tbxdata.', 'tbxtrain.')):
+            del sys.modules[name]
+    sys.path.insert(0, str(PROJECT_ROOT / 'src'))
+    print('Paquete verificado y extraído en:', PROJECT_ROOT)
+    '''.replace('__PACKAGE_SHA256__', package['sha256']))
+
+    add('code', '''
+    import torch
+    if not torch.cuda.is_available():
+        raise RuntimeError('Seleccione un runtime GPU de Colab (T4/L4/A100).')
+    protected = {}
+    for name in ['torch', 'torchvision', 'torchaudio']:
+        try:
+            protected[name] = metadata.version(name)
+        except metadata.PackageNotFoundError:
+            pass
+    constraints = PROJECT_ROOT / 'runtime_constraints.txt'
+    constraints.write_text(''.join(f'{k}=={v}\\n' for k, v in protected.items()))
+    subprocess.check_call([
+        sys.executable, '-m', 'pip', 'install', '--quiet', '--disable-pip-version-check',
+        '-c', str(constraints), '-r', str(PROJECT_ROOT / 'requirements-training.txt'),
+    ])
+    if any(metadata.version(k) != v for k, v in protected.items()):
+        raise RuntimeError('Se alteró torch/torchvision del runtime. Reinicie antes de continuar.')
+    from tbxdata.colab import stage_dataset
+    from tbxdata.validate import validate_manifests
+    from tbxtrain.hybrid_vit_experiment import validate_hybrid_vit_config
+    source = DRIVE_BASE / 'TBX11K.zip'
+    if not source.exists():
+        source = DRIVE_BASE / 'TBX11K'
+    DATASET_ROOT = stage_dataset(source, Path('/content/tbx11k_hybrid_vit/data_cache'), True)
+    integrity = validate_manifests(PROJECT_ROOT, DATASET_ROOT, all_image_hashes=True)
+    CONFIG_HYB_VIT = validate_hybrid_vit_config(
+        json.loads((PROJECT_ROOT / 'configs/hybrid_convnext_vit_controlled.json').read_text()),
+        PROJECT_ROOT,
+    )
+    print('GPU:', torch.cuda.get_device_name(0), '| torch:', torch.__version__, '| Integridad:', integrity['status'])
+    print('Hashes verificados:', integrity['all_image_hashes_verified'])
+    print(json.dumps(CONFIG_HYB_VIT, indent=2, ensure_ascii=False))
+    ''')
+
+    add('markdown', '''
+    ## Paso 2 — Smoke técnico de Híbrido ConvNeXt + ViT-B/16 (`RUN_SMOKES = True`)
+
+    Una imagen por clase (`health`, `sick`, `TB`) a 512 px verifica carga oficial de ambas ramas,
+    fusión `CrossFusion`, forward/backward, actualización de la cabeza y reproducibilidad de `best.pt`.
+    ''')
+
+    add('code', '''
+    from tbxtrain.hybrid_vit_experiment import run_hybrid_vit_model
+    RUN_SMOKES = True
+    if RUN_SMOKES:
+        smoke = run_hybrid_vit_model(PROJECT_ROOT, DATASET_ROOT, DRIVE_BASE, CONFIG_HYB_VIT, smoke=True)
+        print('Smoke Híbrido C+ViT:', smoke['status'], '| updates:', smoke['optimizer_updates'])
+    ''')
+
+    add('markdown', '''
+    ## Paso 3 — Entrenamiento completo controlado y recuperación automática
+
+    Guarda `last.pt` e `history.csv` al finalizar cada época en Drive. Si la sesión se
+    interrumpe, vuelva a ejecutar desde el Paso 1 (puede poner `RUN_SMOKES = False`) y esta
+    celda retomará automáticamente desde `results/hybrid_vit_suite/`.
+    ''')
+
+    add('code', '''
+    marker = DRIVE_BASE / 'results/hybrid_vit_suite' / CONFIG_HYB_VIT['protocol_id'] / 'hybrid_convnext_vit.json'
+    resume = None
+    HYBRID_VIT_RUN_ID = None
+    if marker.exists():
+        prior = json.loads(marker.read_text())
+        prior_id = prior['run_id']
+        summary_path = DRIVE_BASE / 'experiments' / prior_id / 'summary.json'
+        if summary_path.exists():
+            prior_summary = json.loads(summary_path.read_text())
+            if prior_summary['status'] == 'completed_controlled':
+                if prior_summary['protocol'] != CONFIG_HYB_VIT:
+                    raise RuntimeError('El protocolo cambió. Defina otro protocol_id para una nueva tanda.')
+                HYBRID_VIT_RUN_ID = prior_id
+                print('Corrida recuperada sin reentrenar:', HYBRID_VIT_RUN_ID)
+        if HYBRID_VIT_RUN_ID is None and (DRIVE_BASE / 'checkpoints' / prior_id / 'last.pt').exists():
+            resume = prior_id
+    if HYBRID_VIT_RUN_ID is None:
+        summary = run_hybrid_vit_model(
+            PROJECT_ROOT, DATASET_ROOT, DRIVE_BASE, CONFIG_HYB_VIT, resume_run=resume, smoke=False,
+        )
+        HYBRID_VIT_RUN_ID = summary['run_id']
+    print('Corrida Híbrido C+ViT completa:', HYBRID_VIT_RUN_ID)
+    ''')
+
+    add('markdown', '''
+    ## Paso 4 — Exportar figuras, tablas y resumen comparativo de los 5 clasificadores
+
+    Genera curvas de entrenamiento, matriz de confusión, ROC OVR, umbrales TB del nuevo híbrido
+    y la comparación completa de los **5 clasificadores** (`ConvNeXt-Tiny`, `VMamba-Tiny`,
+    `Híbrido v1`, `ViT-B/16`, `Híbrido ConvNeXt + ViT-B/16`).
+
+    **Al terminar, guarde el notebook con Ctrl+S y avise para actualizar `Informe_Avance_Fase_5.docx`.**
+    ''')
+
+    add('code', '''
+    import pandas as pd
+    from datetime import datetime, timezone
+    from IPython.display import Image, display
+    from tbxtrain.protocol import atomic_json
+    from tbxtrain.hybrid_vit_experiment import export_hybrid_vit_report_outputs
+
+    PRIOR_RUNS = {
+        'convnext_tiny': 'phase3_convnext_tiny_20261103T023002Z_4a7e2a',
+        'vmamba_tiny': 'phase3_vmamba_tiny_20261103T025536Z_4784e4',
+        'hybrid_cross_attention': 'phase3_hybrid_cross_attention_20261103T032205Z_71d127',
+        'vit_b_16': 'phase3_vit_b_16_20261116T014808Z_2e8a27',
+    }
+    OUT_EXPORT = DRIVE_BASE / 'results/hybrid_vit_phase3_export' / (
+        HYBRID_VIT_RUN_ID + '_' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    )
+    payload = export_hybrid_vit_report_outputs(
+        PROJECT_ROOT, DRIVE_BASE, HYBRID_VIT_RUN_ID, OUT_EXPORT, prior_runs=PRIOR_RUNS,
+    )
+    atomic_json(OUT_EXPORT / 'transfer_integrity.json', integrity)
+
+    print('=== COMPARACIÓN DE LOS 5 CLASIFICADORES (VALIDATION) ===')
+    display(pd.DataFrame(payload['comparison_5models'])[
+        ['display_name', 'run_id', 'completed_epochs', 'best_epoch', 'stop_reason',
+         'accuracy', 'macro_f1', 'TB_recognized', 'TB_recall', 'TB_precision', 'TB_specificity']
+    ])
+
+    print('=== HISTORIAL POR ÉPOCA · Híbrido ConvNeXt + ViT-B/16 ===')
+    display(pd.DataFrame(payload['hybrid_vit_details']['history']))
+
+    print('=== TABLA DE UMBRALES TB · Híbrido ConvNeXt + ViT-B/16 (VALIDATION) ===')
+    display(pd.DataFrame(payload['hybrid_vit_details']['thresholds_grid']))
+
+    print('=== CANDIDATO PRINCIPAL POR MACRO-F1 ===', payload['candidate_by_macro_f1'])
+    display(pd.DataFrame(payload['candidate_thresholds_grid']))
+
+    for fig_name in [
+        'classifier_comparison.png',
+        'hybrid_convnext_vit_training.png',
+        'hybrid_convnext_vit_confusion.png',
+        'hybrid_convnext_vit_roc.png',
+        'TB_roc_precision_recall.png',
+        'hybrid_convnext_vit_thresholds.png',
+    ]:
+        print(fig_name)
+        display(Image(filename=str(OUT_EXPORT / fig_name), width=1000))
+
+    print('=== PAYLOAD JSON PARA ACTUALIZAR INFORME FASE 5 ===')
+    print(json.dumps(payload, indent=2, ensure_ascii=False))
+    print('Carpeta exportada en Drive:', OUT_EXPORT)
+    print('Guarde este notebook ejecutado con Ctrl+S.')
+    ''')
+
+    notebook = dict(
+        nbformat=4,
+        nbformat_minor=5,
+        cells=cells,
+        metadata=dict(
+            kernelspec=dict(name='python3', language='python', display_name='Python 3'),
+            language_info=dict(name='python'),
+            accelerator='GPU',
+            colab=dict(name=NAME, provenance=[]),
+        ),
+    )
+    target = ROOT / 'notebooks' / NAME
+    if target.exists():
+        previous = json.loads(target.read_text(encoding='utf-8'))
+        if any(c.get('outputs') or c.get('execution_count') is not None for c in previous['cells'] if c['cell_type'] == 'code'):
+            raise RuntimeError('Notebook 04c ya ejecutado: conservar outputs; generar otra versión con otro nombre.')
+    target.write_text(json.dumps(notebook, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    print(NAME, len(cells), 'celdas compiladas, sin outputs simulados.')
+
+
+if __name__ == '__main__':
+    main()

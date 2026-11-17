@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/MzeroMiko/VMamba",
+  "revision": "2ed52ead062a51a64521ed3871d52914bf532876",
+  "files": {
+    "vmamba.py": "572207a2b6553ff85d81b602eebda2041623073f01fc0c6d1280c5a2add040f6",
+    "csms6s.py": "b709d303a0b0917d3d1e46acf4b0a5ad01a91ca508d289557b8c87a4432902c5",
+    "LICENSE": "fb8d4c2d5c5bc007e3176259bde6647bbb2a7a017eaab52f4a86e44d86c61076"
+  },
+  "model": "vmamba_tiny_s1l8",
+  "checkpoint_url": "https://github.com/MzeroMiko/VMamba/releases/download/%23v2cls/vssm1_tiny_0230s_ckpt_epoch_264.pth",
+  "license": "MIT",
+  "checkpoint_sha256": "d855b57224a652bc692804932f88dc3a39b9028e64be99f745a7fd6792ca672a"
+}

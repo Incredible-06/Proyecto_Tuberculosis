@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "review_date_lima": "2026-10-21",
+  "source_archive": "results/colab_20261021/drive-download-20261022T000213Z-1-001.zip",
+  "source_archive_sha256": "ae70b5f07003a3d3038c8543c73fe9a8d74063dc7eb896efe0edcefa558ab690",
+  "notebooks": {
+    "00_configuracion_entorno.ipynb": {
+      "code_cells": 9,
+      "executed_in_order": true,
+      "code_matches_current_reference": true,
+      "errors": 0,
+      "sha256": "f52b6f967e3fce9f9bd26ad1b6a7eadb6fe2cec3be5ce9446e58a1a2ac6d4aa4"
+    },
+    "01_exploracion_preprocesamiento.ipynb": {
+      "code_cells": 20,
+      "executed_in_order": true,
+      "code_matches_current_reference": true,
+      "errors": 0,
+      "sha256": "23532ef91d24ce75ad99d16bb52cdda38e534947d8abafca5a9d0ecb5a045314"
+    }
+  },
+  "environment_run": "entorno_20261021T234928814849Z",
+  "environment_run_lima": "2026-10-21T18:49:28.814849-05:00",
+  "data_run": "phase1_20261021T235458631351Z",
+  "data_run_lima": "2026-10-21T18:54:58.631351-05:00",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "cuda_probe": "passed",
+  "complete_image_hashes_in_both_runs": 12278,
+  "internal_overlap_checks_zero": 12,
+  "seven_frozen_csvs_match": [
+    "all_labeled_members.csv",
+    "external_overlap_report.csv",
+    "official_test_unlabeled.csv",
+    "reserved_external.csv",
+    "test.csv",
+    "train.csv",
+    "validation.csv"
+  ],
+  "external_manifest_hashes_match": {
+    "montgomery.csv": "7334825505c16e378915381e52951b4e8322c909121133ec11e28aa3eb8f08eb",
+    "shenzhen.csv": "819b16c7be26d704d738d1a01f2e195972178cf92b31f67c14f00b039f08637a"
+  },
+  "external_summary_matches_local": true,
+  "external_original_images_checked_in_colab": false,
+  "dataloader_check": {
+    "executed": true,
+    "shape": [
+      4,
+      3,
+      512,
+      512
+    ],
+    "device": "cpu"
+  },
+  "figures": {
+    "class_distribution.png": {
+      "matches_displayed_pixels": true,
+      "sha256": "b26e97d8dcd75fc3a0e8c63008679ac45add4cb243e544a2e3ef399280f77776"
+    },
+    "training_samples.png": {
+      "matches_displayed_pixels": true,
+      "sha256": "15fee4e3e1745c29bb4f78656adaf6749d85c2ca4b861544dccb0f5b1e7d65c3"
+    },
+    "training_transformations.png": {
+      "matches_displayed_pixels": true,
+      "sha256": "6ea8828b4332060ca30c8e0a4a23dac0dfec78172c439f8f1bce8c285e3da6c4"
+    }
+  },
+  "training_executed": false,
+  "local_notebook_or_cuda_execution_by_review": false,
+  "scope": "Archivos entregados por el usuario; ejecución Colab registrada, sin observación de una sesión en vivo."
+}

@@ -1,0 +1,133 @@
+{
+  "notebook_format": "4.5",
+  "cells": 42,
+  "code_cells_compiled": 20,
+  "local_execution": true,
+  "executed_cells": [
+    {
+      "index": 2,
+      "status": "passed",
+      "seconds": 0.003,
+      "stdout": "Google Colab: False\n"
+    },
+    {
+      "index": 4,
+      "status": "passed",
+      "seconds": 0.001,
+      "stdout": "Proyecto: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\n"
+    },
+    {
+      "index": 6,
+      "status": "passed",
+      "seconds": 0.329,
+      "stdout": "{\n  \"python\": \"3.14.7\",\n  \"numpy\": \"2.5.4\",\n  \"pillow\": \"12.3.0\",\n  \"platform\": \"Windows-11-10.0.26200-SP0\",\n  \"in_colab\": false\n}\n"
+    },
+    {
+      "index": 8,
+      "status": "passed",
+      "seconds": 0.006,
+      "stdout": "Dataset: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\TBX11K\nEvidencias de esta ejecución: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\reports\\notebook_runs\\phase1_20261021T233343205034Z\n"
+    },
+    {
+      "index": 10,
+      "status": "passed",
+      "seconds": 0.004,
+      "stdout": "Dataset auditado: 12278 {'512x512': 12278} {'RGB': 12278}\nRefinamiento de candidatos: {\n  \"candidate_groups\": 1213,\n  \"images_read\": 4020,\n  \"candidate_pairs\": 13783,\n  \"exact_pairs_already_known\": 216,\n  \"rejected_by_phash\": 13523,\n  \"pairs_with_structural_metrics\": 44,\n  \"suspicious_pairs\": 44,\n  \"method\": {\n    \"candidate_source\": \"equal_dhash64_from_initial_audit\",\n    \"phash_max_distance\": 32,\n    \"suspicious_phash_max_distance\": 20,\n    \"suspicious_ssim_min\": 0.94,\n    \"suspicious_ncc_min\": 0.98,\n    \"review_size\": 128,\n    \"ssim_window\": 7\n  },\n  \"scope\": \"Solo grupos de dHash igual existentes; no busqueda exhaustiva ni identificacion de pacientes.\"\n}\nClases: {'health': 0, 'sick': 1, 'TB': 2}\nConteos congelados: {\n  \"train\": {\n    \"health\": 2660,\n    \"sick\": 2572,\n    \"TB\": 560\n  },\n  \"validation\": {\n    \"health\": 570,\n    \"sick\": 551,\n    \"TB\": 120\n  },\n  \"test\": {\n    \"health\": 570,\n    \"sick\": 551,\n    \"TB\": 120\n  }\n}\n"
+    },
+    {
+      "index": 12,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "Se usan los manifiestos existentes; no se regeneran particiones por defecto.\n"
+    },
+    {
+      "index": 14,
+      "status": "passed",
+      "seconds": 6.566,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"counts\": {\n    \"train\": {\n      \"health\": 2660,\n      \"sick\": 2572,\n      \"TB\": 560\n    },\n    \"validation\": {\n      \"health\": 570,\n      \"sick\": 551,\n      \"TB\": 120\n    },\n    \"test\": {\n      \"health\": 570,\n      \"sick\": 551,\n      \"TB\": 120\n    }\n  },\n  \"overlap_checks\": {\n    \"relative_path:train:validation\": 0,\n    \"relative_path:train:test\": 0,\n    \"relative_path:validation:test\": 0,\n    \"sha256:train:validation\": 0,\n    \"sha256:train:test\": 0,\n    \"sha256:validation:test\": 0,\n    \"rgb_sha256:train:validation\": 0,\n    \"rgb_sha256:train:test\": 0,\n    \"rgb_sha256:validation:test\": 0,\n    \"group_id:train:validation\": 0,\n    \"group_id:train:test\": 0,\n    \"group_id:validation:test\": 0\n  },\n  \"supervised_images\": 8274,\n  \"supervised_groups\": 8251,\n  \"official_test_unlabeled\": 3302,\n  \"reserved_external\": 576,\n  \"hash_verified_samples\": [\n    \"imgs/health/h4570.png\",\n    \"imgs/health/h0111.png\",\n    \"imgs/health/h4517.png\",\n    \"imgs/sick/s1771.png\",\n    \"imgs/sick/s4561.png\",\n    \"imgs/sick/s4259.png\",\n    \"imgs/tb/tb0450.png\",\n    \"imgs/tb/tb0758.png\",\n    \"imgs/tb/tb0851.png\",\n    \"imgs/health/h1159.png\",\n    \"imgs/health/h2723.png\",\n    \"imgs/health/h4076.png\",\n    \"imgs/sick/s1934.png\",\n    \"imgs/sick/s2229.png\",\n    \"imgs/sick/s1745.png\",\n    \"imgs/tb/tb0324.png\",\n    \"imgs/tb/tb0309.png\",\n    \"imgs/tb/tb0285.png\",\n    \"imgs/health/h2682.png\",\n    \"imgs/health/h3100.png\",\n    \"imgs/health/h3468.png\",\n    \"imgs/sick/s4045.png\",\n    \"imgs/sick/s1981.png\",\n    \"imgs/sick/s2253.png\",\n    \"imgs/tb/tb0801.png\",\n    \"imgs/tb/tb0355.png\",\n    \"imgs/tb/tb0042.png\"\n  ],\n  \"all_image_hashes_verified\": 0,\n  \"hash_scope\": \"SHA256 de muestras; tamaños/existencia para todos. No es una reauditoría completa de píxeles.\",\n  \"patient_independence_guaranteed\": false\n}\n"
+    },
+    {
+      "index": 16,
+      "status": "passed",
+      "seconds": 2.868,
+      "stdout": "Train / validation: 5792 1241\nPesos de clase calculados solo en train: {'health': 0.7258145213127136, 'sick': 0.750648021697998, 'TB': 3.4476189613342285}\nNo se carga el test interno para visualizar imágenes o ajustar transformaciones.\n"
+    },
+    {
+      "index": 18,
+      "status": "passed",
+      "seconds": 0.272,
+      "stdout": "Figura guardada: class_distribution.png\nFigura guardada: training_samples.png\n"
+    },
+    {
+      "index": 20,
+      "status": "passed",
+      "seconds": 0.43,
+      "stdout": "Figura guardada: training_transformations.png\n"
+    },
+    {
+      "index": 22,
+      "status": "passed",
+      "seconds": 0.443,
+      "stdout": "Seis muestras verificadas; no se ejecutó entrenamiento.\n"
+    },
+    {
+      "index": 24,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "{'executed': False, 'reason': 'Solo se ejecuta en Google Colab.'}\n"
+    },
+    {
+      "index": 26,
+      "status": "passed",
+      "seconds": 0.015,
+      "stdout": "official_test_unlabeled 3302 filas, sin etiquetas inferidas\nreserved_external 576 filas, sin etiquetas inferidas\nEjemplo de metadatos separados: {'relative_path': 'imgs/tb/tb1199.png', 'image_id': 'tb1199', 'class_name': 'TB', 'label': '2', 'split': 'train', 'group_id': 'g_e2df01c3eda8d755bbc514309dd0fcc53e3c58971f1e369aa13cffb57cfc90fd', 'sha256': '36d2c3a97ab25c570ec857fddcabfae1df9c22da05900de78262e92091b2f07e', 'rgb_sha256': '9cde185f8ef8a1aecb45be42cb829f75fd0ca1c8eb1947a9e87d2718faabec95', 'bytes': '332626', 'width': '512', 'height': '512', 'mode': 'RGB', 'source': 'TBX11K_base', 'official_memberships': 'all_train;all_trainval;TBX11K_train;TBX11K_trainval', 'alias_official_memberships': 'TBX11K_train;TBX11K_trainval;all_train;all_trainval', 'coco_file': 'annotations/json/TBX11K_trainval.json', 'coco_image_id': '800', 'bbox_count': '0', 'annotation_status': 'missing_tb_boxes', 'overlaps_official_test': '0', 'overlaps_reserved_external': '0', 'boxes': [], 'tb_subtypes': [], 'exact_aliases': ['imgs/tb/tb1199.png'], 'box_coordinate_space': 'original_512_image_xywh'}\n"
+    },
+    {
+      "index": 28,
+      "status": "passed",
+      "seconds": 0.027,
+      "stdout": "Comprobación local guardada en: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\reports\\notebook_runs\\phase1_20261021T233343205034Z\n"
+    },
+    {
+      "index": 31,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "FASE 2 | DATOS Y CATEGORÍAS\nImágenes auditadas: 12278 | Tamaño: {'512x512': 12278}\nBase etiquetada: 8400\nSubtipos por imagen TB: {'ObsoletePulmonaryTuberculosis': 139, 'ActiveTuberculosis': 630, 'ActiveTuberculosis + ObsoletePulmonaryTuberculosis': 30, '(empty)': 1}\nClases del clasificador: {'health': 0, 'sick': 1, 'TB': 2}\n30 casos mixtos y 1 TB sin cajas: se conserva la clase TB.\nNo se descartan subtipos: permanecen en los metadatos de lesiones.\nMontgomery/Shenzhen: 400 imágenes combinadas reservadas; no son las fuentes completas.\n"
+    },
+    {
+      "index": 33,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "FASE 2 | PARTICIONES CONGELADAS | seed 20261019\nPartición       Health    Sick      TB    Total\ntrain             2660    2572     560     5792\nvalidation         570     551     120     1241\ntest               570     551     120     1241\nContenidos únicos: 8274 | Grupos: 8251\nrelative_path train/val | train/test | val/test: 0 0 0\nsha256 train/val | train/test | val/test: 0 0 0\nrgb_sha256 train/val | train/test | val/test: 0 0 0\ngroup_id train/val | train/test | val/test: 0 0 0\nIntegridad: passed | Hashes completos: 0\nIndependencia por paciente garantizada: False\n"
+    },
+    {
+      "index": 35,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "Figura guardada: training_samples.png\n"
+    },
+    {
+      "index": 37,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "Salida de clasificación: float32, 3 × 512 × 512\nMedia: [0.485, 0.456, 0.406] | Desviación: [0.229, 0.224, 0.225]\nAumentos solo en train: {'rotation_degrees': 5.0, 'brightness': 0.08, 'contrast': 0.08, 'horizontal_flip': False, 'clahe': False}\nFigura guardada: training_transformations.png\n"
+    },
+    {
+      "index": 39,
+      "status": "passed",
+      "seconds": 0.055,
+      "stdout": "FASE 2 | COMPROBACIÓN FUNCIONAL\nMuestras verificadas: 6 | Train y validación repetibles\nLote PyTorch CPU: {'executed': False, 'reason': 'Solo se ejecuta en Google Colab.'}\nCajas COCO preservadas: 1211\ntb1199: missing_tb_boxes | No usar como negativo del detector\nEspacio de cajas: original_512_image_xywh\nExportación de datos: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\reports\\notebook_runs\\phase1_20261021T233343205034Z\nEntrenamiento ejecutado: False\n"
+    },
+    {
+      "index": 41,
+      "status": "passed",
+      "seconds": 0.002,
+      "stdout": "FASE 2 | FUENTES EXTERNAS OFICIALES\nEstado registrado: prepared_and_reserved\nmontgomery | Imágenes: 138 | Normal: 80 | Anormal compatible con TB: 58 | Lecturas: 138\nshenzhen | Imágenes: 662 | Normal: 326 | Anormal compatible con TB: 336 | Lecturas: 662\nManifiestos externos: hashes coincidentes con la preparación registrada\nExcluidos de train/validation/test de TBX11K: True\nEvaluación independiente habilitada: False\nNo se equiparan sus etiquetas binarias a las tres clases internas.\n"
+    }
+  ],
+  "colab_execution": false,
+  "runtime_results": "reports\\notebook_runs\\phase1_20261021T233343205034Z",
+  "training_executed": false,
+  "torch_imported": false,
+  "notebook": "01_exploracion_preprocesamiento.ipynb"
+}

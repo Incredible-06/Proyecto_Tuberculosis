@@ -1,0 +1,18 @@
+{
+  "source": "C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\results\\report_reference\\Informe_Con_Cambios_Del_Usuario.docx",
+  "source_sha256": "ef997a5a6b959793b1f57856b795bf24bc178e9558c48c28a145405b429754ce",
+  "output_sha256": "1788ef2447e047003c743aa8345e9645ec40a6da028803a1806f1d59f6ece0c9",
+  "user_source_unchanged": true,
+  "original_five_images_preserved": true,
+  "added_bar_chart_sha256": "b26e97d8dcd75fc3a0e8c63008679ac45add4cb243e544a2e3ef399280f77776",
+  "chart_is_original_verified_notebook_output": true,
+  "figures": 6,
+  "visible_dates_removed": true,
+  "cover_change": "Solo se quitó el año visible; el resto de la portada se conservó.",
+  "user_edits_retained": [
+    "Fases de entorno y datos explícitas",
+    "Fuentes externas separadas",
+    "Sin reintroducir referencias o fechas eliminadas",
+    "Límites de la validación externa"
+  ]
+}

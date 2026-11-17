@@ -1,0 +1,9 @@
+# Dependencias para inferencia congelada de Fase 5 (ViT-B/16 + YOLO11n + Grad-CAM/Rollout).
+# En equipos sin GPU NVIDIA, instalar primero torch y torchvision desde:
+#   https://download.pytorch.org/whl/cpu
+torch>=2.6
+torchvision>=0.21
+ultralytics==8.3.228
+numpy>=1.26,<3
+Pillow>=10.4,<14
+PyYAML==6.0.3

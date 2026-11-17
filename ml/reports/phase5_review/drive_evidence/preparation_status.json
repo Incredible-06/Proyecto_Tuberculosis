@@ -1,0 +1,21 @@
+{
+  "status": "validation_preparation_executed",
+  "candidate": "hybrid_cross_attention",
+  "detector_diagnostics_executed": false,
+  "decisions_frozen": false,
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "phase5_complete": false,
+  "pending": [
+    "error_and_box_visual_review",
+    "cost_protocol",
+    "group_uncertainty",
+    "verified_explainability",
+    "final_selection",
+    "threshold_selection",
+    "concordance_selection",
+    "immutable_freeze",
+    "reserved_evaluation",
+    "final_report_and_export"
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "schema": "phase5_frozen_external_evaluation_v1",
+  "evaluated_at_utc": "2026-11-16T05:26:44.433681+00:00",
+  "binary_mapping_note": "Montgomery/Shenzhen solo tienen etiqueta binaria (0=normal, 1=abnormal_tb_consistent). Se reporta alerta congelada p_TB >= 0.30, concordancia combinada y referencia p_abnormal = 1 - p_health.",
+  "overlap_caveat": "TBX11K incluye imágenes de Montgomery/Shenzhen en extra/mc+shenzhen y test oficial; solo clean_vs_train_val_subset descarta solapamiento contra train/validation.",
+  "datasets": {
+    "montgomery": {
+      "all_images_with_overlap_caveat": {
+        "p_TB_frozen_threshold": {
+          "n": 138,
+          "positives": 58,
+          "negatives": 80,
+          "threshold": 0.3,
+          "tp": 43,
+          "fp": 60,
+          "fn": 15,
+          "tn": 20,
+          "accuracy": 0.45652173913043476,
+          "sensitivity": 0.7413793103448276,
+          "specificity": 0.25,
+          "precision": 0.4174757281553398,
+          "roc_auc": 0.5799568965517241,
+          "average_precision": 0.5438457166144925
+        },
+        "p_abnormal_1_minus_health_ref_0_50": {
+          "n": 138,
+          "positives": 58,
+          "negatives": 80,
+          "threshold": 0.5,
+          "tp": 58,
+          "fp": 80,
+          "fn": 0,
+          "tn": 0,
+          "accuracy": 0.42028985507246375,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "precision": 0.42028985507246375,
+          "roc_auc": 0.7234913793103448,
+          "average_precision": 0.6997816011378033
+        },
+        "concordance_review_required": {
+          "n": 138,
+          "tp": 47,
+          "fp": 60,
+          "fn": 11,
+          "tn": 20,
+          "sensitivity": 0.8103448275862069,
+          "specificity": 0.25,
+          "precision": 0.4392523364485981
+        }
+      },
+      "clean_vs_train_val_subset": {
+        "p_TB_frozen_threshold": {
+          "n": 138,
+          "positives": 58,
+          "negatives": 80,
+          "threshold": 0.3,
+          "tp": 43,
+          "fp": 60,
+          "fn": 15,
+          "tn": 20,
+          "accuracy": 0.45652173913043476,
+          "sensitivity": 0.7413793103448276,
+          "specificity": 0.25,
+          "precision": 0.4174757281553398,
+          "roc_auc": 0.5799568965517241,
+          "average_precision": 0.5438457166144925
+        },
+        "p_abnormal_1_minus_health_ref_0_50": {
+          "n": 138,
+          "positives": 58,
+          "negatives": 80,
+          "threshold": 0.5,
+          "tp": 58,
+          "fp": 80,
+          "fn": 0,
+          "tn": 0,
+          "accuracy": 0.42028985507246375,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "precision": 0.42028985507246375,
+          "roc_auc": 0.7234913793103448,
+          "average_precision": 0.6997816011378033
+        },
+        "concordance_review_required": {
+          "n": 138,
+          "tp": 47,
+          "fp": 60,
+          "fn": 11,
+          "tn": 20,
+          "sensitivity": 0.8103448275862069,
+          "specificity": 0.25,
+          "precision": 0.4392523364485981
+        }
+      }
+    },
+    "shenzhen": {
+      "all_images_with_overlap_caveat": {
+        "p_TB_frozen_threshold": {
+          "n": 662,
+          "positives": 336,
+          "negatives": 326,
+          "threshold": 0.3,
+          "tp": 319,
+          "fp": 284,
+          "fn": 17,
+          "tn": 42,
+          "accuracy": 0.5453172205438066,
+          "sensitivity": 0.9494047619047619,
+          "specificity": 0.12883435582822086,
+          "precision": 0.5290215588723052,
+          "roc_auc": 0.6465089103125913,
+          "average_precision": 0.6697058431071816
+        },
+        "p_abnormal_1_minus_health_ref_0_50": {
+          "n": 662,
+          "positives": 336,
+          "negatives": 326,
+          "threshold": 0.5,
+          "tp": 324,
+          "fp": 316,
+          "fn": 12,
+          "tn": 10,
+          "accuracy": 0.5045317220543807,
+          "sensitivity": 0.9642857142857143,
+          "specificity": 0.03067484662576687,
+          "precision": 0.50625,
+          "roc_auc": 0.6251004236050248,
+          "average_precision": 0.6721612586083362
+        },
+        "concordance_review_required": {
+          "n": 662,
+          "tp": 324,
+          "fp": 284,
+          "fn": 12,
+          "tn": 42,
+          "sensitivity": 0.9642857142857143,
+          "specificity": 0.12883435582822086,
+          "precision": 0.5328947368421053
+        }
+      },
+      "clean_vs_train_val_subset": {
+        "p_TB_frozen_threshold": {
+          "n": 662,
+          "positives": 336,
+          "negatives": 326,
+          "threshold": 0.3,
+          "tp": 319,
+          "fp": 284,
+          "fn": 17,
+          "tn": 42,
+          "accuracy": 0.5453172205438066,
+          "sensitivity": 0.9494047619047619,
+          "specificity": 0.12883435582822086,
+          "precision": 0.5290215588723052,
+          "roc_auc": 0.6465089103125913,
+          "average_precision": 0.6697058431071816
+        },
+        "p_abnormal_1_minus_health_ref_0_50": {
+          "n": 662,
+          "positives": 336,
+          "negatives": 326,
+          "threshold": 0.5,
+          "tp": 324,
+          "fp": 316,
+          "fn": 12,
+          "tn": 10,
+          "accuracy": 0.5045317220543807,
+          "sensitivity": 0.9642857142857143,
+          "specificity": 0.03067484662576687,
+          "precision": 0.50625,
+          "roc_auc": 0.6251004236050248,
+          "average_precision": 0.6721612586083362
+        },
+        "concordance_review_required": {
+          "n": 662,
+          "tp": 324,
+          "fp": 284,
+          "fn": 12,
+          "tn": 42,
+          "sensitivity": 0.9642857142857143,
+          "specificity": 0.12883435582822086,
+          "precision": 0.5328947368421053
+        }
+      }
+    }
+  }
+}

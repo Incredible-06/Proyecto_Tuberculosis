@@ -1,0 +1,78 @@
+{
+  "schema": "phase5_frozen_contract_v1",
+  "decisions_frozen": true,
+  "frozen_at_utc": "2026-11-16T05:08:51.337042+00:00",
+  "selection_rationale": "ViT-B/16 empatado en Macro-F1 (0.9644 vs 0.9645 de Híbrido C+VM; IC 95 % del delta cruza cero), mayor sensibilidad TB en argmax (91.67 %) y combinada con YOLO11n (96.67 % a p_TB>=0.30), mayor enriquecimiento Grad-CAM en cajas GT (1.42x) y portabilidad PyTorch estándar sin kernel oflex.",
+  "classifier": {
+    "architecture": "vit_b_16",
+    "display_name": "ViT-B/16",
+    "run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+    "protocol_config": "configs/vit_controlled.json",
+    "checkpoint_sha256": "2873fbcff636ad151b41451022b0fc34eeb197866cf5acd200e3f764f4f3d50d",
+    "best_epoch": 11,
+    "requires_oflex": false,
+    "operational_tb_threshold": 0.3,
+    "preserve_argmax_and_probabilities": true
+  },
+  "detector": {
+    "architecture": "yolo11n",
+    "run_id": "detector_yolo11n_20261103T032033865005Z",
+    "weights_sha256": "3e28e82987c8c2c84ca503f639354c7da1130472165adae8642737c7b5263dd0",
+    "confidence_threshold": 0.25,
+    "inference_options": {
+      "imgsz": 512,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "half": false,
+      "rect": false,
+      "augment": false
+    },
+    "nms_iou": 0.7,
+    "max_det": 300,
+    "match_iou_for_localization_metrics": 0.5
+  },
+  "concordance_rule": {
+    "name": "additive_4state_no_suppression_v1",
+    "suppress_classifier_without_boxes": false,
+    "multiply_scores": false,
+    "states": [
+      "both_alert",
+      "classifier_only_review",
+      "detector_only_review",
+      "neither_alert"
+    ]
+  },
+  "preprocessing": {
+    "data_config": "configs/data.json",
+    "data_config_sha256": "133b8e16e71e5c42dcdfad938eaea476dd9fa35fc83c2cd7e99dbd2040c15e3d",
+    "image_size": 512,
+    "color_mode": "RGB",
+    "letterbox": true,
+    "normalization": "imagenet_rgb"
+  },
+  "validation_evidence": {
+    "diagnostic_run_id": "phase5_diag_20261116T042213Z_ac3bcb",
+    "validation_manifest_sha256": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e",
+    "test_manifest_sha256": "081a7b1ccfcbde3c36879100f966281a981dbb99a7f01d786b3fccf91fd9e63d"
+  },
+  "code_hashes": {
+    "src/tbxdata/__init__.py": "d0b719809436ac815df0f1ed5d85b70e16b8bff35b979647091ba2ec8c212589",
+    "src/tbxdata/colab.py": "7f610a963f434edaf93ccae0a23a65654a2b752c7f868c140d39ea1548a86900",
+    "src/tbxdata/common.py": "647339fd8c9388d18cf0aaea55c7682a68babceefe1dec6011e08d904da89410",
+    "src/tbxdata/dataset.py": "75645e57c23f6da6adae8bb634baa7e7caa196d3b43528f4f1fcd9cd1aacb512",
+    "src/tbxdata/environment.py": "cc3a5ed3d3c532e6f9ab36d67a0a58ddcc6ada45a3bf097d85d88ff059c1ae23",
+    "src/tbxdata/prepare.py": "270904f3f2fa107c140bc57a992287cc9a2d4cf58c10732e95948cf47266d3fd",
+    "src/tbxdata/validate.py": "191547cba341d736eb806d86a19f21fdeb15f72195a927359787ca2cf7383f83",
+    "src/tbxdata/visualize.py": "1203a9e171183f8e12dbb24eeba9cd1a5abca50a470536a7c79373701632d2ab",
+    "src/tbxtrain/__init__.py": "6f47dd11fcf3e5b31d784eb0fa2f4c75df2fdc5a9c637b69f84881fe1da583b4",
+    "src/tbxtrain/architectures.py": "9a82fc92b45a7003fb4615ced9b02a633fc83a90838bc52b34e317cb743c284f",
+    "src/tbxtrain/metrics.py": "93a056ef3c0dc93ca3113bdb5ea56e6fb90de4489fc5fc64bc35e8cbc71973c4",
+    "src/tbxtrain/phase5.py": "e1cb2ba30040018c57599a93dd1004177fffa5d88c05224cdd0502e660f92e21",
+    "src/tbxtrain/phase5_diagnostics.py": "621a1a374d32c9d345855a628ebe75e8b33065016c5815fa3d854c7c9c1501df",
+    "src/tbxtrain/phase5_evaluation.py": "fdb180c18ba1e02e9e07990f5b8b87296565f89f2ecdaad5e3bf67f9876fc879",
+    "src/tbxtrain/protocol.py": "7abb46b9bd71e6be544a06fafea9fbbbfefde3dfe35cf9deb068cac59bd6ad3c",
+    "src/tbxtrain/train.py": "99a08c824ad6125dbdf6f0541d82d82ca0fc712aeb3d0f1b2fe1bba709fd55ac",
+    "src/tbxtrain/vit_experiment.py": "86d966aabd2621346bfb6a1c5bd62c069bc5931d95e6d68d4f5d441290e078c8"
+  }
+}

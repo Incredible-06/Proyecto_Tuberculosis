@@ -1,0 +1,75 @@
+{
+  "source": "Capturas aportadas por el usuario el 21 de octubre de 2026",
+  "originals": {
+    "dataset_stage": {
+      "file": "results/colab_20261021/screenshots/dataset_stage.png",
+      "sha256": "0b015ae6ed84bbca1ce40d2dd6a8bf50f912c2f9733143cbd27487ba5c0327c0"
+    },
+    "environment_details": {
+      "file": "results/colab_20261021/screenshots/environment_details.png",
+      "sha256": "eba49b4361e9906fa8fafc5c341a86ba8dba1d2975a76eb7aa57fcd19965c140"
+    },
+    "transfer_integrity": {
+      "file": "results/colab_20261021/screenshots/transfer_integrity.png",
+      "sha256": "bbca5e1e9b8beedc5181178fcab143fc566d0f58e34cc8760a8ce49773d28753"
+    },
+    "F1-E1": {
+      "file": "results/colab_20261021/screenshots/F1-E1.png",
+      "sha256": "bd358f53c32fcf535676c14c1385f64ac1f14276ee10c45c02ea0791f5c065e1"
+    },
+    "dataset_audit": {
+      "file": "results/colab_20261021/screenshots/dataset_audit.png",
+      "sha256": "d9e37e7480a5fd847664b48d4063e2677029cbad91ced7e982660c259976ef50"
+    },
+    "class_weights": {
+      "file": "results/colab_20261021/screenshots/class_weights.png",
+      "sha256": "2f3f9fab30b2983f222ec3df19451445fc653abda4a292212c8c8b313aaec727"
+    },
+    "figures_code": {
+      "file": "results/colab_20261021/screenshots/figures_code.png",
+      "sha256": "39c4b9a3a8e15ca2a9abc2bf6c935d013a5da752a430794a63bd060908e47f3d"
+    },
+    "distribution": {
+      "file": "results/colab_20261021/screenshots/distribution.png",
+      "sha256": "3d6be171c095ad15ceb951f2c9ad4f2c13521e8c74d7a0b87421a161b2456e59"
+    },
+    "training_samples": {
+      "file": "results/colab_20261021/screenshots/training_samples.png",
+      "sha256": "0bc7798139fc4a804c4715eb1c8a82e3e6e304fd030fecada5700cf393773e6f"
+    },
+    "F2-E2": {
+      "file": "results/colab_20261021/screenshots/F2-E2.png",
+      "sha256": "5699a8cd0d4349c0dab5724ee19a00a8f77532562a64c63a2275e4d776a4fbe0"
+    }
+  },
+  "crops": {
+    "F1-E1": {
+      "box": [
+        73,
+        400,
+        730,
+        569
+      ],
+      "changes": "Solo recorte rectangular; sin alterar texto o resultados."
+    },
+    "transfer_integrity": {
+      "box": [
+        32,
+        287,
+        635,
+        336
+      ],
+      "changes": "Solo recorte rectangular; sin alterar texto o resultados."
+    },
+    "F2-E2": {
+      "box": [
+        48,
+        444,
+        720,
+        716
+      ],
+      "changes": "Solo recorte rectangular; sin alterar texto o resultados."
+    }
+  },
+  "plot_source": "reports/colab_20261021/figures; verificado contra los PNG mostrados por el notebook entregado."
+}

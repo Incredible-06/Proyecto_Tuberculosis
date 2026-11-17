@@ -1,0 +1,15 @@
+{
+  "source": "Salida de Colab pegada por el usuario",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA L4",
+  "kernel_package": "selective_scan-0.0.2",
+  "wheel_sha256": "ec0cc059322791b29557518ee8c718c249deedaddfd4c8c667685b400683c176",
+  "build_successful": true,
+  "import_successful": true,
+  "active_backend": "oflex",
+  "vmamba_imagenet_weights_sha256": "d855b57224a652bc692804932f88dc3a39b9028e64be99f745a7fd6792ca672a",
+  "full_suite_training_verified": false,
+  "phase3_complete": false,
+  "next_cell": "F3-C2"
+}

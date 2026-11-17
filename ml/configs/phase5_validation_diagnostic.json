@@ -1,0 +1,85 @@
+{
+  "schema": "phase5_validation_diagnostic_v1",
+  "scope": "validation_only",
+  "selection_criterion": "validation_macro_f1",
+  "decisions_frozen": false,
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "classifiers": [
+    {
+      "architecture": "convnext_tiny",
+      "display_name": "ConvNeXt-Tiny",
+      "short_name": "ConvNeXt",
+      "run_id": "phase3_convnext_tiny_20261103T023002Z_4a7e2a",
+      "protocol_config": "configs/phase3_suite.json",
+      "sha256": "33869c4791569f95c262df2987c9a688649aa4f65c92e51e79f8340c1d0c3616",
+      "pointer": false,
+      "requires_oflex": false
+    },
+    {
+      "architecture": "vmamba_tiny",
+      "display_name": "VMamba-Tiny",
+      "short_name": "VMamba",
+      "run_id": "phase3_vmamba_tiny_20261103T025536Z_4784e4",
+      "protocol_config": "configs/phase3_suite.json",
+      "sha256": "56efbe2bc8230f7fb52cc199d89489f98134bb2364cc06fa20f353d471860b53",
+      "pointer": false,
+      "requires_oflex": true
+    },
+    {
+      "architecture": "hybrid_cross_attention",
+      "display_name": "Híbrido (ConvNeXt+VMamba)",
+      "short_name": "Híbrido C+VM",
+      "run_id": "phase3_hybrid_cross_attention_20261103T032205Z_71d127",
+      "protocol_config": "configs/phase3_suite.json",
+      "sha256": "1db1965bd191456cec05f9d91a45539e7dcc22bfbbab0adcc474f351b7473830",
+      "pointer": true,
+      "requires_oflex": true
+    },
+    {
+      "architecture": "vit_b_16",
+      "display_name": "ViT-B/16",
+      "short_name": "ViT-B/16",
+      "run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+      "protocol_config": "configs/vit_controlled.json",
+      "sha256": "2873fbcff636ad151b41451022b0fc34eeb197866cf5acd200e3f764f4f3d50d",
+      "pointer": true,
+      "requires_oflex": false
+    },
+    {
+      "architecture": "hybrid_convnext_vit",
+      "display_name": "Híbrido (ConvNeXt+ViT-B/16)",
+      "short_name": "Híbrido C+ViT",
+      "run_id": "phase3_hybrid_convnext_vit_20261116T031647Z_376827",
+      "protocol_config": "configs/hybrid_convnext_vit_controlled.json",
+      "sha256": "bd88a5ee557b6ad1b6b1da59cbada3a47946d69defbe897b25721bbd357ecf1d",
+      "pointer": true,
+      "requires_oflex": false
+    }
+  ],
+  "detector": {
+    "run_id": "detector_yolo11n_20261103T032033865005Z",
+    "architecture": "yolo11n",
+    "observed_sha256": "3e28e82987c8c2c84ca503f639354c7da1130472165adae8642737c7b5263dd0",
+    "thresholds": [0.001, 0.01, 0.05, 0.1, 0.2, 0.25, 0.3, 0.5, 0.7, 0.9],
+    "inference_options": {
+      "imgsz": 512,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "half": false,
+      "rect": false,
+      "augment": false
+    }
+  },
+  "exploratory_grid": {
+    "classifier_thresholds": [0.1, 0.3, 0.5],
+    "detector_thresholds": [0.1, 0.25, 0.5],
+    "default_pair": [0.5, 0.25]
+  },
+  "bootstrap": {
+    "seed": 20261019,
+    "n_resamples": 2000,
+    "ci_level": 0.95
+  }
+}

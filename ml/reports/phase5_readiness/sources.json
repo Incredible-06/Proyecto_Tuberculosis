@@ -1,0 +1,147 @@
+{
+  "review_date_local": "2026-11-02",
+  "timezone": "America/Lima",
+  "files": [
+    {
+      "scope": "closure",
+      "title": "transfer_integrity.json",
+      "id": "1uiGlm4qZlEo5OsxmaPtsvr2euLIkgQfi",
+      "url": "https://drive.google.com/file/d/1uiGlm4qZlEo5OsxmaPtsvr2euLIkgQfi/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:45:23.068Z"
+    },
+    {
+      "scope": "closure",
+      "title": "closure.json",
+      "id": "1Dqi-uwHxdoX1zWqvdVOiFeA6REuwTvpy",
+      "url": "https://drive.google.com/file/d/1Dqi-uwHxdoX1zWqvdVOiFeA6REuwTvpy/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:45:23.058Z"
+    },
+    {
+      "scope": "closure",
+      "title": "comparison.csv",
+      "id": "199WrFHjAbwGOhKmRQ7LcqncSQQRGTvZo",
+      "url": "https://drive.google.com/file/d/199WrFHjAbwGOhKmRQ7LcqncSQQRGTvZo/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:45:23.051Z"
+    },
+    {
+      "scope": "detector",
+      "title": "detector_summary.json",
+      "id": "1XanMH8ATgTmuCFA_Z_Bcm6QxGlJ83a-k",
+      "url": "https://drive.google.com/file/d/1XanMH8ATgTmuCFA_Z_Bcm6QxGlJ83a-k/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:58:35.833Z"
+    },
+    {
+      "scope": "detector",
+      "title": "conversion.json",
+      "id": "12Sah2UdCw1njBPu_Y3hHMW5Nos4Y4Lpj",
+      "url": "https://drive.google.com/file/d/12Sah2UdCw1njBPu_Y3hHMW5Nos4Y4Lpj/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:20:43.360Z"
+    },
+    {
+      "scope": "convnext",
+      "title": "summary.json",
+      "id": "1xbnT_sGpPhGFRVmGT0pWgaOL7MnbTKRD",
+      "url": "https://drive.google.com/file/d/1xbnT_sGpPhGFRVmGT0pWgaOL7MnbTKRD/view?usp=drivesdk",
+      "modified_time": "2026-11-03T02:55:35.345Z"
+    },
+    {
+      "scope": "convnext",
+      "title": "validation_predictions.csv",
+      "id": "1nNFmyGghEWlTa8PipaNK69FSSOimDIxz",
+      "url": "https://drive.google.com/file/d/1nNFmyGghEWlTa8PipaNK69FSSOimDIxz/view?usp=drivesdk",
+      "modified_time": "2026-11-03T02:55:34.265Z"
+    },
+    {
+      "scope": "convnext",
+      "title": "history.csv",
+      "id": "1qRPTd6tWtyG-MQ0rWHpyoSXWgw6iQCqE",
+      "url": "https://drive.google.com/file/d/1qRPTd6tWtyG-MQ0rWHpyoSXWgw6iQCqE/view?usp=drivesdk",
+      "modified_time": "2026-11-03T02:55:26.699Z"
+    },
+    {
+      "scope": "vmamba",
+      "title": "summary.json",
+      "id": "1KBd8nke6pEuPuP44qtLjWliLchDnNVxm",
+      "url": "https://drive.google.com/file/d/1KBd8nke6pEuPuP44qtLjWliLchDnNVxm/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:22:04.756Z"
+    },
+    {
+      "scope": "vmamba",
+      "title": "validation_predictions.csv",
+      "id": "11R7HTlZ8ILw5sgCGzT5OCLCs1Bc8Nd7F",
+      "url": "https://drive.google.com/file/d/11R7HTlZ8ILw5sgCGzT5OCLCs1Bc8Nd7F/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:22:03.716Z"
+    },
+    {
+      "scope": "vmamba",
+      "title": "history.csv",
+      "id": "1-Cepiqgk1Qd3ZErAIDCFJu0QCsnfCSYz",
+      "url": "https://drive.google.com/file/d/1-Cepiqgk1Qd3ZErAIDCFJu0QCsnfCSYz/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:21:53.804Z"
+    },
+    {
+      "scope": "hybrid",
+      "title": "summary.json",
+      "id": "1R9x5ShOkM2Z40_LyOSeHJ7M5Cqc5GGC9",
+      "url": "https://drive.google.com/file/d/1R9x5ShOkM2Z40_LyOSeHJ7M5Cqc5GGC9/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:44:51.290Z"
+    },
+    {
+      "scope": "hybrid",
+      "title": "validation_predictions.csv",
+      "id": "1alsIqAkbgGGAkdeedeNnNgle_O9n3iBB",
+      "url": "https://drive.google.com/file/d/1alsIqAkbgGGAkdeedeNnNgle_O9n3iBB/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:44:49.530Z"
+    },
+    {
+      "scope": "hybrid",
+      "title": "history.csv",
+      "id": "1GYgA2cba5stXkaAHtBSCr_oZ5P0wxEBz",
+      "url": "https://drive.google.com/file/d/1GYgA2cba5stXkaAHtBSCr_oZ5P0wxEBz/view?usp=drivesdk",
+      "modified_time": "2026-11-03T03:44:28.891Z"
+    },
+    {
+      "scope": "detector_training",
+      "id": "1UaTHFGC2baFGtBSIkwvUD09VTuYJJw8h",
+      "title": "results.csv",
+      "mime_type": "text/csv",
+      "size": "4245",
+      "url": "https://drive.google.com/file/d/1UaTHFGC2baFGtBSIkwvUD09VTuYJJw8h/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/1UaTHFGC2baFGtBSIkwvUD09VTuYJJw8h/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": "2026-11-03T03:28:08.675Z",
+      "modified_time": "2026-11-03T03:58:15.651Z",
+      "parent_ids": null,
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": true,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified",
+      "can_download": true,
+      "can_list_children": false
+    },
+    {
+      "scope": "detector_training",
+      "id": "17rXoX1QurG9kiZQw73nebmwx5jx1g5Fy",
+      "title": "args.yaml",
+      "mime_type": "application/octet-stream",
+      "size": "1768",
+      "url": "https://drive.google.com/file/d/17rXoX1QurG9kiZQw73nebmwx5jx1g5Fy/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/17rXoX1QurG9kiZQw73nebmwx5jx1g5Fy/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": "2026-11-03T03:26:41.777Z",
+      "modified_time": "2026-11-03T03:26:41.777Z",
+      "parent_ids": null,
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": true,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified",
+      "can_download": true,
+      "can_list_children": false
+    }
+  ],
+  "reference_metrics_code": "https://github.com/ultralytics/ultralytics/blob/v8.3.228/ultralytics/utils/metrics.py"
+}

@@ -1,0 +1,50 @@
+{
+  "created": [
+    {
+      "id": "1XMzT95x1p9WSBNex3yyXuQiySZODGyvD",
+      "title": "06_fase5_seleccion_explicabilidad_evaluacion.ipynb",
+      "mime_type": "application/vnd.google.colaboratory",
+      "size": "27959",
+      "url": "https://colab.research.google.com/drive/1XMzT95x1p9WSBNex3yyXuQiySZODGyvD",
+      "file_or_folder": "file",
+      "created_time": "2026-11-03T04:27:52.592Z",
+      "modified_time": "2026-11-03T04:27:52.592Z",
+      "parent_ids": null,
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": true,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified",
+      "can_download": true,
+      "can_list_children": false
+    },
+    {
+      "id": "1SYDKnsch6TG7BBst3QF1vPd55iktHUgO",
+      "title": "tbx11k_fase5_preparacion_colab.zip",
+      "mime_type": "application/zip",
+      "size": "4154878",
+      "url": "https://drive.google.com/file/d/1SYDKnsch6TG7BBst3QF1vPd55iktHUgO/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/1SYDKnsch6TG7BBst3QF1vPd55iktHUgO/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": "2026-11-03T04:27:45.835Z",
+      "modified_time": "2026-11-03T04:27:45.835Z",
+      "parent_ids": null,
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": true,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified",
+      "can_download": true,
+      "can_list_children": false
+    }
+  ],
+  "prior_notebook_metadata_unchanged": true,
+  "status": "uploaded_and_metadata_verified",
+  "user_authorized_upload": true,
+  "colab_executed": false,
+  "test_evaluated": false,
+  "decisions_frozen": false,
+  "local_validation": "reports/phase5_preparation/validation.json"
+}

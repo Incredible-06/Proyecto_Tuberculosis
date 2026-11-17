@@ -1,0 +1,137 @@
+{
+  "n_images": 1241,
+  "n_groups": 1237,
+  "n_resamples": 2000,
+  "seed": 20261019,
+  "ci_level": 0.95,
+  "classifier_argmax": {
+    "accuracy": {
+      "point": 0.9717969379532635,
+      "ci_low": 0.9621882542236525,
+      "ci_high": 0.9806295399515739,
+      "std": 0.004626785804357678,
+      "valid_resamples": 2000
+    },
+    "macro_f1": {
+      "point": 0.9551419659898959,
+      "ci_low": 0.9377899766689519,
+      "ci_high": 0.9702437767575388,
+      "std": 0.008269129735036143,
+      "valid_resamples": 2000
+    },
+    "balanced_accuracy": {
+      "point": 0.9463349465618068,
+      "ci_low": 0.924593396551905,
+      "ci_high": 0.9654096900662958,
+      "std": 0.01068455490978398,
+      "valid_resamples": 2000
+    },
+    "tb_recall": {
+      "point": 0.875,
+      "ci_low": 0.8083333333333333,
+      "ci_high": 0.9333333333333333,
+      "std": 0.031131472736027507,
+      "valid_resamples": 2000
+    },
+    "tb_specificity": {
+      "point": 0.9946476360392507,
+      "ci_low": 0.9901697944593387,
+      "ci_high": 0.9982190560997328,
+      "std": 0.002233930158940203,
+      "valid_resamples": 2000
+    },
+    "tb_precision": {
+      "point": 0.9459459459459459,
+      "ci_low": 0.9016393442622951,
+      "ci_high": 0.9819819819819819,
+      "std": 0.021270041742927553,
+      "valid_resamples": 2000
+    },
+    "tb_roc_auc": {
+      "point": 0.9940677966101694,
+      "ci_low": 0.988454618571057,
+      "ci_high": 0.9981011269006156,
+      "std": 0.0025031281802075727,
+      "valid_resamples": 2000
+    },
+    "tb_average_precision": {
+      "point": 0.9682936142188067,
+      "ci_low": 0.9470304125100183,
+      "ci_high": 0.986352308866402,
+      "std": 0.010085448911758704,
+      "valid_resamples": 2000
+    }
+  },
+  "operational_and_concordance": {
+    "cls_thresh_sensitivity": {
+      "point": 0.9,
+      "ci_low": 0.8416666666666667,
+      "ci_high": 0.95,
+      "std": 0.028068507716368235,
+      "valid_resamples": 2000
+    },
+    "cls_thresh_specificity": {
+      "point": 0.9910793933987511,
+      "ci_low": 0.9848484848484849,
+      "ci_high": 0.9964285714285714,
+      "std": 0.00289478454374221,
+      "valid_resamples": 2000
+    },
+    "cls_thresh_precision": {
+      "point": 0.9152542372881356,
+      "ci_low": 0.864,
+      "ci_high": 0.9636363636363636,
+      "std": 0.0250967326647054,
+      "valid_resamples": 2000
+    },
+    "combined_tb_sensitivity": {
+      "point": 0.9583333333333334,
+      "ci_low": 0.9247916666666671,
+      "ci_high": 0.9916666666666667,
+      "std": 0.018197810373047872,
+      "valid_resamples": 2000
+    },
+    "combined_non_tb_review_rate": {
+      "point": 0.009812667261373774,
+      "ci_low": 0.004456327985739751,
+      "ci_high": 0.016057091882247992,
+      "std": 0.0030213733893120825,
+      "valid_resamples": 2000
+    },
+    "detector_lesion_recall": {
+      "point": 0.483695652173913,
+      "ci_low": 0.4095744680851064,
+      "ci_high": 0.5586592178770949,
+      "std": 0.038483373416128196,
+      "valid_resamples": 2000
+    },
+    "detector_box_precision": {
+      "point": 0.4635416666666667,
+      "ci_low": 0.41360388396196174,
+      "ci_high": 0.5214732172306881,
+      "std": 0.02782470592606335,
+      "valid_resamples": 2000
+    },
+    "detector_image_any_box": {
+      "point": 0.7333333333333333,
+      "ci_low": 0.65,
+      "ci_high": 0.8083333333333333,
+      "std": 0.03990590113421545,
+      "valid_resamples": 2000
+    },
+    "detector_image_localized": {
+      "point": 0.6083333333333333,
+      "ci_low": 0.5166666666666667,
+      "ci_high": 0.6916666666666667,
+      "std": 0.04486316422779431,
+      "valid_resamples": 2000
+    },
+    "detector_neg_alert_rate": {
+      "point": 0.001784121320249777,
+      "ci_low": 0.0,
+      "ci_high": 0.004464285714285714,
+      "std": 0.0012481661609458964,
+      "valid_resamples": 2000
+    }
+  }
+}

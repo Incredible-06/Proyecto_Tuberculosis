@@ -1,0 +1,9 @@
+{
+  "status": "phase5_part1_validation_diagnostic_completed",
+  "run_id": "phase5_diag_20261116T042213Z_ac3bcb",
+  "decisions_frozen": false,
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "phase5_complete": false,
+  "ready_for_freeze_decision": true
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "phase5_diag_20261116T042213Z_ac3bcb",
+  "package_sha256": "33b77fcd1d01e5a610df50995bbcccbcb02487a22a18e90b968f4d56d6a647ac",
+  "scope": "validation_only",
+  "decisions_frozen": false,
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "phase5_complete": false
+}

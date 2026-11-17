@@ -1,0 +1,127 @@
+{
+  "schema": "hybrid_convnext_vit_controlled_v1",
+  "run_id": "phase3_hybrid_convnext_vit_20261116T031647Z_376827",
+  "architecture": "hybrid_convnext_vit",
+  "status": "completed_controlled",
+  "training_executed": true,
+  "protocol": {
+    "protocol_id": "phase3_controlled_hybrid_vit_v1",
+    "architecture": "hybrid_convnext_vit",
+    "display_name": "Híbrido ConvNeXt + ViT-B/16",
+    "weights": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1 + ViT_B_16_Weights.IMAGENET1K_V1",
+    "seed": 20261019,
+    "epochs": 12,
+    "warmup_epochs": 2,
+    "batch_size": 2,
+    "accumulation_steps": 16,
+    "num_workers": 2,
+    "head_lr": 0.0003,
+    "backbone_lr": 5e-06,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "patience": 4,
+    "min_delta": 0.001,
+    "precision": "fp32",
+    "selection_metric": "validation_macro_f1",
+    "initialization": "ImageNet oficial por rama (ConvNeXt-Tiny + ViT-B/16 con interpolación bicúbica 224->512); fusión CrossFusion inicializada desde cero",
+    "scope": "Extensión de comparación controlada con una seed; mismos datos, splits, aumentos e hiperparámetros que phase3_controlled_v1"
+  },
+  "completed_epochs": 6,
+  "optimizer_updates": 1086,
+  "best_epoch": 2,
+  "stop_reason": "early_stopping",
+  "validation": {
+    "n": 1241,
+    "accuracy": 0.9782433521353747,
+    "macro_f1": 0.9629935436748385,
+    "balanced_accuracy": 0.951154466626336,
+    "macro_roc_auc_ovr": 0.998259631738709,
+    "confusion_matrix": [
+      [
+        566,
+        3,
+        1
+      ],
+      [
+        6,
+        543,
+        2
+      ],
+      [
+        4,
+        11,
+        105
+      ]
+    ],
+    "classes": [
+      "health",
+      "sick",
+      "TB"
+    ],
+    "per_class": {
+      "health": {
+        "support": 570,
+        "precision": 0.9826388888888888,
+        "recall": 0.9929824561403509,
+        "f1": 0.987783595113438,
+        "specificity": 0.9850968703427719,
+        "roc_auc": 0.9992339268439354,
+        "average_precision": 0.9992246161203554
+      },
+      "sick": {
+        "support": 551,
+        "precision": 0.9748653500897666,
+        "recall": 0.985480943738657,
+        "f1": 0.98014440433213,
+        "specificity": 0.9797101449275363,
+        "roc_auc": 0.9980799074147136,
+        "average_precision": 0.9977165146135035
+      },
+      "TB": {
+        "support": 120,
+        "precision": 0.9722222222222222,
+        "recall": 0.875,
+        "f1": 0.9210526315789473,
+        "specificity": 0.9973238180196253,
+        "roc_auc": 0.9974650609574784,
+        "average_precision": 0.9805539372192251
+      }
+    },
+    "decision_rule": "argmax softmax; sin ajuste de umbral",
+    "evaluation_unit": "imagen; sin intervalos de confianza ni garantía de independencia por paciente",
+    "loss": 0.15887529597772523,
+    "unweighted_loss": 0.07865504839735044,
+    "split": "validation"
+  },
+  "provenance": {
+    "configs/data.json": "133b8e16e71e5c42dcdfad938eaea476dd9fa35fc83c2cd7e99dbd2040c15e3d",
+    "manifests/manifest_metadata.json": "5096512725c2c9154c6d50d819a9a3260d92b3c08574b4b07c5970786bad50c3",
+    "manifests/train.csv": "60a912df315f7cfbfba24fcf8429cc1323cf164d143ba0505c180621d8ed2993",
+    "manifests/validation.csv": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e",
+    "manifests/test.csv": "081a7b1ccfcbde3c36879100f966281a981dbb99a7f01d786b3fccf91fd9e63d",
+    "src/tbxtrain/__init__.py": "6f47dd11fcf3e5b31d784eb0fa2f4c75df2fdc5a9c637b69f84881fe1da583b4",
+    "src/tbxtrain/architectures.py": "9a82fc92b45a7003fb4615ced9b02a633fc83a90838bc52b34e317cb743c284f",
+    "src/tbxtrain/detection.py": "fde4c615b677abc1aae56d971a3d92bcb9bb7c6229526a591913fbc64c3169ea",
+    "src/tbxtrain/hybrid_vit_experiment.py": "ba9ec8a2528185db6cf555a8ff4bf88335a3dc0d2f76100ab7cf9b4698a14105",
+    "src/tbxtrain/metrics.py": "93a056ef3c0dc93ca3113bdb5ea56e6fb90de4489fc5fc64bc35e8cbc71973c4",
+    "src/tbxtrain/phase5.py": "e1cb2ba30040018c57599a93dd1004177fffa5d88c05224cdd0502e660f92e21",
+    "src/tbxtrain/phase5_figures.py": "432e60c80e9348cf69d395b01a636452b781545fe80eacc06648f5e6052c8943",
+    "src/tbxtrain/protocol.py": "7abb46b9bd71e6be544a06fafea9fbbbfefde3dfe35cf9deb068cac59bd6ad3c",
+    "src/tbxtrain/review.py": "ec2540beedec1798c43a192e87dabf43cce7f271ea5031a8ddbb6bf348863285",
+    "src/tbxtrain/suite.py": "14e22fbd12b762250a3102c616ad74943f5a7b68576a3076ef4cacefe2f97a54",
+    "src/tbxtrain/train.py": "99a08c824ad6125dbdf6f0541d82d82ca0fc712aeb3d0f1b2fe1bba709fd55ac",
+    "src/tbxtrain/vit_experiment.py": "86d966aabd2621346bfb6a1c5bd62c069bc5931d95e6d68d4f5d441290e078c8",
+    "src/tbxdata/__init__.py": "d0b719809436ac815df0f1ed5d85b70e16b8bff35b979647091ba2ec8c212589",
+    "src/tbxdata/colab.py": "7f610a963f434edaf93ccae0a23a65654a2b752c7f868c140d39ea1548a86900",
+    "src/tbxdata/common.py": "647339fd8c9388d18cf0aaea55c7682a68babceefe1dec6011e08d904da89410",
+    "src/tbxdata/dataset.py": "75645e57c23f6da6adae8bb634baa7e7caa196d3b43528f4f1fcd9cd1aacb512",
+    "src/tbxdata/environment.py": "cc3a5ed3d3c532e6f9ab36d67a0a58ddcc6ada45a3bf097d85d88ff059c1ae23",
+    "src/tbxdata/prepare.py": "270904f3f2fa107c140bc57a992287cc9a2d4cf58c10732e95948cf47266d3fd",
+    "src/tbxdata/validate.py": "191547cba341d736eb806d86a19f21fdeb15f72195a927359787ca2cf7383f83",
+    "src/tbxdata/visualize.py": "1203a9e171183f8e12dbb24eeba9cd1a5abca50a470536a7c79373701632d2ab"
+  },
+  "checkpoint_sha256": "bd88a5ee557b6ad1b6b1da59cbada3a47946d69defbe897b25721bbd357ecf1d",
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "phase3_complete": false
+}

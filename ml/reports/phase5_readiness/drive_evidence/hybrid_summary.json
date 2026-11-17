@@ -1,0 +1,129 @@
+{
+  "schema": "suite_v1",
+  "run_id": "phase3_hybrid_cross_attention_20261103T032205Z_71d127",
+  "architecture": "hybrid_cross_attention",
+  "status": "completed_controlled",
+  "training_executed": true,
+  "protocol": {
+    "protocol_id": "phase3_controlled_v1",
+    "architectures": [
+      "convnext_tiny",
+      "vmamba_tiny",
+      "hybrid_cross_attention"
+    ],
+    "seed": 20261019,
+    "epochs": 12,
+    "warmup_epochs": 2,
+    "batch_size": 2,
+    "accumulation_steps": 16,
+    "num_workers": 2,
+    "head_lr": 0.0003,
+    "backbone_lr": 5e-06,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "patience": 4,
+    "min_delta": 0.001,
+    "precision": "fp32",
+    "selection_metric": "validation_macro_f1",
+    "initialization": "ImageNet oficial por rama; híbrido no hereda pesos adaptados a TBX11K",
+    "scope": "Comparación controlada con una seed; no evaluación final ni prueba de superioridad estadística"
+  },
+  "completed_epochs": 7,
+  "optimizer_updates": 1267,
+  "best_epoch": 3,
+  "stop_reason": "early_stopping",
+  "validation": {
+    "n": 1241,
+    "accuracy": 0.9782433521353747,
+    "macro_f1": 0.9644699190877536,
+    "balanced_accuracy": 0.9554597701149424,
+    "macro_roc_auc_ovr": 0.9979184364355014,
+    "confusion_matrix": [
+      [
+        568,
+        2,
+        0
+      ],
+      [
+        8,
+        539,
+        4
+      ],
+      [
+        6,
+        7,
+        107
+      ]
+    ],
+    "classes": [
+      "health",
+      "sick",
+      "TB"
+    ],
+    "per_class": {
+      "health": {
+        "support": 570,
+        "precision": 0.9759450171821306,
+        "recall": 0.9964912280701754,
+        "f1": 0.9861111111111112,
+        "specificity": 0.9791356184798807,
+        "roc_auc": 0.9997228540800587,
+        "average_precision": 0.999689172386675
+      },
+      "sick": {
+        "support": 551,
+        "precision": 0.9835766423357665,
+        "recall": 0.9782214156079855,
+        "f1": 0.9808917197452229,
+        "specificity": 0.9869565217391304,
+        "roc_auc": 0.9982771772008732,
+        "average_precision": 0.997808357431418
+      },
+      "TB": {
+        "support": 120,
+        "precision": 0.963963963963964,
+        "recall": 0.8916666666666667,
+        "f1": 0.9264069264069265,
+        "specificity": 0.9964317573595004,
+        "roc_auc": 0.9957552780255725,
+        "average_precision": 0.974506449396239
+      }
+    },
+    "decision_rule": "argmax softmax; sin ajuste de umbral",
+    "evaluation_unit": "imagen; sin intervalos de confianza ni garantía de independencia por paciente",
+    "loss": 0.20650916686868023,
+    "unweighted_loss": 0.08761918450538454,
+    "split": "validation"
+  },
+  "provenance": {
+    "configs/data.json": "133b8e16e71e5c42dcdfad938eaea476dd9fa35fc83c2cd7e99dbd2040c15e3d",
+    "manifests/manifest_metadata.json": "5096512725c2c9154c6d50d819a9a3260d92b3c08574b4b07c5970786bad50c3",
+    "manifests/train.csv": "60a912df315f7cfbfba24fcf8429cc1323cf164d143ba0505c180621d8ed2993",
+    "manifests/validation.csv": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e",
+    "manifests/test.csv": "081a7b1ccfcbde3c36879100f966281a981dbb99a7f01d786b3fccf91fd9e63d",
+    "src/tbxtrain/__init__.py": "6f47dd11fcf3e5b31d784eb0fa2f4c75df2fdc5a9c637b69f84881fe1da583b4",
+    "src/tbxtrain/architectures.py": "9a82fc92b45a7003fb4615ced9b02a633fc83a90838bc52b34e317cb743c284f",
+    "src/tbxtrain/detection.py": "fde4c615b677abc1aae56d971a3d92bcb9bb7c6229526a591913fbc64c3169ea",
+    "src/tbxtrain/metrics.py": "93a056ef3c0dc93ca3113bdb5ea56e6fb90de4489fc5fc64bc35e8cbc71973c4",
+    "src/tbxtrain/protocol.py": "7abb46b9bd71e6be544a06fafea9fbbbfefde3dfe35cf9deb068cac59bd6ad3c",
+    "src/tbxtrain/review.py": "ec2540beedec1798c43a192e87dabf43cce7f271ea5031a8ddbb6bf348863285",
+    "src/tbxtrain/suite.py": "14e22fbd12b762250a3102c616ad74943f5a7b68576a3076ef4cacefe2f97a54",
+    "src/tbxtrain/train.py": "99a08c824ad6125dbdf6f0541d82d82ca0fc712aeb3d0f1b2fe1bba709fd55ac",
+    "src/tbxdata/__init__.py": "d0b719809436ac815df0f1ed5d85b70e16b8bff35b979647091ba2ec8c212589",
+    "src/tbxdata/colab.py": "7f610a963f434edaf93ccae0a23a65654a2b752c7f868c140d39ea1548a86900",
+    "src/tbxdata/common.py": "647339fd8c9388d18cf0aaea55c7682a68babceefe1dec6011e08d904da89410",
+    "src/tbxdata/dataset.py": "75645e57c23f6da6adae8bb634baa7e7caa196d3b43528f4f1fcd9cd1aacb512",
+    "src/tbxdata/environment.py": "cc3a5ed3d3c532e6f9ab36d67a0a58ddcc6ada45a3bf097d85d88ff059c1ae23",
+    "src/tbxdata/prepare.py": "270904f3f2fa107c140bc57a992287cc9a2d4cf58c10732e95948cf47266d3fd",
+    "src/tbxdata/validate.py": "191547cba341d736eb806d86a19f21fdeb15f72195a927359787ca2cf7383f83",
+    "src/tbxdata/visualize.py": "1203a9e171183f8e12dbb24eeba9cd1a5abca50a470536a7c79373701632d2ab",
+    "vendor/vmamba/LICENSE": "fb8d4c2d5c5bc007e3176259bde6647bbb2a7a017eaab52f4a86e44d86c61076",
+    "vendor/vmamba/csms6s.py": "b709d303a0b0917d3d1e46acf4b0a5ad01a91ca508d289557b8c87a4432902c5",
+    "vendor/vmamba/source.json": "203a7c9af2f4e622f73d85acaeb691d1bd45323878614173b8b191328cc61192",
+    "vendor/vmamba/vmamba.py": "572207a2b6553ff85d81b602eebda2041623073f01fc0c6d1280c5a2add040f6"
+  },
+  "checkpoint_sha256": "1db1965bd191456cec05f9d91a45539e7dcc22bfbbab0adcc474f351b7473830",
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "phase3_complete": false
+}

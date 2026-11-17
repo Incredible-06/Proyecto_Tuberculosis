@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "frozen_manifests": "passed",
+  "official_vmamba_checkpoint_strict_load": true,
+  "official_vmamba_checkpoint_sha256": "d855b57224a652bc692804932f88dc3a39b9028e64be99f745a7fd6792ca672a",
+  "three_real_models_forward_backward_cpu_32px": true,
+  "hybrid_both_branches_have_gradients": true,
+  "notebook_cells_compiled": true,
+  "cuda_kernel_compiled_in_colab": false,
+  "full_colab_suite_trained": false,
+  "phase3_complete": false,
+  "phase4_detector_trained": false,
+  "scope": "Fixtures CPU y validación estática. No son entrenamientos TBX11K ni prueba GPU/512px."
+}

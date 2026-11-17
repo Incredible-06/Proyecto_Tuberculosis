@@ -1,0 +1,256 @@
+{
+  "scope": "existing_training_and_validation_artifacts",
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "new_training_executed": false,
+  "figures": [
+    {
+      "name": "convnext_tiny_training",
+      "title": "Historial de ConvNeXt-Tiny",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny"
+      ],
+      "note": "Epochs reales; línea en mejor época. Train se mide durante updates con aumentos; validation sin aumentos. No se rellenan épocas tras early stopping.",
+      "files": [
+        "convnext_tiny_training.png",
+        "convnext_tiny_training.pdf",
+        "convnext_tiny_training.svg",
+        "convnext_tiny_training.csv"
+      ]
+    },
+    {
+      "name": "convnext_tiny_confusion",
+      "title": "Matriz de confusión de ConvNeXt-Tiny",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny"
+      ],
+      "note": "Filas reales, columnas predichas; argmax original; normalización por fila.",
+      "files": [
+        "convnext_tiny_confusion.png",
+        "convnext_tiny_confusion.pdf",
+        "convnext_tiny_confusion.svg",
+        "convnext_tiny_confusion.csv"
+      ]
+    },
+    {
+      "name": "convnext_tiny_roc",
+      "title": "ROC multiclase de ConvNeXt-Tiny",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny"
+      ],
+      "note": "One-vs-rest, scores originales; no corresponde a test.",
+      "files": [
+        "convnext_tiny_roc.png",
+        "convnext_tiny_roc.pdf",
+        "convnext_tiny_roc.svg",
+        "convnext_tiny_roc.csv"
+      ]
+    },
+    {
+      "name": "vmamba_tiny_training",
+      "title": "Historial de VMamba-Tiny",
+      "split": "validation",
+      "architectures": [
+        "vmamba_tiny"
+      ],
+      "note": "Epochs reales; línea en mejor época. Train se mide durante updates con aumentos; validation sin aumentos. No se rellenan épocas tras early stopping.",
+      "files": [
+        "vmamba_tiny_training.png",
+        "vmamba_tiny_training.pdf",
+        "vmamba_tiny_training.svg",
+        "vmamba_tiny_training.csv"
+      ]
+    },
+    {
+      "name": "vmamba_tiny_confusion",
+      "title": "Matriz de confusión de VMamba-Tiny",
+      "split": "validation",
+      "architectures": [
+        "vmamba_tiny"
+      ],
+      "note": "Filas reales, columnas predichas; argmax original; normalización por fila.",
+      "files": [
+        "vmamba_tiny_confusion.png",
+        "vmamba_tiny_confusion.pdf",
+        "vmamba_tiny_confusion.svg",
+        "vmamba_tiny_confusion.csv"
+      ]
+    },
+    {
+      "name": "vmamba_tiny_roc",
+      "title": "ROC multiclase de VMamba-Tiny",
+      "split": "validation",
+      "architectures": [
+        "vmamba_tiny"
+      ],
+      "note": "One-vs-rest, scores originales; no corresponde a test.",
+      "files": [
+        "vmamba_tiny_roc.png",
+        "vmamba_tiny_roc.pdf",
+        "vmamba_tiny_roc.svg",
+        "vmamba_tiny_roc.csv"
+      ]
+    },
+    {
+      "name": "hybrid_cross_attention_training",
+      "title": "Historial de Híbrido de atención cruzada",
+      "split": "validation",
+      "architectures": [
+        "hybrid_cross_attention"
+      ],
+      "note": "Epochs reales; línea en mejor época. Train se mide durante updates con aumentos; validation sin aumentos. No se rellenan épocas tras early stopping.",
+      "files": [
+        "hybrid_cross_attention_training.png",
+        "hybrid_cross_attention_training.pdf",
+        "hybrid_cross_attention_training.svg",
+        "hybrid_cross_attention_training.csv"
+      ]
+    },
+    {
+      "name": "hybrid_cross_attention_confusion",
+      "title": "Matriz de confusión de Híbrido de atención cruzada",
+      "split": "validation",
+      "architectures": [
+        "hybrid_cross_attention"
+      ],
+      "note": "Filas reales, columnas predichas; argmax original; normalización por fila.",
+      "files": [
+        "hybrid_cross_attention_confusion.png",
+        "hybrid_cross_attention_confusion.pdf",
+        "hybrid_cross_attention_confusion.svg",
+        "hybrid_cross_attention_confusion.csv"
+      ]
+    },
+    {
+      "name": "hybrid_cross_attention_roc",
+      "title": "ROC multiclase de Híbrido de atención cruzada",
+      "split": "validation",
+      "architectures": [
+        "hybrid_cross_attention"
+      ],
+      "note": "One-vs-rest, scores originales; no corresponde a test.",
+      "files": [
+        "hybrid_cross_attention_roc.png",
+        "hybrid_cross_attention_roc.pdf",
+        "hybrid_cross_attention_roc.svg",
+        "hybrid_cross_attention_roc.csv"
+      ]
+    },
+    {
+      "name": "classifier_comparison",
+      "title": "Comparación de los tres clasificadores",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny",
+        "vmamba_tiny",
+        "hybrid_cross_attention"
+      ],
+      "note": "Una seed y validation reutilizada para selección; sin intervalos ni prueba de superioridad estadística.",
+      "files": [
+        "classifier_comparison.png",
+        "classifier_comparison.pdf",
+        "classifier_comparison.svg",
+        "classifier_comparison.csv"
+      ]
+    },
+    {
+      "name": "TB_roc_precision_recall",
+      "title": "ROC y precisión–recall TB comparativas",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny",
+        "vmamba_tiny",
+        "hybrid_cross_attention"
+      ],
+      "note": "AP es average precision, no área trapezoidal. Scores TB originales; ningún umbral queda seleccionado.",
+      "files": [
+        "TB_roc_precision_recall.png",
+        "TB_roc_precision_recall.pdf",
+        "TB_roc_precision_recall.svg",
+        "TB_roc_precision_recall.csv"
+      ]
+    },
+    {
+      "name": "detector_training",
+      "title": "Entrenamiento del detector YOLO11n",
+      "split": "validation",
+      "architectures": [
+        "yolo11n"
+      ],
+      "note": "La línea marca el mejor mAP50–95 del historial. El resultado final de best.pt procede del resumen y puede diferir del CSV de entrenamiento. P/R no son sensibilidad por imagen.",
+      "files": [
+        "detector_training.png",
+        "detector_training.pdf",
+        "detector_training.svg",
+        "detector_training.csv"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "/content/tbx11k_phase5/phase5_validation_20261103T042954Z_bc33c6/manifests/validation.csv": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/summary.json": "aae592ca4615cac408d70c0b044c86c6a5f7b958468b695a70527d02bac6a661",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/history.csv": "d23e92321c9eb7d1f949f44bf4e6952437a39cbcaf4510d88264cc656b408a29",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/validation_predictions.csv": "7a2540f7bf93a21e1e5c2c291e6d81d1d3ce77738a5dbd4e51a6227e504f40fd",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/summary.json": "61a33baaa4b3be52e4628b0c589b77c0e4e055cc6e10f3c142c9a78a6904f3ee",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/history.csv": "c912ab446aab6e0b30d9d4f19e6ff2327e16ea2976ed9ab8f73ba343ed116cd0",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/validation_predictions.csv": "9981825c9d67443811d64d00a288e6130ee1062495c9fab3b399f02156521209",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/summary.json": "b635d2c70d6b9bd8a85302b2915aadb0b39992e1ccd2cd4e5e453327bb9fc077",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/history.csv": "aa2e223d3daa1f86e84180120906537cf40aa334fea6006d20f9150363bf01ab",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/validation_predictions.csv": "b6ebd0738a0d10713d25f13a84bbf5761adc15567816c6a0dc2440bc77c34056",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/detector_yolo11n_20261103T032033865005Z/training/results.csv": "b1ac73eb4f27b3dd936ee47a03e9bf1020c826cd8d771e896272fe41a0c70182",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/detector_yolo11n_20261103T032033865005Z/detector_summary.json": "63b48c8209395643f1c09132facbca656539533070e7d247c13897e195871e42"
+  },
+  "output_sha256": {
+    "TB_roc_precision_recall.csv": "6f70e2ea670bf11d0013500a19433e089779054b5a7998ab9d04e8b127c3e310",
+    "TB_roc_precision_recall.pdf": "0d27abfc660b739d041a35d5ccb93a88ad99dd36235f929bcff38e1ddc7a7ac4",
+    "TB_roc_precision_recall.png": "ebdca378fddfce886dbf98ec6ab658a6128b783f1d4f5d5f5d8a974add48d2e3",
+    "TB_roc_precision_recall.svg": "19d88f39f597958b0d40f9d1f35dfef74afa51a2e9b797a69541a429afdd652b",
+    "classifier_comparison.csv": "2c4b98baf4cfde9d947302054c3fd1617f3dd2c7f2df711fab41e1fe257f0af8",
+    "classifier_comparison.pdf": "e29ce66e21684f9b48930175ea555720dfe68b9a735c1aee09d5a65b76640927",
+    "classifier_comparison.png": "6d48275608b425313f11eecf75eec4a0c57c78b8c5c64c7594c673b07060b062",
+    "classifier_comparison.svg": "9055d91bebcacce8acdf5993159d30c9d7d2cf1ec63b66b49901ef286f76873a",
+    "convnext_tiny_confusion.csv": "14592963c98d1f7e071e9f4595187f6228e4a0301b95f4ff4b0dcde89c285494",
+    "convnext_tiny_confusion.pdf": "be31a0466621b4c3f60925018d4e7965fe0cd7a688f71e4e4808ef090d8458b6",
+    "convnext_tiny_confusion.png": "1b57d97b80924c8f2bf3092a1230e8284703ff86c85c22485ebf0b7a1d3a7533",
+    "convnext_tiny_confusion.svg": "e0eebe11dd2a3192749198b11ab651a90ec2ae5af04e85d2d3217d184a7100e3",
+    "convnext_tiny_roc.csv": "c1818169774a5464349189b601536506486247b8bca37963a3582c48f29593b9",
+    "convnext_tiny_roc.pdf": "4b7dee00992dc39e2af9c73b85161d35a88c795fafc4fb1a8ed0df0d36a2f3c4",
+    "convnext_tiny_roc.png": "8a7c5771de467c0e5f5bc7091fe6e4f06263e2e2c4fca6a30d4f4163ab42fd69",
+    "convnext_tiny_roc.svg": "9bdcf221e87f32ed80202435389e61f8a323f9caecd0da0b41c47eee39d3f597",
+    "convnext_tiny_training.csv": "d23e92321c9eb7d1f949f44bf4e6952437a39cbcaf4510d88264cc656b408a29",
+    "convnext_tiny_training.pdf": "f6d5085bf966d573138317faf3f8b6fd2deece1668a5f2d094201bfaf1df93bb",
+    "convnext_tiny_training.png": "40b0764064f0d813a0b2c720aad10e29a0aadfaf89b93f2aac4f1e438031336e",
+    "convnext_tiny_training.svg": "69a5c6c3f9677ccaca984e005162ec41dabc740d843989520faef09e0ee9a352",
+    "detector_training.csv": "b1ac73eb4f27b3dd936ee47a03e9bf1020c826cd8d771e896272fe41a0c70182",
+    "detector_training.pdf": "7be482c11bc6f49e3db787d369199ec2591c275025170071206e52f587c3c7ed",
+    "detector_training.png": "77bb606f53ac4b3c7872bc79fea3ffe221d66cdcb740101430f7700dc3d275ee",
+    "detector_training.svg": "6da623309e3a51dbba4b3a8b6e29e426fb805249567e1639aaa491eec596bd4d",
+    "hybrid_cross_attention_confusion.csv": "6019410a7e1c38ec17d917f84d4ef6797881e140b9bc453656d320645bf5686c",
+    "hybrid_cross_attention_confusion.pdf": "dc64668f5c5b19ff6e70b0ddc127f1925bf0c86dae99e4faa81bcc8135ab8f73",
+    "hybrid_cross_attention_confusion.png": "818f73934c48691bff3f4088b415f767d3634c092314a2634b2b27010db2a31a",
+    "hybrid_cross_attention_confusion.svg": "ce6a5bb1e3ccb9ace8321efb9414a58b966069d0421565290cd220c82ae8453e",
+    "hybrid_cross_attention_roc.csv": "8c21c901acff2e3b4eec16d6f34f92836901c087ab637993ad0e9b0d73c6ae11",
+    "hybrid_cross_attention_roc.pdf": "da1f055384c34d1500ef9cb2a2510208b6c973b307b155af3ebf959a1e829764",
+    "hybrid_cross_attention_roc.png": "ff5df6b2c85ff30fa54b1683cd7324ab3526694bf09a74f4a5c0134a3915041e",
+    "hybrid_cross_attention_roc.svg": "fe7aa65246a94e24a0857f80934399daded0e3d02a88e2125cf12b4b54d70478",
+    "hybrid_cross_attention_training.csv": "aa2e223d3daa1f86e84180120906537cf40aa334fea6006d20f9150363bf01ab",
+    "hybrid_cross_attention_training.pdf": "7cb23ed91cb70f435b0335c6b148173b8858ce01a9fd32b74315ba618dff2cc5",
+    "hybrid_cross_attention_training.png": "20d6686f306dfe89a01a60256580cf36f5aba5dccb310dd6126c35ffc2d31387",
+    "hybrid_cross_attention_training.svg": "cc2fcc31c2d5967883ed7d9758a394caab878719e78362f522ea0f3b4eefe252",
+    "vmamba_tiny_confusion.csv": "43b12acc091cd66229d71695f3bdf0ce80d230eca15f471433681ed63349128f",
+    "vmamba_tiny_confusion.pdf": "36084d6d93a26eba691e356c425fe705c964cda4ee7101ecc449404badbe67c7",
+    "vmamba_tiny_confusion.png": "f82364f1c987c3a57a62ac50d61d1d3a8445dc239d8b9dfcaa58edac14542a99",
+    "vmamba_tiny_confusion.svg": "c0e86544029c2e432e94eb80b8bf724f529ec5b8469c89ec9bd5c9cf012f1425",
+    "vmamba_tiny_roc.csv": "c284ddf3db2ff39d1050c0529bb178cd612016ebbfc600df1a4b6ae8f9ffd7d1",
+    "vmamba_tiny_roc.pdf": "a90cf348dbfabd7076f5be75495bdb6105614798ef2b460f4dc226ac1138d737",
+    "vmamba_tiny_roc.png": "307f3ce7f8e37b1089e784e8aa6be188d37f5550ea6c516ad90974e231f795d7",
+    "vmamba_tiny_roc.svg": "9aaecedd66aac9d1c9489fb3917101e4e0090e2c5a7160d1b9e3fd9dc08e25ae",
+    "vmamba_tiny_training.csv": "c912ab446aab6e0b30d9d4f19e6ff2327e16ea2976ed9ab8f73ba343ed116cd0",
+    "vmamba_tiny_training.pdf": "a0ab199bc8bd6ca2e009bca9383a35fc03b235ec716cbf4effac524d20441c27",
+    "vmamba_tiny_training.png": "d1b02f1e63913fabd129a68edda979fff6615df28b6d41c584941ead86498541",
+    "vmamba_tiny_training.svg": "a1d2509f9ed2e18582dd8bd888245a8868fe64e4e271342f7aaff7476a11c68e"
+  }
+}

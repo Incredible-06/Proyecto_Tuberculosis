@@ -1,0 +1,10 @@
+{
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "seconds": 15.342,
+  "python": "3.14.7",
+  "training_executed": false,
+  "torch_imported": false
+}

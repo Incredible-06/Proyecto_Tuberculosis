@@ -1,0 +1,88 @@
+{
+  "classifiers": [
+    {
+      "architecture": "convnext_tiny",
+      "display_name": "ConvNeXt-Tiny",
+      "run_id": "phase3_convnext_tiny_20261103T023002Z_4a7e2a",
+      "best_epoch": 11,
+      "accuracy": 0.9709911361804996,
+      "macro_f1": 0.942715557119158,
+      "tb_recall": 0.7833333333333333,
+      "tb_precision": 0.9690721649484536,
+      "tb_specificity": 0.9973238180196253,
+      "tb_roc_auc": 0.9957850133809099,
+      "tb_ap": 0.9738730105812046,
+      "checkpoint_sha256": "33869c4791569f95c262df2987c9a688649aa4f65c92e51e79f8340c1d0c3616"
+    },
+    {
+      "architecture": "vmamba_tiny",
+      "display_name": "VMamba-Tiny",
+      "run_id": "phase3_vmamba_tiny_20261103T025536Z_4784e4",
+      "best_epoch": 11,
+      "accuracy": 0.9685737308622079,
+      "macro_f1": 0.949672039326329,
+      "tb_recall": 0.8416666666666667,
+      "tb_precision": 0.9619047619047619,
+      "tb_specificity": 0.9964317573595004,
+      "tb_roc_auc": 0.9934359203092478,
+      "tb_ap": 0.958695159378909,
+      "checkpoint_sha256": "56efbe2bc8230f7fb52cc199d89489f98134bb2364cc06fa20f353d471860b53"
+    },
+    {
+      "architecture": "hybrid_cross_attention",
+      "display_name": "Híbrido (ConvNeXt+VMamba)",
+      "run_id": "phase3_hybrid_cross_attention_20261103T032205Z_71d127",
+      "best_epoch": 3,
+      "accuracy": 0.9782433521353747,
+      "macro_f1": 0.9644699190877536,
+      "tb_recall": 0.8916666666666667,
+      "tb_precision": 0.963963963963964,
+      "tb_specificity": 0.9964317573595004,
+      "tb_roc_auc": 0.9957552780255725,
+      "tb_ap": 0.974506449396239,
+      "checkpoint_sha256": "1db1965bd191456cec05f9d91a45539e7dcc22bfbbab0adcc474f351b7473830"
+    },
+    {
+      "architecture": "vit_b_16",
+      "display_name": "ViT-B/16",
+      "run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+      "best_epoch": 11,
+      "accuracy": 0.9774375503626108,
+      "macro_f1": 0.9644352282077575,
+      "tb_recall": 0.9166666666666666,
+      "tb_precision": 0.9401709401709402,
+      "tb_specificity": 0.9937555753791257,
+      "tb_roc_auc": 0.9969223907225692,
+      "tb_ap": 0.9784350072275361,
+      "checkpoint_sha256": "2873fbcff636ad151b41451022b0fc34eeb197866cf5acd200e3f764f4f3d50d"
+    },
+    {
+      "architecture": "hybrid_convnext_vit",
+      "display_name": "Híbrido (ConvNeXt+ViT-B/16)",
+      "run_id": "phase3_hybrid_convnext_vit_20261116T031647Z_376827",
+      "best_epoch": 2,
+      "accuracy": 0.9782433521353747,
+      "macro_f1": 0.9629935436748385,
+      "tb_recall": 0.875,
+      "tb_precision": 0.9722222222222222,
+      "tb_specificity": 0.9973238180196253,
+      "tb_roc_auc": 0.9974650609574784,
+      "tb_ap": 0.9805539372192251,
+      "checkpoint_sha256": "bd88a5ee557b6ad1b6b1da59cbada3a47946d69defbe897b25721bbd357ecf1d"
+    }
+  ],
+  "detector": {
+    "run_id": "detector_yolo11n_20261103T032033865005Z",
+    "sha256": "3e28e82987c8c2c84ca503f639354c7da1130472165adae8642737c7b5263dd0",
+    "summary": {
+      "status": "trained_validation_available",
+      "map50_95": 0.21577616090176216,
+      "map50": 0.48423225059138064,
+      "validation_only": true,
+      "test_evaluated": false,
+      "phase5_complete": false
+    }
+  },
+  "test_evaluated": false,
+  "external_evaluated": false
+}

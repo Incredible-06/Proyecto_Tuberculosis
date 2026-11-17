@@ -1,0 +1,154 @@
+{
+  "gpu": "NVIDIA L4",
+  "classifiers": {
+    "convnext_tiny": {
+      "total_params": 27822435,
+      "protocol_trainable_params": 15474435,
+      "checkpoint_mb": 106.19428157806396,
+      "batches": {
+        "batch_1": {
+          "batch_size": 1,
+          "mean_batch_ms": 8.72836470998891,
+          "mean_per_image_ms": 8.72836470998891,
+          "p50_batch_ms": 8.681936500011034,
+          "p95_batch_ms": 9.049252199872626,
+          "throughput_img_s": 114.56899811434101,
+          "peak_vram_mb": 186.01806640625
+        },
+        "batch_8": {
+          "batch_size": 8,
+          "mean_batch_ms": 76.90967689001354,
+          "mean_per_image_ms": 9.613709611251693,
+          "p50_batch_ms": 76.78325450001466,
+          "p95_batch_ms": 78.4161022498779,
+          "throughput_img_s": 104.01812000121369,
+          "peak_vram_mb": 627.01806640625
+        }
+      }
+    },
+    "vmamba_tiny": {
+      "total_params": 29482371,
+      "protocol_trainable_params": 15108099,
+      "checkpoint_mb": 112.55588245391846,
+      "batches": {
+        "batch_1": {
+          "batch_size": 1,
+          "mean_batch_ms": 22.818140599997605,
+          "mean_per_image_ms": 22.818140599997605,
+          "p50_batch_ms": 22.741345499980525,
+          "p95_batch_ms": 23.61214970017045,
+          "throughput_img_s": 43.82478035918952,
+          "peak_vram_mb": 249.57080078125
+        },
+        "batch_8": {
+          "batch_size": 8,
+          "mean_batch_ms": 112.64880378999806,
+          "mean_per_image_ms": 14.081100473749757,
+          "p50_batch_ms": 112.6182709999739,
+          "p95_batch_ms": 113.30740385006948,
+          "throughput_img_s": 71.0171766662853,
+          "peak_vram_mb": 1086.94580078125
+        }
+      }
+    },
+    "hybrid_cross_attention": {
+      "total_params": 58220771,
+      "protocol_trainable_params": 31498499,
+      "checkpoint_mb": 222.2396001815796,
+      "batches": {
+        "batch_1": {
+          "batch_size": 1,
+          "mean_batch_ms": 29.994194410005548,
+          "mean_per_image_ms": 29.994194410005548,
+          "p50_batch_ms": 30.024026499972933,
+          "p95_batch_ms": 30.70412055003544,
+          "throughput_img_s": 33.33978523745306,
+          "peak_vram_mb": 359.36328125
+        },
+        "batch_8": {
+          "batch_size": 8,
+          "mean_batch_ms": 190.69080559999523,
+          "mean_per_image_ms": 23.836350699999404,
+          "p50_batch_ms": 190.5497349999905,
+          "p95_batch_ms": 192.439276649975,
+          "throughput_img_s": 41.95273062499559,
+          "peak_vram_mb": 1201.98828125
+        }
+      }
+    },
+    "vit_b_16": {
+      "total_params": 86436867,
+      "protocol_trainable_params": 14179587,
+      "checkpoint_mb": 329.7845849990845,
+      "batches": {
+        "batch_1": {
+          "batch_size": 1,
+          "mean_batch_ms": 31.258028499999,
+          "mean_per_image_ms": 31.258028499999,
+          "p50_batch_ms": 31.13703150006586,
+          "p95_batch_ms": 32.4853023001765,
+          "throughput_img_s": 31.991780927579356,
+          "peak_vram_mb": 388.64453125
+        },
+        "batch_8": {
+          "batch_size": 8,
+          "mean_batch_ms": 239.85571713999664,
+          "mean_per_image_ms": 29.98196464249958,
+          "p50_batch_ms": 239.86956750002264,
+          "p95_batch_ms": 240.90349509979205,
+          "throughput_img_s": 33.353384673881415,
+          "peak_vram_mb": 682.9111328125
+        }
+      }
+    },
+    "hybrid_convnext_vit": {
+      "total_params": 115176803,
+      "protocol_trainable_params": 30571523,
+      "checkpoint_mb": 439.47489643096924,
+      "batches": {
+        "batch_1": {
+          "batch_size": 1,
+          "mean_batch_ms": 40.72434647000364,
+          "mean_per_image_ms": 40.72434647000364,
+          "p50_batch_ms": 40.569865000065874,
+          "p95_batch_ms": 41.793147450130164,
+          "throughput_img_s": 24.555335731085844,
+          "peak_vram_mb": 519.24853515625
+        },
+        "batch_8": {
+          "batch_size": 8,
+          "mean_batch_ms": 320.4770397899961,
+          "mean_per_image_ms": 40.059629973749516,
+          "p50_batch_ms": 319.7944454999515,
+          "p95_batch_ms": 324.3237316498835,
+          "throughput_img_s": 24.962786742046426,
+          "peak_vram_mb": 960.24853515625
+        }
+      }
+    }
+  },
+  "detector": {
+    "total_params": 2590035,
+    "checkpoint_mb": 5.198572158813477,
+    "batches": {
+      "batch_1": {
+        "batch_size": 1,
+        "mean_batch_ms": 19.407800825013055,
+        "mean_per_image_ms": 19.407800825013055,
+        "p50_batch_ms": 19.312704499952815,
+        "p95_batch_ms": 20.001622250015316,
+        "throughput_img_s": 51.525673053650955,
+        "peak_vram_mb": 41.94189453125
+      },
+      "batch_8": {
+        "batch_size": 8,
+        "mean_batch_ms": 84.29188587498402,
+        "mean_per_image_ms": 10.536485734373002,
+        "p50_batch_ms": 84.2605849999245,
+        "p95_batch_ms": 85.08343199982846,
+        "throughput_img_s": 94.90830483808435,
+        "peak_vram_mb": 146.2783203125
+      }
+    }
+  }
+}

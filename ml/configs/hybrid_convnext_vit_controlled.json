@@ -1,0 +1,22 @@
+{
+  "protocol_id": "phase3_controlled_hybrid_vit_v1",
+  "architecture": "hybrid_convnext_vit",
+  "display_name": "Híbrido ConvNeXt + ViT-B/16",
+  "weights": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1 + ViT_B_16_Weights.IMAGENET1K_V1",
+  "seed": 20261019,
+  "epochs": 12,
+  "warmup_epochs": 2,
+  "batch_size": 2,
+  "accumulation_steps": 16,
+  "num_workers": 2,
+  "head_lr": 0.0003,
+  "backbone_lr": 0.000005,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "patience": 4,
+  "min_delta": 0.001,
+  "precision": "fp32",
+  "selection_metric": "validation_macro_f1",
+  "initialization": "ImageNet oficial por rama (ConvNeXt-Tiny + ViT-B/16 con interpolación bicúbica 224->512); fusión CrossFusion inicializada desde cero",
+  "scope": "Extensión de comparación controlada con una seed; mismos datos, splits, aumentos e hiperparámetros que phase3_controlled_v1"
+}

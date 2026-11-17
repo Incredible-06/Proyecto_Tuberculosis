@@ -1,0 +1,2018 @@
+[
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/tb/tb0378.png",
+    "class_name": "TB",
+    "p_health": 2.4605060389149003e-07,
+    "p_sick": 0.2744063436985016,
+    "p_TB": 0.7255933284759521,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.2705034598530168,
+    "class_contrast_l1": 0.1759437471628189,
+    "head_randomization_pearson": 0.26489371171385706,
+    "head_randomization_l1": 0.10567911714315414,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.027330275624990463,
+    "gt_area_fraction": 0.063751220703125,
+    "gt_enrichment": 0.4287019969744794,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 150.6310272216797,
+        "gradient_norm": 0.8716124892234802,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.15233737230300903,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/tb/tb0435.png",
+    "class_name": "TB",
+    "p_health": 1.0599065625171988e-08,
+    "p_sick": 0.008015651255846024,
+    "p_TB": 0.9919844269752502,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.18989871508598602,
+    "class_contrast_l1": 0.14839975535869598,
+    "head_randomization_pearson": -0.0063453890762269404,
+    "head_randomization_l1": 0.15133148431777954,
+    "pointing_game_hit": true,
+    "gt_energy_ratio": 0.6460289359092712,
+    "gt_area_fraction": 0.3843269348144531,
+    "gt_enrichment": 1.6809358839789974,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 177.49871826171875,
+        "gradient_norm": 0.7557055354118347,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.09209340810775757,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/tb/tb0563.png",
+    "class_name": "TB",
+    "p_health": 7.97587290435331e-06,
+    "p_sick": 0.0009885710896924138,
+    "p_TB": 0.9990034699440002,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.2814648802437004,
+    "class_contrast_l1": 0.2003747522830963,
+    "head_randomization_pearson": 0.1268371006032637,
+    "head_randomization_l1": 0.1365470588207245,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.04122665524482727,
+    "gt_area_fraction": 0.041339874267578125,
+    "gt_enrichment": 0.9972612634954323,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 154.12936401367188,
+        "gradient_norm": 0.9278524518013,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.10983920097351074,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/tb/tb0870.png",
+    "class_name": "TB",
+    "p_health": 1.0271141714923715e-09,
+    "p_sick": 7.864558574510738e-05,
+    "p_TB": 0.9999213218688965,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.25179552715824927,
+    "class_contrast_l1": 0.19523677229881287,
+    "head_randomization_pearson": -0.15985641933218978,
+    "head_randomization_l1": 0.18992751836776733,
+    "pointing_game_hit": true,
+    "gt_energy_ratio": 0.43798962235450745,
+    "gt_area_fraction": 0.2215423583984375,
+    "gt_enrichment": 1.97700171434844,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 169.3602752685547,
+        "gradient_norm": 0.748653769493103,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.0892716497182846,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/tb/tb0003.png",
+    "class_name": "TB",
+    "p_health": 0.011700675822794437,
+    "p_sick": 0.7023409008979797,
+    "p_TB": 0.2859584391117096,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.2606680640282574,
+    "class_contrast_l1": 0.13889756798744202,
+    "head_randomization_pearson": 0.34304840444129137,
+    "head_randomization_l1": 0.11685938388109207,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.036563824862241745,
+    "gt_area_fraction": 0.0988311767578125,
+    "gt_enrichment": 0.3699624557930948,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 170.10794067382812,
+        "gradient_norm": 0.9523561596870422,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.16513526439666748,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/tb/tb0062.png",
+    "class_name": "TB",
+    "p_health": 0.20388533174991608,
+    "p_sick": 0.04225536435842514,
+    "p_TB": 0.7538593411445618,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.32676313602491186,
+    "class_contrast_l1": 0.20791228115558624,
+    "head_randomization_pearson": 0.14323268160610417,
+    "head_randomization_l1": 0.1409796178340912,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.1262199729681015,
+    "gt_area_fraction": 0.07490158081054688,
+    "gt_enrichment": 1.685144313407181,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 170.8618927001953,
+        "gradient_norm": 0.8503301739692688,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.11233349144458771,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/tb/tb0142.png",
+    "class_name": "TB",
+    "p_health": 0.0028677487280219793,
+    "p_sick": 0.9921952486038208,
+    "p_TB": 0.004937007091939449,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.24639105410391102,
+    "class_contrast_l1": 0.16220024228096008,
+    "head_randomization_pearson": 0.41606182033970834,
+    "head_randomization_l1": 0.09179481863975525,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.06019406020641327,
+    "gt_area_fraction": 0.029956817626953125,
+    "gt_enrichment": 2.009360972717433,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 162.19503784179688,
+        "gradient_norm": 0.8831286430358887,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.14363202452659607,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/health/h1160.png",
+    "class_name": "health",
+    "p_health": 0.393438458442688,
+    "p_sick": 0.6061164736747742,
+    "p_TB": 0.0004450416308827698,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.34630950064424937,
+    "class_contrast_l1": 0.21232691407203674,
+    "head_randomization_pearson": 0.05782324130109463,
+    "head_randomization_l1": 0.14883826673030853,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 151.459716796875,
+        "gradient_norm": 0.8948431611061096,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06571485102176666,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/sick/s0228.png",
+    "class_name": "sick",
+    "p_health": 2.7452854283183115e-06,
+    "p_sick": 0.9989756345748901,
+    "p_TB": 0.0010216713417321444,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.3727981692112927,
+    "class_contrast_l1": 0.1917562186717987,
+    "head_randomization_pearson": -0.10983724272143286,
+    "head_randomization_l1": 0.14061973989009857,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 169.6082763671875,
+        "gradient_norm": 0.8308984041213989,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.15394923090934753,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/sick/s0673.png",
+    "class_name": "sick",
+    "p_health": 0.003324587596580386,
+    "p_sick": 0.505079984664917,
+    "p_TB": 0.49159544706344604,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.349850948707659,
+    "class_contrast_l1": 0.178605854511261,
+    "head_randomization_pearson": 0.04564534193594409,
+    "head_randomization_l1": 0.14419995248317719,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 171.016357421875,
+        "gradient_norm": 0.9311751127243042,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.1728062927722931,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/sick/s0015.png",
+    "class_name": "sick",
+    "p_health": 1.2730023399853962e-06,
+    "p_sick": 0.9999756813049316,
+    "p_TB": 2.310183299414348e-05,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.3370884127293841,
+    "class_contrast_l1": 0.17760923504829407,
+    "head_randomization_pearson": -0.07712913408459578,
+    "head_randomization_l1": 0.12584586441516876,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 168.35365295410156,
+        "gradient_norm": 0.9272390604019165,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.1317214071750641,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "convnext_tiny",
+    "relative_path": "imgs/health/h0009.png",
+    "class_name": "health",
+    "p_health": 0.9999455213546753,
+    "p_sick": 5.386749035096727e-05,
+    "p_TB": 5.638785864903184e-07,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.3069949273863141,
+    "class_contrast_l1": 0.1793815642595291,
+    "head_randomization_pearson": 0.032113778450973414,
+    "head_randomization_l1": 0.14357680082321167,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 157.74472045898438,
+        "gradient_norm": 0.8847954869270325,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.10928580164909363,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/tb/tb0378.png",
+    "class_name": "TB",
+    "p_health": 6.476705038949149e-08,
+    "p_sick": 0.0002645299828145653,
+    "p_TB": 0.9997352957725525,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.3850027155689346,
+    "class_contrast_l1": 0.3653668463230133,
+    "head_randomization_pearson": 0.11183599100909716,
+    "head_randomization_l1": 0.27523693442344666,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.04134685546159744,
+    "gt_area_fraction": 0.063751220703125,
+    "gt_enrichment": 0.648565705967269,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 514.7964477539062,
+        "gradient_norm": 0.13973085582256317,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.050338372588157654,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/tb/tb0435.png",
+    "class_name": "TB",
+    "p_health": 1.4779496515515689e-09,
+    "p_sick": 0.0020015465561300516,
+    "p_TB": 0.9979984164237976,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.33223449828598883,
+    "class_contrast_l1": 0.35869383811950684,
+    "head_randomization_pearson": 0.05898437741918341,
+    "head_randomization_l1": 0.22471942007541656,
+    "pointing_game_hit": true,
+    "gt_energy_ratio": 0.544779360294342,
+    "gt_area_fraction": 0.3843269348144531,
+    "gt_enrichment": 1.4174894105648692,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 522.3910522460938,
+        "gradient_norm": 0.13446275889873505,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06039110943675041,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/tb/tb0563.png",
+    "class_name": "TB",
+    "p_health": 2.4059193037828663e-06,
+    "p_sick": 0.0014473750488832593,
+    "p_TB": 0.9985502362251282,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.41677871728783195,
+    "class_contrast_l1": 0.26180288195610046,
+    "head_randomization_pearson": -0.13709371821182945,
+    "head_randomization_l1": 0.2181251347064972,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.027729373425245285,
+    "gt_area_fraction": 0.041339874267578125,
+    "gt_enrichment": 0.6707657900883547,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 445.8021545410156,
+        "gradient_norm": 0.1517733782529831,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06582140177488327,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/tb/tb0870.png",
+    "class_name": "TB",
+    "p_health": 5.144187298355973e-10,
+    "p_sick": 2.6803563741850667e-05,
+    "p_TB": 0.9999731779098511,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.32110387054280815,
+    "class_contrast_l1": 0.40012073516845703,
+    "head_randomization_pearson": -0.09163199224782254,
+    "head_randomization_l1": 0.28308069705963135,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.25346970558166504,
+    "gt_area_fraction": 0.2215423583984375,
+    "gt_enrichment": 1.1441139627384806,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 510.5532531738281,
+        "gradient_norm": 0.1350751519203186,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06394774466753006,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/tb/tb0003.png",
+    "class_name": "TB",
+    "p_health": 0.6121377944946289,
+    "p_sick": 0.2797982394695282,
+    "p_TB": 0.10806397348642349,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.2968473490538604,
+    "class_contrast_l1": 0.1594129353761673,
+    "head_randomization_pearson": -0.019722131359824802,
+    "head_randomization_l1": 0.18507888913154602,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.11462228000164032,
+    "gt_area_fraction": 0.0988311767578125,
+    "gt_enrichment": 1.1597785613999536,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 457.07183837890625,
+        "gradient_norm": 0.14985135197639465,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.05638148635625839,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/tb/tb0062.png",
+    "class_name": "TB",
+    "p_health": 0.9584830403327942,
+    "p_sick": 0.0009434345411136746,
+    "p_TB": 0.04057350009679794,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.48723476500608937,
+    "class_contrast_l1": 0.25643348693847656,
+    "head_randomization_pearson": -0.29851032655174553,
+    "head_randomization_l1": 0.23692888021469116,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.06531982123851776,
+    "gt_area_fraction": 0.07490158081054688,
+    "gt_enrichment": 0.8720753358161446,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 476.80645751953125,
+        "gradient_norm": 0.14454825222492218,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.03461297228932381,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/tb/tb0142.png",
+    "class_name": "TB",
+    "p_health": 0.01963934861123562,
+    "p_sick": 0.9511362314224243,
+    "p_TB": 0.029224371537566185,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.3210914669721081,
+    "class_contrast_l1": 0.16224229335784912,
+    "head_randomization_pearson": -0.052956759281354834,
+    "head_randomization_l1": 0.15166056156158447,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.003098130691796541,
+    "gt_area_fraction": 0.029956817626953125,
+    "gt_enrichment": 0.10341988693114892,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 469.00445556640625,
+        "gradient_norm": 0.14888475835323334,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.03789462521672249,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/health/h1160.png",
+    "class_name": "health",
+    "p_health": 0.827914297580719,
+    "p_sick": 0.17174264788627625,
+    "p_TB": 0.00034304914879612625,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.29536643326940126,
+    "class_contrast_l1": 0.22171595692634583,
+    "head_randomization_pearson": 0.25057036349383005,
+    "head_randomization_l1": 0.2010660022497177,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 473.05145263671875,
+        "gradient_norm": 0.14584478735923767,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.02662273868918419,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/sick/s0228.png",
+    "class_name": "sick",
+    "p_health": 0.00020301494805607945,
+    "p_sick": 0.8982398509979248,
+    "p_TB": 0.1015571653842926,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.22878921891587564,
+    "class_contrast_l1": 0.17155569791793823,
+    "head_randomization_pearson": 0.11275258068965736,
+    "head_randomization_l1": 0.18351970613002777,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 488.186767578125,
+        "gradient_norm": 0.1422918438911438,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.054569534957408905,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/sick/s0673.png",
+    "class_name": "sick",
+    "p_health": 4.024647296319017e-06,
+    "p_sick": 0.0001432610588381067,
+    "p_TB": 0.9998526573181152,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.45865547895694075,
+    "class_contrast_l1": 0.30237165093421936,
+    "head_randomization_pearson": 0.21428760592460475,
+    "head_randomization_l1": 0.2369736284017563,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 503.0220642089844,
+        "gradient_norm": 0.14813372492790222,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06185045838356018,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/sick/s0015.png",
+    "class_name": "sick",
+    "p_health": 0.00013918112381361425,
+    "p_sick": 0.998884379863739,
+    "p_TB": 0.0009764000424183905,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.2666131450953365,
+    "class_contrast_l1": 0.16140219569206238,
+    "head_randomization_pearson": 0.09028855764332551,
+    "head_randomization_l1": 0.15546846389770508,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 467.0879211425781,
+        "gradient_norm": 0.15003512799739838,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.031203825026750565,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vmamba_tiny",
+    "relative_path": "imgs/health/h0009.png",
+    "class_name": "health",
+    "p_health": 0.9999914169311523,
+    "p_sick": 8.31863781058928e-06,
+    "p_TB": 2.7875017849510186e-07,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.1842500320989208,
+    "class_contrast_l1": 0.28090324997901917,
+    "head_randomization_pearson": 0.06611721086556396,
+    "head_randomization_l1": 0.12474408000707626,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "mamba_gradcam": {
+        "activation_norm": 468.90155029296875,
+        "gradient_norm": 0.14563265442848206,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.01332021877169609,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/tb/tb0378.png",
+    "class_name": "TB",
+    "p_health": 3.088084810087821e-08,
+    "p_sick": 0.003656103042885661,
+    "p_TB": 0.9963439106941223,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.2345031687029285,
+    "class_contrast_l1": 0.12657524645328522,
+    "head_randomization_pearson": -0.196547113441698,
+    "head_randomization_l1": 0.1360037922859192,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.06594158709049225,
+    "gt_area_fraction": 0.063751220703125,
+    "gt_enrichment": 1.034358030531953,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 113.76986694335938,
+        "gradient_norm": 1.697522521018982,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.022248277440667152,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 1015.6550903320312,
+        "gradient_norm": 0.09305619448423386,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.007343440782278776,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/tb/tb0435.png",
+    "class_name": "TB",
+    "p_health": 1.1052530446420405e-08,
+    "p_sick": 0.0012811908964067698,
+    "p_TB": 0.9987188577651978,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": 0.30153104411755277,
+    "class_contrast_l1": 0.12055163085460663,
+    "head_randomization_pearson": -0.028885792654727956,
+    "head_randomization_l1": 0.14506733417510986,
+    "pointing_game_hit": true,
+    "gt_energy_ratio": 0.5139977335929871,
+    "gt_area_fraction": 0.3843269348144531,
+    "gt_enrichment": 1.337397114363418,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 130.51072692871094,
+        "gradient_norm": 1.343786358833313,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.014425238594412804,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 1017.0702514648438,
+        "gradient_norm": 0.058536335825920105,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.008058633655309677,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/tb/tb0563.png",
+    "class_name": "TB",
+    "p_health": 5.250801677902928e-06,
+    "p_sick": 0.04263940453529358,
+    "p_TB": 0.9573553800582886,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.5225447157602288,
+    "class_contrast_l1": 0.17923209071159363,
+    "head_randomization_pearson": 0.4119623092521212,
+    "head_randomization_l1": 0.09873788058757782,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.05679093673825264,
+    "gt_area_fraction": 0.041339874267578125,
+    "gt_enrichment": 1.3737568810844791,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 111.23941040039062,
+        "gradient_norm": 3.8061256408691406,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06633741408586502,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 1033.3709716796875,
+        "gradient_norm": 0.21118606626987457,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.02832076884806156,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/tb/tb0870.png",
+    "class_name": "TB",
+    "p_health": 1.586424858146529e-08,
+    "p_sick": 0.00019058714678976685,
+    "p_TB": 0.9998094439506531,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": 0.3306960123286175,
+    "class_contrast_l1": 0.1336117386817932,
+    "head_randomization_pearson": -0.1609889723271538,
+    "head_randomization_l1": 0.1489160656929016,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.22951218485832214,
+    "gt_area_fraction": 0.2215423583984375,
+    "gt_enrichment": 1.0359742783163441,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 126.22447967529297,
+        "gradient_norm": 0.5750636458396912,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.010789291933178902,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 991.9903564453125,
+        "gradient_norm": 0.04197799414396286,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.004192230757325888,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/tb/tb0003.png",
+    "class_name": "TB",
+    "p_health": 0.06423458456993103,
+    "p_sick": 0.9230692982673645,
+    "p_TB": 0.012696148827672005,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.48632417696372915,
+    "class_contrast_l1": 0.13502398133277893,
+    "head_randomization_pearson": 0.08390765233683754,
+    "head_randomization_l1": 0.10670889914035797,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.06217658147215843,
+    "gt_area_fraction": 0.0988311767578125,
+    "gt_enrichment": 0.6291191050423615,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 128.11570739746094,
+        "gradient_norm": 8.637789726257324,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.1656247079372406,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 836.3422241210938,
+        "gradient_norm": 0.43394792079925537,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.08429859578609467,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/tb/tb0062.png",
+    "class_name": "TB",
+    "p_health": 0.7821632623672485,
+    "p_sick": 0.05257581174373627,
+    "p_TB": 0.1652609258890152,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.4730226861701504,
+    "class_contrast_l1": 0.1804082989692688,
+    "head_randomization_pearson": -0.02641937026698335,
+    "head_randomization_l1": 0.15449273586273193,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.055903613567352295,
+    "gt_area_fraction": 0.07490158081054688,
+    "gt_enrichment": 0.7463609307359307,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 115.01871490478516,
+        "gradient_norm": 13.217202186584473,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.08320523053407669,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 919.56787109375,
+        "gradient_norm": 0.35920411348342896,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.038909971714019775,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/tb/tb0142.png",
+    "class_name": "TB",
+    "p_health": 0.0004167294246144593,
+    "p_sick": 0.996239185333252,
+    "p_TB": 0.0033440222032368183,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.39205327151880875,
+    "class_contrast_l1": 0.15798483788967133,
+    "head_randomization_pearson": -0.08246384904634967,
+    "head_randomization_l1": 0.14683115482330322,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.051512349396944046,
+    "gt_area_fraction": 0.029956817626953125,
+    "gt_enrichment": 1.7195534598640647,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 120.54690551757812,
+        "gradient_norm": 5.788788795471191,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.07010631263256073,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 1049.988037109375,
+        "gradient_norm": 0.40365299582481384,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.03242979943752289,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/health/h1160.png",
+    "class_name": "health",
+    "p_health": 0.2895243465900421,
+    "p_sick": 0.7104163765907288,
+    "p_TB": 5.923162825638428e-05,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.4483998635093534,
+    "class_contrast_l1": 0.16769595444202423,
+    "head_randomization_pearson": 0.04597848543375021,
+    "head_randomization_l1": 0.11946128308773041,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 109.43919372558594,
+        "gradient_norm": 2.489729881286621,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.045851364731788635,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 926.5853881835938,
+        "gradient_norm": 0.19286248087882996,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.024894706904888153,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/sick/s0228.png",
+    "class_name": "sick",
+    "p_health": 2.2216629531612853e-06,
+    "p_sick": 0.12235931307077408,
+    "p_TB": 0.8776384592056274,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.33786809262662637,
+    "class_contrast_l1": 0.13687649369239807,
+    "head_randomization_pearson": 0.23603682575645252,
+    "head_randomization_l1": 0.10597884654998779,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 121.82549285888672,
+        "gradient_norm": 4.163894176483154,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.050817668437957764,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 1058.4876708984375,
+        "gradient_norm": 0.1573965847492218,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.03020523674786091,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/sick/s0673.png",
+    "class_name": "sick",
+    "p_health": 2.0647105429816293e-06,
+    "p_sick": 0.002039143815636635,
+    "p_TB": 0.997958779335022,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.261068031720297,
+    "class_contrast_l1": 0.1320856362581253,
+    "head_randomization_pearson": -0.057016006489705985,
+    "head_randomization_l1": 0.11020364612340927,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 129.879638671875,
+        "gradient_norm": 12.39896011352539,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.010892996564507484,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 1042.19970703125,
+        "gradient_norm": 0.16476404666900635,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.02594197914004326,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/sick/s0015.png",
+    "class_name": "sick",
+    "p_health": 1.384040751872817e-05,
+    "p_sick": 0.9999251365661621,
+    "p_TB": 6.105381180532277e-05,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.5721200445266764,
+    "class_contrast_l1": 0.172563835978508,
+    "head_randomization_pearson": 0.3789433059139998,
+    "head_randomization_l1": 0.10077053308486938,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 121.38519287109375,
+        "gradient_norm": 4.3614349365234375,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06799215823411942,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 832.3176879882812,
+        "gradient_norm": 0.24227885901927948,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.058428701013326645,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_cross_attention",
+    "relative_path": "imgs/health/h0009.png",
+    "class_name": "health",
+    "p_health": 0.9999502897262573,
+    "p_sick": 4.8666242946637794e-05,
+    "p_TB": 1.1203791245861794e-06,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.37269535563048156,
+    "class_contrast_l1": 0.14554397761821747,
+    "head_randomization_pearson": -0.03856999096157491,
+    "head_randomization_l1": 0.149850532412529,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 113.12655639648438,
+        "gradient_norm": 1.4428602457046509,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.042533308267593384,
+        "non_trivial": true
+      },
+      "mamba_gradcam": {
+        "activation_norm": 917.8969116210938,
+        "gradient_norm": 0.11913923174142838,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.010632343590259552,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/tb/tb0378.png",
+    "class_name": "TB",
+    "p_health": 2.3515231362125633e-07,
+    "p_sick": 0.0020171175710856915,
+    "p_TB": 0.9979826211929321,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.3437382338578848,
+    "class_contrast_l1": 0.1627141833305359,
+    "head_randomization_pearson": -0.06638813268905562,
+    "head_randomization_l1": 0.09899699687957764,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.031058629974722862,
+    "gt_area_fraction": 0.063751220703125,
+    "gt_enrichment": 0.48718486692758195,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 643.7297973632812,
+        "gradient_norm": 0.33482825756073,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.008983755484223366,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/tb/tb0435.png",
+    "class_name": "TB",
+    "p_health": 2.0356555330280912e-10,
+    "p_sick": 3.4486994991311803e-05,
+    "p_TB": 0.9999655485153198,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": 0.3227561539569597,
+    "class_contrast_l1": 0.14765310287475586,
+    "head_randomization_pearson": -0.2933574589764181,
+    "head_randomization_l1": 0.27077871561050415,
+    "pointing_game_hit": true,
+    "gt_energy_ratio": 0.5897301435470581,
+    "gt_area_fraction": 0.3843269348144531,
+    "gt_enrichment": 1.534449163267129,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 629.0933837890625,
+        "gradient_norm": 0.11691384762525558,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.0033000826369971037,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/tb/tb0563.png",
+    "class_name": "TB",
+    "p_health": 8.319505973020114e-09,
+    "p_sick": 1.808055822039023e-05,
+    "p_TB": 0.9999818801879883,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.17228584637954528,
+    "class_contrast_l1": 0.17474231123924255,
+    "head_randomization_pearson": 0.16506547595861457,
+    "head_randomization_l1": 0.10877439379692078,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.13735541701316833,
+    "gt_area_fraction": 0.041339874267578125,
+    "gt_enrichment": 3.322589133293347,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 639.7230224609375,
+        "gradient_norm": 0.19805964827537537,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.004597138147801161,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/tb/tb0870.png",
+    "class_name": "TB",
+    "p_health": 8.291505676494282e-11,
+    "p_sick": 0.00010026200470747426,
+    "p_TB": 0.9998997449874878,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": 0.04667073033112251,
+    "class_contrast_l1": 0.20164978504180908,
+    "head_randomization_pearson": -0.19283290039767714,
+    "head_randomization_l1": 0.24773113429546356,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.364227831363678,
+    "gt_area_fraction": 0.2215423583984375,
+    "gt_enrichment": 1.6440550421000069,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 638.2210693359375,
+        "gradient_norm": 0.20403176546096802,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.0057068136520683765,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/tb/tb0003.png",
+    "class_name": "TB",
+    "p_health": 0.022446284070611,
+    "p_sick": 0.9681012630462646,
+    "p_TB": 0.009452514350414276,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.4794195017224818,
+    "class_contrast_l1": 0.20204980671405792,
+    "head_randomization_pearson": -0.20634969468299524,
+    "head_randomization_l1": 0.2023906260728836,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.13904260098934174,
+    "gt_area_fraction": 0.0988311767578125,
+    "gt_enrichment": 1.4068698314709742,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 606.012451171875,
+        "gradient_norm": 0.28542450070381165,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.009844265878200531,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/tb/tb0062.png",
+    "class_name": "TB",
+    "p_health": 0.0026585212908685207,
+    "p_sick": 4.064557288074866e-05,
+    "p_TB": 0.9973008036613464,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.4343728538030521,
+    "class_contrast_l1": 0.19364872574806213,
+    "head_randomization_pearson": -0.42767604517746705,
+    "head_randomization_l1": 0.21502043306827545,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.07791278511285782,
+    "gt_area_fraction": 0.07490158081054688,
+    "gt_enrichment": 1.0402021461993889,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 596.417236328125,
+        "gradient_norm": 0.24012060463428497,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.006405697204172611,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/tb/tb0142.png",
+    "class_name": "TB",
+    "p_health": 0.060468778014183044,
+    "p_sick": 0.17218223214149475,
+    "p_TB": 0.7673489451408386,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.4384887078690873,
+    "class_contrast_l1": 0.23394334316253662,
+    "head_randomization_pearson": -0.5837428937180504,
+    "head_randomization_l1": 0.27431249618530273,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.015522021800279617,
+    "gt_area_fraction": 0.029956817626953125,
+    "gt_enrichment": 0.5181465532678594,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 614.3291625976562,
+        "gradient_norm": 0.17673788964748383,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.014509875327348709,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/health/h1160.png",
+    "class_name": "health",
+    "p_health": 0.9836649298667908,
+    "p_sick": 0.015517272986471653,
+    "p_TB": 0.0008177265408448875,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.22497662125075846,
+    "class_contrast_l1": 0.20298852026462555,
+    "head_randomization_pearson": -0.06746942035457824,
+    "head_randomization_l1": 0.2562899589538574,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 622.5191650390625,
+        "gradient_norm": 0.2110132873058319,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.005895410664379597,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/sick/s0228.png",
+    "class_name": "sick",
+    "p_health": 6.921520689928684e-09,
+    "p_sick": 0.9999743700027466,
+    "p_TB": 2.5600817025406286e-05,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.4373943181192137,
+    "class_contrast_l1": 0.24071356654167175,
+    "head_randomization_pearson": -0.11891138657858537,
+    "head_randomization_l1": 0.21637997031211853,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 618.4642333984375,
+        "gradient_norm": 0.2213141769170761,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.008625399321317673,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/sick/s0673.png",
+    "class_name": "sick",
+    "p_health": 1.1333093425491825e-05,
+    "p_sick": 0.10406836122274399,
+    "p_TB": 0.8959203362464905,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.3685787791533144,
+    "class_contrast_l1": 0.20261317491531372,
+    "head_randomization_pearson": -0.30981202223129695,
+    "head_randomization_l1": 0.19775429368019104,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 678.35888671875,
+        "gradient_norm": 0.24360200762748718,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.005456296261399984,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/sick/s0015.png",
+    "class_name": "sick",
+    "p_health": 7.18005594535498e-07,
+    "p_sick": 0.9996482133865356,
+    "p_TB": 0.0003510641399770975,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.17918172870850863,
+    "class_contrast_l1": 0.22030925750732422,
+    "head_randomization_pearson": -0.03876760550180108,
+    "head_randomization_l1": 0.21909385919570923,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 626.0025024414062,
+        "gradient_norm": 0.1961570382118225,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.005370630417019129,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "vit_b_16",
+    "relative_path": "imgs/health/h0009.png",
+    "class_name": "health",
+    "p_health": 0.9999996423721313,
+    "p_sick": 3.8285105574686895e-07,
+    "p_TB": 3.6191078578440283e-08,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.1840366298940059,
+    "class_contrast_l1": 0.2399221956729889,
+    "head_randomization_pearson": -0.37580112735773774,
+    "head_randomization_l1": 0.2859618067741394,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "vit_token_gradcam": {
+        "activation_norm": 629.4007568359375,
+        "gradient_norm": 0.170942023396492,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.007281792350113392,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/tb/tb0378.png",
+    "class_name": "TB",
+    "p_health": 6.349742761813104e-06,
+    "p_sick": 0.01817500963807106,
+    "p_TB": 0.9818187355995178,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.04374515280655401,
+    "class_contrast_l1": 0.11665705591440201,
+    "head_randomization_pearson": -0.06338635239140485,
+    "head_randomization_l1": 0.12300830334424973,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.040618352591991425,
+    "gt_area_fraction": 0.063751220703125,
+    "gt_enrichment": 0.6371384287862015,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 114.23039245605469,
+        "gradient_norm": 1.377530574798584,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.05086337402462959,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 592.172607421875,
+        "gradient_norm": 0.17168423533439636,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.0046445573680102825,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/tb/tb0435.png",
+    "class_name": "TB",
+    "p_health": 2.3139689631079818e-07,
+    "p_sick": 0.0013478925684466958,
+    "p_TB": 0.998651921749115,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": 0.7543912368888307,
+    "class_contrast_l1": 0.07496830821037292,
+    "head_randomization_pearson": -0.08878730463940762,
+    "head_randomization_l1": 0.11281277239322662,
+    "pointing_game_hit": true,
+    "gt_energy_ratio": 0.5308651328086853,
+    "gt_area_fraction": 0.3843269348144531,
+    "gt_enrichment": 1.3812852670994253,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 130.72088623046875,
+        "gradient_norm": 1.0394209623336792,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.014963547699153423,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 591.7576293945312,
+        "gradient_norm": 0.09248221665620804,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.0024086632765829563,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/tb/tb0563.png",
+    "class_name": "TB",
+    "p_health": 4.5501739805331454e-05,
+    "p_sick": 0.0022845917847007513,
+    "p_TB": 0.9976698756217957,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": 0.07294882838056682,
+    "class_contrast_l1": 0.10860982537269592,
+    "head_randomization_pearson": -0.1031192642058141,
+    "head_randomization_l1": 0.12649351358413696,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.047775305807590485,
+    "gt_area_fraction": 0.041339874267578125,
+    "gt_enrichment": 1.1556712896212051,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 111.9146957397461,
+        "gradient_norm": 1.188909649848938,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.030609551817178726,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 589.5233764648438,
+        "gradient_norm": 0.17672552168369293,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.004095867741852999,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/tb/tb0870.png",
+    "class_name": "TB",
+    "p_health": 3.905622065758507e-07,
+    "p_sick": 0.0006264569237828255,
+    "p_TB": 0.9993732571601868,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": 0.7269683223808785,
+    "class_contrast_l1": 0.06818419694900513,
+    "head_randomization_pearson": -0.02543979312810386,
+    "head_randomization_l1": 0.12342934310436249,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.32674524188041687,
+    "gt_area_fraction": 0.2215423583984375,
+    "gt_enrichment": 1.4748657739427646,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 126.4725570678711,
+        "gradient_norm": 0.9116213321685791,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.012505519203841686,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 591.4523315429688,
+        "gradient_norm": 0.10003907233476639,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.003173649776726961,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/tb/tb0003.png",
+    "class_name": "TB",
+    "p_health": 0.06585042178630829,
+    "p_sick": 0.8687180280685425,
+    "p_TB": 0.06543156504631042,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.1316974563826087,
+    "class_contrast_l1": 0.12272520363330841,
+    "head_randomization_pearson": -0.15114325813058888,
+    "head_randomization_l1": 0.126194566488266,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.11882960796356201,
+    "gt_area_fraction": 0.0988311767578125,
+    "gt_enrichment": 1.202349419098348,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 128.41734313964844,
+        "gradient_norm": 2.5493381023406982,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.052668582648038864,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 596.0652465820312,
+        "gradient_norm": 0.49808260798454285,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.012744463980197906,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/tb/tb0062.png",
+    "class_name": "TB",
+    "p_health": 0.16287760436534882,
+    "p_sick": 0.2665365934371948,
+    "p_TB": 0.5705857872962952,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.43188930483298266,
+    "class_contrast_l1": 0.1757102608680725,
+    "head_randomization_pearson": 0.0451783478705151,
+    "head_randomization_l1": 0.13419535756111145,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.09348560124635696,
+    "gt_area_fraction": 0.07490158081054688,
+    "gt_enrichment": 1.2481125262605042,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 115.4432144165039,
+        "gradient_norm": 1.9000722169876099,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.052035972476005554,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 591.4163208007812,
+        "gradient_norm": 0.4266791343688965,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.009766431525349617,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/tb/tb0142.png",
+    "class_name": "TB",
+    "p_health": 0.00013210615725256503,
+    "p_sick": 0.7882223725318909,
+    "p_TB": 0.21164551377296448,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.16285423532224774,
+    "class_contrast_l1": 0.12929947674274445,
+    "head_randomization_pearson": -0.09711299729815472,
+    "head_randomization_l1": 0.10328660160303116,
+    "pointing_game_hit": false,
+    "gt_energy_ratio": 0.04417239502072334,
+    "gt_area_fraction": 0.029956817626953125,
+    "gt_enrichment": 1.474535632282249,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 121.47030639648438,
+        "gradient_norm": 1.8186074495315552,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06000155955553055,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 596.353271484375,
+        "gradient_norm": 0.3046092391014099,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.009157040156424046,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/health/h1160.png",
+    "class_name": "health",
+    "p_health": 0.27172812819480896,
+    "p_sick": 0.32692068815231323,
+    "p_TB": 0.40135112404823303,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.34171917414612885,
+    "class_contrast_l1": 0.14925220608711243,
+    "head_randomization_pearson": -0.04246842203443888,
+    "head_randomization_l1": 0.11650592088699341,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 110.04668426513672,
+        "gradient_norm": 1.5025423765182495,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.0324147492647171,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 589.171142578125,
+        "gradient_norm": 0.29471006989479065,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.0069791404530406,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/sick/s0228.png",
+    "class_name": "sick",
+    "p_health": 9.213642442773562e-06,
+    "p_sick": 0.9996563196182251,
+    "p_TB": 0.00033444410655647516,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.39935573443987343,
+    "class_contrast_l1": 0.14630362391471863,
+    "head_randomization_pearson": -0.01281286098259678,
+    "head_randomization_l1": 0.1261393129825592,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 122.31600189208984,
+        "gradient_norm": 2.0047402381896973,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.06126909703016281,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 589.2643432617188,
+        "gradient_norm": 0.3158646523952484,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.009273950010538101,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/sick/s0673.png",
+    "class_name": "sick",
+    "p_health": 0.06074434146285057,
+    "p_sick": 0.075327567756176,
+    "p_TB": 0.8639280796051025,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.35541151097708834,
+    "class_contrast_l1": 0.15439611673355103,
+    "head_randomization_pearson": -0.004818638256672934,
+    "head_randomization_l1": 0.11656573414802551,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 130.42083740234375,
+        "gradient_norm": 3.0075087547302246,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.07760462164878845,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 582.6162719726562,
+        "gradient_norm": 0.34227409958839417,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.009551647119224072,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/sick/s0015.png",
+    "class_name": "sick",
+    "p_health": 2.81193229056953e-06,
+    "p_sick": 0.9992244243621826,
+    "p_TB": 0.0007728066993877292,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.29731895834658467,
+    "class_contrast_l1": 0.15118780732154846,
+    "head_randomization_pearson": 0.013082953569932,
+    "head_randomization_l1": 0.11704477667808533,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 121.71612548828125,
+        "gradient_norm": 1.6004241704940796,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.053916074335575104,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 597.79345703125,
+        "gradient_norm": 0.28628969192504883,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.007537242025136948,
+        "non_trivial": true
+      }
+    }
+  },
+  {
+    "architecture": "hybrid_convnext_vit",
+    "relative_path": "imgs/health/h0009.png",
+    "class_name": "health",
+    "p_health": 0.9999113082885742,
+    "p_sick": 6.939267041161656e-05,
+    "p_TB": 1.928093479364179e-05,
+    "all_finite": true,
+    "all_nonzero_grad": true,
+    "all_nontrivial_maps": true,
+    "class_contrast_pearson": -0.1645855325346174,
+    "class_contrast_l1": 0.14780035614967346,
+    "head_randomization_pearson": -0.10083762285375064,
+    "head_randomization_l1": 0.13379915058612823,
+    "pointing_game_hit": null,
+    "gt_energy_ratio": null,
+    "gt_area_fraction": null,
+    "gt_enrichment": null,
+    "branch_stats": {
+      "conv_gradcam": {
+        "activation_norm": 113.5591049194336,
+        "gradient_norm": 0.8974541425704956,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.02150045521557331,
+        "non_trivial": true
+      },
+      "vit_token_gradcam": {
+        "activation_norm": 592.252685546875,
+        "gradient_norm": 0.1674828976392746,
+        "activation_finite": true,
+        "gradient_finite": true,
+        "raw_min": 0.0,
+        "raw_max": 0.004674163646996021,
+        "non_trivial": true
+      }
+    }
+  }
+]

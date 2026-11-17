@@ -1,0 +1,20 @@
+{
+  "status": "prepared_not_trained",
+  "counts": {
+    "train": {
+      "negative_no_TB_boxes": 5232,
+      "boxes": 851,
+      "positive_TB_boxes": 559,
+      "excluded_TB_missing_boxes": 1
+    },
+    "validation": {
+      "negative_no_TB_boxes": 1121,
+      "boxes": 176,
+      "positive_TB_boxes": 120
+    }
+  },
+  "test_exported": false,
+  "class_policy": "Cajas TB originales unificadas como tb_lesion; subtipos no se usan como clases de detección.",
+  "missing_box_policy": "TB sin cajas excluida; nunca negativo.",
+  "phase4_complete": false
+}

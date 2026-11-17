@@ -1,0 +1,588 @@
+{
+  "schema": "vit_phase5_report_payload_v1",
+  "scope": "validation_only",
+  "test_evaluated": false,
+  "external_evaluated": false,
+  "candidate_by_macro_f1": "hybrid_cross_attention",
+  "comparison_4models": [
+    {
+      "architecture": "convnext_tiny",
+      "display_name": "ConvNeXt-Tiny",
+      "short_label": "ConvNeXt",
+      "run_id": "phase3_convnext_tiny_20261103T023002Z_4a7e2a",
+      "completed_epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "accuracy": 0.9709911361804996,
+      "macro_f1": 0.942715557119158,
+      "TB_recall": 0.7833333333333333,
+      "TB_precision": 0.9690721649484536,
+      "TB_specificity": 0.9973238180196253,
+      "TB_roc_auc": 0.9957850133809099,
+      "TB_recognized": 94,
+      "TB_to_health": 4,
+      "TB_to_sick": 22,
+      "sick_to_TB": 3,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "33869c4791569f95c262df2987c9a688649aa4f65c92e51e79f8340c1d0c3616"
+    },
+    {
+      "architecture": "vmamba_tiny",
+      "display_name": "VMamba-Tiny",
+      "short_label": "VMamba",
+      "run_id": "phase3_vmamba_tiny_20261103T025536Z_4784e4",
+      "completed_epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "accuracy": 0.9685737308622079,
+      "macro_f1": 0.949672039326329,
+      "TB_recall": 0.8416666666666667,
+      "TB_precision": 0.9619047619047619,
+      "TB_specificity": 0.9964317573595004,
+      "TB_roc_auc": 0.9934359203092478,
+      "TB_recognized": 101,
+      "TB_to_health": 12,
+      "TB_to_sick": 7,
+      "sick_to_TB": 4,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "56efbe2bc8230f7fb52cc199d89489f98134bb2364cc06fa20f353d471860b53"
+    },
+    {
+      "architecture": "hybrid_cross_attention",
+      "display_name": "Híbrido de atención cruzada",
+      "short_label": "Híbrido",
+      "run_id": "phase3_hybrid_cross_attention_20261103T032205Z_71d127",
+      "completed_epochs": 7,
+      "best_epoch": 3,
+      "stop_reason": "early_stopping",
+      "accuracy": 0.9782433521353747,
+      "macro_f1": 0.9644699190877536,
+      "TB_recall": 0.8916666666666667,
+      "TB_precision": 0.963963963963964,
+      "TB_specificity": 0.9964317573595004,
+      "TB_roc_auc": 0.9957552780255725,
+      "TB_recognized": 107,
+      "TB_to_health": 6,
+      "TB_to_sick": 7,
+      "sick_to_TB": 4,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "1db1965bd191456cec05f9d91a45539e7dcc22bfbbab0adcc474f351b7473830"
+    },
+    {
+      "architecture": "vit_b_16",
+      "display_name": "ViT-B/16",
+      "short_label": "ViT-B/16",
+      "run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+      "completed_epochs": 12,
+      "best_epoch": 11,
+      "stop_reason": "epoch_budget",
+      "accuracy": 0.9774375503626108,
+      "macro_f1": 0.9644352282077575,
+      "TB_recall": 0.9166666666666666,
+      "TB_precision": 0.9401709401709402,
+      "TB_specificity": 0.9937555753791257,
+      "TB_roc_auc": 0.9969223907225692,
+      "TB_recognized": 110,
+      "TB_to_health": 3,
+      "TB_to_sick": 7,
+      "sick_to_TB": 7,
+      "health_to_TB": 0,
+      "checkpoint_sha256": "2873fbcff636ad151b41451022b0fc34eeb197866cf5acd200e3f764f4f3d50d"
+    }
+  ],
+  "vit_details": {
+    "run_id": "phase3_vit_b_16_20261116T014808Z_2e8a27",
+    "completed_epochs": 12,
+    "best_epoch": 11,
+    "stop_reason": "epoch_budget",
+    "checkpoint_sha256": "2873fbcff636ad151b41451022b0fc34eeb197866cf5acd200e3f764f4f3d50d",
+    "validation": {
+      "n": 1241,
+      "accuracy": 0.9774375503626108,
+      "macro_f1": 0.9644352282077575,
+      "balanced_accuracy": 0.961413591449889,
+      "macro_roc_auc_ovr": 0.9982901845571499,
+      "confusion_matrix": [
+        [
+          566,
+          4,
+          0
+        ],
+        [
+          7,
+          537,
+          7
+        ],
+        [
+          3,
+          7,
+          110
+        ]
+      ],
+      "classes": [
+        "health",
+        "sick",
+        "TB"
+      ],
+      "per_class": {
+        "health": {
+          "support": 570,
+          "precision": 0.9826388888888888,
+          "recall": 0.9929824561403509,
+          "f1": 0.987783595113438,
+          "specificity": 0.9850968703427719,
+          "roc_auc": 0.9995999686249901,
+          "average_precision": 0.9995584664656993
+        },
+        "sick": {
+          "support": 551,
+          "precision": 0.9799270072992701,
+          "recall": 0.9745916515426497,
+          "f1": 0.9772520473157416,
+          "specificity": 0.9840579710144928,
+          "roc_auc": 0.9983481943238907,
+          "average_precision": 0.9978773135116772
+        },
+        "TB": {
+          "support": 120,
+          "precision": 0.9401709401709402,
+          "recall": 0.9166666666666666,
+          "f1": 0.9282700421940928,
+          "specificity": 0.9937555753791257,
+          "roc_auc": 0.9969223907225692,
+          "average_precision": 0.9784350072275361
+        }
+      },
+      "decision_rule": "argmax softmax; sin ajuste de umbral",
+      "evaluation_unit": "imagen; sin intervalos de confianza ni garantía de independencia por paciente"
+    },
+    "history": [
+      {
+        "epoch": "1",
+        "train_loss": "0.6144445804844342",
+        "train_accuracy": "0.8459944751381215",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "head_only",
+        "validation_loss": "0.40729925016179247",
+        "validation_accuracy": "0.8879935535858179",
+        "validation_macro_f1": "0.823650759518252",
+        "validation_tb_recall": "0.8",
+        "seconds": "227.93847443699997"
+      },
+      {
+        "epoch": "2",
+        "train_loss": "0.34435268296496674",
+        "train_accuracy": "0.9140193370165746",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "head_only",
+        "validation_loss": "0.3097794260461341",
+        "validation_accuracy": "0.9186140209508461",
+        "validation_macro_f1": "0.8595025296023054",
+        "validation_tb_recall": "0.75",
+        "seconds": "229.3251564630001"
+      },
+      {
+        "epoch": "3",
+        "train_loss": "0.24355762524808391",
+        "train_accuracy": "0.9376726519337016",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.22858447089221698",
+        "validation_accuracy": "0.943593875906527",
+        "validation_macro_f1": "0.8997051393023273",
+        "validation_tb_recall": "0.7583333333333333",
+        "seconds": "287.9321308450001"
+      },
+      {
+        "epoch": "4",
+        "train_loss": "0.16464060820127172",
+        "train_accuracy": "0.9597720994475138",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.16811305729644616",
+        "validation_accuracy": "0.958904109589041",
+        "validation_macro_f1": "0.9315307572814936",
+        "validation_tb_recall": "0.8583333333333333",
+        "seconds": "288.0851638880001"
+      },
+      {
+        "epoch": "5",
+        "train_loss": "0.13639833055989348",
+        "train_accuracy": "0.9711671270718232",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.2303694132929255",
+        "validation_accuracy": "0.9645447219983884",
+        "validation_macro_f1": "0.9381646860665253",
+        "validation_tb_recall": "0.8083333333333333",
+        "seconds": "288.0255398899999"
+      },
+      {
+        "epoch": "6",
+        "train_loss": "0.1130175500463678",
+        "train_accuracy": "0.9770372928176796",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.40458645741993743",
+        "validation_accuracy": "0.9460112812248187",
+        "validation_macro_f1": "0.9025638844586213",
+        "validation_tb_recall": "0.65",
+        "seconds": "287.8375285489999"
+      },
+      {
+        "epoch": "7",
+        "train_loss": "0.10679015411046532",
+        "train_accuracy": "0.9810082872928176",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.14427566690851476",
+        "validation_accuracy": "0.9669621273166801",
+        "validation_macro_f1": "0.9420709830961509",
+        "validation_tb_recall": "0.8583333333333333",
+        "seconds": "288.10826958300004"
+      },
+      {
+        "epoch": "8",
+        "train_loss": "0.0986711703069393",
+        "train_accuracy": "0.9835980662983426",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.16339154424977992",
+        "validation_accuracy": "0.9709911361804996",
+        "validation_macro_f1": "0.9509467025921596",
+        "validation_tb_recall": "0.8583333333333333",
+        "seconds": "288.01815875400007"
+      },
+      {
+        "epoch": "9",
+        "train_loss": "0.07930467696533085",
+        "train_accuracy": "0.9853245856353591",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.18523324098257424",
+        "validation_accuracy": "0.9734085414987913",
+        "validation_macro_f1": "0.9534502959881707",
+        "validation_tb_recall": "0.85",
+        "seconds": "288.0371703669998"
+      },
+      {
+        "epoch": "10",
+        "train_loss": "0.07446449191548969",
+        "train_accuracy": "0.9872237569060773",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.14016322603798445",
+        "validation_accuracy": "0.9766317485898469",
+        "validation_macro_f1": "0.9576590201817062",
+        "validation_tb_recall": "0.875",
+        "seconds": "288.0058424240001"
+      },
+      {
+        "epoch": "11",
+        "train_loss": "0.060399093558225876",
+        "train_accuracy": "0.988950276243094",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.11902075569581029",
+        "validation_accuracy": "0.9774375503626108",
+        "validation_macro_f1": "0.9644352282077575",
+        "validation_tb_recall": "0.9166666666666666",
+        "seconds": "288.0053990819997"
+      },
+      {
+        "epoch": "12",
+        "train_loss": "0.06250946026775235",
+        "train_accuracy": "0.9901588397790055",
+        "optimizer_updates": "181",
+        "train_n": "5792",
+        "stage": "last_stages",
+        "validation_loss": "0.17603843017453574",
+        "validation_accuracy": "0.9766317485898469",
+        "validation_macro_f1": "0.959467882349443",
+        "validation_tb_recall": "0.8666666666666667",
+        "seconds": "287.907715975"
+      }
+    ],
+    "thresholds_grid": [
+      {
+        "threshold": 0.05,
+        "tp": 115,
+        "fp": 29,
+        "fn": 5,
+        "tn": 1092,
+        "sensitivity": 0.9583333333333334,
+        "specificity": 0.9741302408563782,
+        "precision": 0.7986111111111112,
+        "alerts": 144
+      },
+      {
+        "threshold": 0.1,
+        "tp": 115,
+        "fp": 22,
+        "fn": 5,
+        "tn": 1099,
+        "sensitivity": 0.9583333333333334,
+        "specificity": 0.9803746654772525,
+        "precision": 0.8394160583941606,
+        "alerts": 137
+      },
+      {
+        "threshold": 0.2,
+        "tp": 115,
+        "fp": 15,
+        "fn": 5,
+        "tn": 1106,
+        "sensitivity": 0.9583333333333334,
+        "specificity": 0.9866190900981266,
+        "precision": 0.8846153846153846,
+        "alerts": 130
+      },
+      {
+        "threshold": 0.3,
+        "tp": 111,
+        "fp": 14,
+        "fn": 9,
+        "tn": 1107,
+        "sensitivity": 0.925,
+        "specificity": 0.9875111507582516,
+        "precision": 0.888,
+        "alerts": 125
+      },
+      {
+        "threshold": 0.5,
+        "tp": 110,
+        "fp": 6,
+        "fn": 10,
+        "tn": 1115,
+        "sensitivity": 0.9166666666666666,
+        "specificity": 0.9946476360392507,
+        "precision": 0.9482758620689655,
+        "alerts": 116
+      },
+      {
+        "threshold": 0.7,
+        "tp": 104,
+        "fp": 3,
+        "fn": 16,
+        "tn": 1118,
+        "sensitivity": 0.8666666666666667,
+        "specificity": 0.9973238180196253,
+        "precision": 0.9719626168224299,
+        "alerts": 107
+      },
+      {
+        "threshold": 0.9,
+        "tp": 100,
+        "fp": 2,
+        "fn": 20,
+        "tn": 1119,
+        "sensitivity": 0.8333333333333334,
+        "specificity": 0.9982158786797503,
+        "precision": 0.9803921568627451,
+        "alerts": 102
+      }
+    ]
+  },
+  "candidate_thresholds_grid": [
+    {
+      "threshold": 0.05,
+      "tp": 111,
+      "fp": 6,
+      "fn": 9,
+      "tn": 1115,
+      "sensitivity": 0.925,
+      "specificity": 0.9946476360392507,
+      "precision": 0.9487179487179487,
+      "alerts": 117
+    },
+    {
+      "threshold": 0.1,
+      "tp": 111,
+      "fp": 5,
+      "fn": 9,
+      "tn": 1116,
+      "sensitivity": 0.925,
+      "specificity": 0.9955396966993756,
+      "precision": 0.9568965517241379,
+      "alerts": 116
+    },
+    {
+      "threshold": 0.2,
+      "tp": 109,
+      "fp": 4,
+      "fn": 11,
+      "tn": 1117,
+      "sensitivity": 0.9083333333333333,
+      "specificity": 0.9964317573595004,
+      "precision": 0.9646017699115044,
+      "alerts": 113
+    },
+    {
+      "threshold": 0.3,
+      "tp": 107,
+      "fp": 4,
+      "fn": 13,
+      "tn": 1117,
+      "sensitivity": 0.8916666666666667,
+      "specificity": 0.9964317573595004,
+      "precision": 0.963963963963964,
+      "alerts": 111
+    },
+    {
+      "threshold": 0.5,
+      "tp": 107,
+      "fp": 4,
+      "fn": 13,
+      "tn": 1117,
+      "sensitivity": 0.8916666666666667,
+      "specificity": 0.9964317573595004,
+      "precision": 0.963963963963964,
+      "alerts": 111
+    },
+    {
+      "threshold": 0.7,
+      "tp": 106,
+      "fp": 3,
+      "fn": 14,
+      "tn": 1118,
+      "sensitivity": 0.8833333333333333,
+      "specificity": 0.9973238180196253,
+      "precision": 0.9724770642201835,
+      "alerts": 109
+    },
+    {
+      "threshold": 0.9,
+      "tp": 100,
+      "fp": 1,
+      "fn": 20,
+      "tn": 1120,
+      "sensitivity": 0.8333333333333334,
+      "specificity": 0.9991079393398751,
+      "precision": 0.9900990099009901,
+      "alerts": 101
+    }
+  ],
+  "figures": [
+    {
+      "name": "vit_b_16_training",
+      "title": "Historial de ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "vit_b_16"
+      ],
+      "note": "Epochs reales; línea en mejor época. Train se mide durante updates con aumentos; validation sin aumentos. No se rellenan épocas tras early stopping.",
+      "files": [
+        "vit_b_16_training.png",
+        "vit_b_16_training.pdf",
+        "vit_b_16_training.svg",
+        "vit_b_16_training.csv"
+      ]
+    },
+    {
+      "name": "vit_b_16_confusion",
+      "title": "Matriz de confusión de ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "vit_b_16"
+      ],
+      "note": "Filas reales, columnas predichas; argmax original; normalización por fila.",
+      "files": [
+        "vit_b_16_confusion.png",
+        "vit_b_16_confusion.pdf",
+        "vit_b_16_confusion.svg",
+        "vit_b_16_confusion.csv"
+      ]
+    },
+    {
+      "name": "vit_b_16_roc",
+      "title": "ROC multiclase de ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "vit_b_16"
+      ],
+      "note": "One-vs-rest, scores originales; no corresponde a test.",
+      "files": [
+        "vit_b_16_roc.png",
+        "vit_b_16_roc.pdf",
+        "vit_b_16_roc.svg",
+        "vit_b_16_roc.csv"
+      ]
+    },
+    {
+      "name": "classifier_comparison",
+      "title": "Comparación de los cuatro clasificadores",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny",
+        "vmamba_tiny",
+        "hybrid_cross_attention",
+        "vit_b_16"
+      ],
+      "note": "Una seed y validation reutilizada para selección; sin intervalos ni prueba de superioridad estadística.",
+      "files": [
+        "classifier_comparison.png",
+        "classifier_comparison.pdf",
+        "classifier_comparison.svg",
+        "classifier_comparison.csv"
+      ]
+    },
+    {
+      "name": "TB_roc_precision_recall",
+      "title": "ROC y precisión–recall TB comparativas",
+      "split": "validation",
+      "architectures": [
+        "convnext_tiny",
+        "vmamba_tiny",
+        "hybrid_cross_attention",
+        "vit_b_16"
+      ],
+      "note": "AP es average precision, no área trapezoidal. Scores TB originales; ningún umbral queda seleccionado.",
+      "files": [
+        "TB_roc_precision_recall.png",
+        "TB_roc_precision_recall.pdf",
+        "TB_roc_precision_recall.svg",
+        "TB_roc_precision_recall.csv"
+      ]
+    },
+    {
+      "name": "vit_b_16_thresholds",
+      "title": "Curva de umbrales TB de ViT-B/16",
+      "split": "validation",
+      "architectures": [
+        "vit_b_16"
+      ],
+      "note": "Exploración de p_TB >= t en validation; no congela umbral operativo.",
+      "files": [
+        "vit_b_16_thresholds.png",
+        "vit_b_16_thresholds.pdf",
+        "vit_b_16_thresholds.svg"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "/content/tbx11k_vit/project/manifests/validation.csv": "9d156a2fe48d236d1937544f303c5c897890062caf3c5f99d3c63ce0135e1c6e",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/summary.json": "aae592ca4615cac408d70c0b044c86c6a5f7b958468b695a70527d02bac6a661",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/history.csv": "d23e92321c9eb7d1f949f44bf4e6952437a39cbcaf4510d88264cc656b408a29",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_convnext_tiny_20261103T023002Z_4a7e2a/validation_predictions.csv": "7a2540f7bf93a21e1e5c2c291e6d81d1d3ce77738a5dbd4e51a6227e504f40fd",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/summary.json": "61a33baaa4b3be52e4628b0c589b77c0e4e055cc6e10f3c142c9a78a6904f3ee",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/history.csv": "c912ab446aab6e0b30d9d4f19e6ff2327e16ea2976ed9ab8f73ba343ed116cd0",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vmamba_tiny_20261103T025536Z_4784e4/validation_predictions.csv": "9981825c9d67443811d64d00a288e6130ee1062495c9fab3b399f02156521209",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/summary.json": "b635d2c70d6b9bd8a85302b2915aadb0b39992e1ccd2cd4e5e453327bb9fc077",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/history.csv": "aa2e223d3daa1f86e84180120906537cf40aa334fea6006d20f9150363bf01ab",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_hybrid_cross_attention_20261103T032205Z_71d127/validation_predictions.csv": "b6ebd0738a0d10713d25f13a84bbf5761adc15567816c6a0dc2440bc77c34056",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vit_b_16_20261116T014808Z_2e8a27/summary.json": "d8d692895ae539663eb7ee1d3d0582356a7e70726e2a33e80065fb87c19f417e",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vit_b_16_20261116T014808Z_2e8a27/history.csv": "a75da880867b0d0982ad8c817e6b960ba96a709c55061b488186fe4feb601577",
+    "/content/drive/MyDrive/Proyecto_Tuberculosis/experiments/phase3_vit_b_16_20261116T014808Z_2e8a27/validation_predictions.csv": "9ee335dcb0716cc6f808b3e3ee57b87370546a6d8ae503c570def13a589dcf1f"
+  }
+}

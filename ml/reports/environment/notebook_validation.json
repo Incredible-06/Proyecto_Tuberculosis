@@ -1,0 +1,67 @@
+{
+  "notebook_format": "4.5",
+  "cells": 20,
+  "code_cells_compiled": 9,
+  "local_execution": true,
+  "executed_cells": [
+    {
+      "index": 2,
+      "status": "passed",
+      "seconds": 0.003,
+      "stdout": "Google Colab: False\n"
+    },
+    {
+      "index": 4,
+      "status": "passed",
+      "seconds": 0.001,
+      "stdout": "Proyecto: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\n"
+    },
+    {
+      "index": 6,
+      "status": "passed",
+      "seconds": 0.337,
+      "stdout": "{\n  \"python\": \"3.14.7\",\n  \"numpy\": \"2.5.4\",\n  \"pillow\": \"12.3.0\",\n  \"platform\": \"Windows-11-10.0.26200-SP0\",\n  \"in_colab\": false\n}\n"
+    },
+    {
+      "index": 8,
+      "status": "passed",
+      "seconds": 0.007,
+      "stdout": "Dataset: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\TBX11K\nEvidencias de esta ejecución: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\reports\\notebook_runs\\phase1_20261021T233246173497Z\n"
+    },
+    {
+      "index": 10,
+      "status": "passed",
+      "seconds": 0.019,
+      "stdout": "{\n  \"python\": \"3.14.7\",\n  \"numpy\": \"2.5.4\",\n  \"pillow\": \"12.3.0\",\n  \"platform\": \"Windows-11-10.0.26200-SP0\",\n  \"seed\": 20261019,\n  \"in_colab\": false,\n  \"pythonhashseed_at_start\": null,\n  \"training_executed\": false,\n  \"cuda_probe\": {\n    \"executed\": false,\n    \"status\": \"not_requested\"\n  }\n}\n"
+    },
+    {
+      "index": 12,
+      "status": "passed",
+      "seconds": 8.958,
+      "stdout": "Integridad: passed\nArchivos con SHA256 verificado completo: 0\n"
+    },
+    {
+      "index": 14,
+      "status": "passed",
+      "seconds": 0.015,
+      "stdout": "Entregar esta carpeta para actualizar el informe: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\reports\\environment\\entorno_20261021T233255495860Z\nGPU/CUDA no verificados en esta ejecución; no presentar como completados.\n"
+    },
+    {
+      "index": 17,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "FASE 1 | ENTORNO DE ESTA EJECUCIÓN\nColab: False | Python: 3.14.7\nPyTorch: no revisado localmente\nGPU: no disponible\nCUDA build: no disponible\nPrueba CUDA: not_requested\nSeed: 20261019 | Entrenamiento: False\nOperación: no ejecutada\n"
+    },
+    {
+      "index": 19,
+      "status": "passed",
+      "seconds": 0.0,
+      "stdout": "FASE 1 | INTEGRIDAD Y PERSISTENCIA\nIntegridad: passed\nSHA-256 completos comprobados: 0\nCruces internos conocidos: 0\nResultados: C:\\Users\\andyr\\Desktop\\Proyecto_Tuberculosis\\reports\\environment\\entorno_20261021T233255495860Z\nCarpetas futuras: solo se crean en Drive desde Colab\nNo se generan pesos ni checkpoints en estas fases.\nCIERRE GPU PENDIENTE EN ESTA EJECUCIÓN\n"
+    }
+  ],
+  "colab_execution": false,
+  "runtime_results": "reports\\notebook_runs\\phase1_20261021T233246173497Z",
+  "training_executed": false,
+  "torch_imported": false,
+  "notebook": "00_configuracion_entorno.ipynb"
+}
